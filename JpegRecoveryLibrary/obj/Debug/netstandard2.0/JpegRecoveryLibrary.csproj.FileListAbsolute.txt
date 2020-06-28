@@ -1,0 +1,9 @@
+C:\Users\Ahmad\Desktop\QCRIInternship\Code\jpgscraper-master\jpeg-carver-csharp-source\JpegRecoveryLibrary\bin\Debug\netstandard2.0\JpegRecoveryLibrary.deps.json
+C:\Users\Ahmad\Desktop\QCRIInternship\Code\jpgscraper-master\jpeg-carver-csharp-source\JpegRecoveryLibrary\bin\Debug\netstandard2.0\JpegRecoveryLibrary.dll
+C:\Users\Ahmad\Desktop\QCRIInternship\Code\jpgscraper-master\jpeg-carver-csharp-source\JpegRecoveryLibrary\bin\Debug\netstandard2.0\JpegRecoveryLibrary.pdb
+C:\Users\Ahmad\Desktop\QCRIInternship\Code\jpgscraper-master\jpeg-carver-csharp-source\JpegRecoveryLibrary\obj\Debug\netstandard2.0\JpegRecoveryLibrary.AssemblyInfoInputs.cache
+C:\Users\Ahmad\Desktop\QCRIInternship\Code\jpgscraper-master\jpeg-carver-csharp-source\JpegRecoveryLibrary\obj\Debug\netstandard2.0\JpegRecoveryLibrary.AssemblyInfo.cs
+C:\Users\Ahmad\Desktop\QCRIInternship\Code\jpgscraper-master\jpeg-carver-csharp-source\JpegRecoveryLibrary\obj\Debug\netstandard2.0\JpegRecoveryLibrary.csproj.CoreCompileInputs.cache
+C:\Users\Ahmad\Desktop\QCRIInternship\Code\jpgscraper-master\jpeg-carver-csharp-source\JpegRecoveryLibrary\obj\Debug\netstandard2.0\JpegRecoveryLibrary.dll
+C:\Users\Ahmad\Desktop\QCRIInternship\Code\jpgscraper-master\jpeg-carver-csharp-source\JpegRecoveryLibrary\obj\Debug\netstandard2.0\JpegRecoveryLibrary.pdb
+C:\Users\Ahmad\Desktop\QCRIInternship\Code\jpgscraper-master\jpeg-carver-csharp-source\JpegRecoveryLibrary\obj\Debug\netstandard2.0\JpegRecoveryLibrary.csprojAssemblyReference.cache

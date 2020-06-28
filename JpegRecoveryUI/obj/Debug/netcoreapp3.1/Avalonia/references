@@ -25,13 +25,15 @@ C:\Users\Ahmad\.nuget\packages\avalonia\0.9.10\lib\netcoreapp2.0\Avalonia.Visual
 C:\Users\Ahmad\.nuget\packages\avalonia.win32\0.9.10\lib\netstandard2.0\Avalonia.Win32.dll
 C:\Users\Ahmad\.nuget\packages\avalonia.x11\0.9.10\lib\netstandard2.0\Avalonia.X11.dll
 C:\Users\Ahmad\.nuget\packages\jetbrains.annotations\10.3.0\lib\netstandard1.0\JetBrains.Annotations.dll
-C:\Users\Ahmad\Desktop\QCRIInternship\Code\jpgscraper-master\jpeg-carver-csharp-source\JpegRecovery\bin\Debug\JpegRecovery.dll
+C:\Users\Ahmad\Desktop\QCRIInternship\Code\jpgscraper-master\jpeg-carver-csharp-source\JpegRecoveryLibrary\bin\Debug\netstandard2.1\JpegRecoveryLibrary.dll
+C:\Users\Ahmad\.nuget\packages\mathnet.numerics\4.11.0\lib\netstandard2.0\MathNet.Numerics.dll
 C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\3.1.0\ref\netcoreapp3.1\Microsoft.CSharp.dll
 C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\3.1.0\ref\netcoreapp3.1\Microsoft.VisualBasic.Core.dll
 C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\3.1.0\ref\netcoreapp3.1\Microsoft.VisualBasic.dll
 C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\3.1.0\ref\netcoreapp3.1\Microsoft.Win32.Primitives.dll
 C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\3.1.0\ref\netcoreapp3.1\mscorlib.dll
 C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\3.1.0\ref\netcoreapp3.1\netstandard.dll
+C:\Users\Ahmad\.nuget\packages\newtonsoft.json\12.0.3\lib\netstandard2.0\Newtonsoft.Json.dll
 C:\Users\Ahmad\.nuget\packages\serilog\2.5.0\lib\netstandard1.3\Serilog.dll
 C:\Users\Ahmad\.nuget\packages\serilog.sinks.debug\1.0.0\lib\netstandard1.0\Serilog.Sinks.Debug.dll
 C:\Users\Ahmad\.nuget\packages\serilog.sinks.trace\2.1.0\lib\netstandard1.3\Serilog.Sinks.Trace.dll
@@ -72,7 +74,7 @@ C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\3.1.0\ref\netcoreapp3.1\
 C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\3.1.0\ref\netcoreapp3.1\System.Diagnostics.TraceSource.dll
 C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\3.1.0\ref\netcoreapp3.1\System.Diagnostics.Tracing.dll
 C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\3.1.0\ref\netcoreapp3.1\System.dll
-C:\Users\Ahmad\.nuget\packages\system.drawing.common\4.5.0\ref\netstandard2.0\System.Drawing.Common.dll
+C:\Users\Ahmad\.nuget\packages\system.drawing.common\4.7.0\ref\netcoreapp3.0\System.Drawing.Common.dll
 C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\3.1.0\ref\netcoreapp3.1\System.Drawing.dll
 C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\3.1.0\ref\netcoreapp3.1\System.Drawing.Primitives.dll
 C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\3.1.0\ref\netcoreapp3.1\System.Dynamic.Runtime.dll

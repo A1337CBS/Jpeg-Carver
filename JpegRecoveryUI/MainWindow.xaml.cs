@@ -4,7 +4,7 @@ using Avalonia.Interactivity;
 using Avalonia.Markup.Xaml;
 using JpegRecoveryUI.Models;
 using System.Threading.Tasks;
-using System;
+using JpegRecoveryLibrary;
 
 namespace JpegRecoveryUI
 {
@@ -26,7 +26,15 @@ namespace JpegRecoveryUI
 
         public async Task<string> GetPath()
         {
-            OpenFileDialog dialog = new OpenFileDialog();
+            OpenFileDialog dialog = new OpenFileDialog
+            {
+                AllowMultiple = false,
+                Title = "Choose a picture file to load"
+                /*Filters = new List<FileDialogFilter>
+                    {
+                        new FileDialogFilter {Name = "Pictures", Extensions = new List<string> {"png", "jpg"}}
+                    }*/
+            };
             //dialog.Filters.Add(new FileDialogFilter() { Name = "Text", Extensions = { "txt" } });
 
             string[] result = await dialog.ShowAsync(this);
@@ -53,6 +61,7 @@ namespace JpegRecoveryUI
             System.Console.WriteLine("Hello");
             var context = this.DataContext as TxtViewModel;
             context.Path = "Hello";
+            
        
         }
 

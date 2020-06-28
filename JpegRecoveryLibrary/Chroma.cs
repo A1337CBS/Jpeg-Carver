@@ -22,7 +22,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace JpegRecovery
+namespace JpegRecoveryLibrary
 {
     class Chroma
     {

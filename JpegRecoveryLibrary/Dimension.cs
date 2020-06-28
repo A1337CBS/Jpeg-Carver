@@ -6,7 +6,7 @@ using MathNet.Numerics.IntegralTransforms;
 using MathNet.Numerics.Differentiation;
 using System.Numerics;
 
-namespace JpegRecovery
+namespace JpegRecoveryLibrary
 {
     class Dimension
     {

@@ -9,12 +9,13 @@ using System.Windows.Forms;
 using PacketDotNet;
 using SharpPcap;
 using SharpPcap.LibPcap;
+using JpegRecoveryLibrary;
 
 namespace JpegRecovery
 {
     class MainClass
     {
-
+        
         static PreCheck preCheck = new PreCheck();
         int[] nrof_par_head = new int[25];
         long[] len_par_head = new long[25];
@@ -48,14 +49,12 @@ namespace JpegRecovery
                 String rawPath = @"C:\Users\Ahmad\Desktop\QCRIInternship\Code\jpeg-carver-csharp-master\Dataset\Original\deagon_test_4kib";
                 
                 //Check if file is jpeg or not
-                /*
                 FileStream testFileStream = new FileStream(rawPath, FileMode.Open);
                 bool isJpeg = preCheck.isJpeg(testFileStream);
                 Console.WriteLine("Is Jpeg File?: "+isJpeg);
 
                 //Check if jpeg partial headers exist
                 //Find SOS marker
-                
                 var sos = preCheck.get_sos_cnt_and_point(testFileStream);
                 int sos_index = sos.Item1; // which SOS code is hit
                 long sos_point = sos.Item2; // point of encoded data starts. go ahead and recover consequent jpeg
@@ -66,11 +65,12 @@ namespace JpegRecovery
                 else {
                     Console.WriteLine("SOS marker exists at:" + sos_point);
                 }
-                */
+                
 
             //Find DHT marker
             // Set the stream position to the beginning of the file.
-           // testFileStream.Seek(0, SeekOrigin.Begin);
+            testFileStream.Seek(0, SeekOrigin.Begin);
+
             /*DHT
              * FF C4 - Marker(2 bytes)
              * XX XX - Length(2 bytes)
@@ -78,7 +78,7 @@ namespace JpegRecovery
              * [16]  - # of codes of each length
              * [X]   - Symbols
              */
-            /*
+            
             var dht = preCheck.get_dht_point(testFileStream);
             int dht_index = dht.Item1; // DHT is hit or not
             long dht_point = dht.Item2; // point of DHT data starts.
@@ -91,17 +91,20 @@ namespace JpegRecovery
                 Console.WriteLine("DHT marker starts at:" + dht_point);
             }
 
-            int[][] dht_codes_sym_AC;
-            //int[][] dht_codes_sym_DC = new Huff[4][];
-            //testFileStream.Seek(0, SeekOrigin.Begin);
+            testFileStream.Seek(0, SeekOrigin.Begin);
             preCheck.parseDht(testFileStream, dht_point);
-            */
-            //testFileStream.Close();
+            
+            testFileStream.Close();
 
+
+            p = new Program(rawPath);
+            m.recoverSegment(rawPath, p);
 
 
             //p = new Program(rawPath);
             //m.recoverSegment(rawPath, p);
+
+            /*Procedure 3: Network Packets
             String packetPath = @"C:\Users\Ahmad\Desktop\QCRIInternship\test.pcapng";
             String packetPathTemp = "raw_temp";
             MemoryStream memoryStream = m.packetParser(packetPath);
@@ -114,16 +117,13 @@ namespace JpegRecovery
             memoryStream.Close();
             fileStream.Close();
             //Console.WriteLine("Is Jpeg File?: " + isJpeg);
-
-            //p = new Program(rawPath);
-            //m.recoverSegment(rawPath, p);
             
             p = new Program(packetPathTemp);
             m.recoverSegment(packetPathTemp, p);
-
+            */
 
             //m.recoverSegment(openfiledialog1.FileName, p);
-            
+
             Console.WriteLine(" Hell Yeah!!");
                 //p.startDecoding();
                 //p.finalizeDecoding();

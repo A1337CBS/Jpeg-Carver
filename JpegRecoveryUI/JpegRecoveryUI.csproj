@@ -16,6 +16,6 @@
     <PackageReference Include="Avalonia.Desktop" Version="0.9.10" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\JpegRecovery\JpegRecovery.csproj" />
+    <ProjectReference Include="..\JpegRecoveryLibrary\JpegRecoveryLibrary.csproj" />
   </ItemGroup>
 </Project>

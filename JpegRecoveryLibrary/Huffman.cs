@@ -3,12 +3,10 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using System.Linq.Expressions;
-using System.Threading;
 
-namespace JpegRecovery
+namespace JpegRecoveryLibrary
 {
-    class Huffman
+    public class Huffman
     {
         public static int[][] mincode, maxcode, valptr;
         public static byte[][] huffval;
@@ -45,6 +43,10 @@ namespace JpegRecovery
                     for (var i = 0; i < this.maxcodelength.Length; i++)
                     {
                         hash = hash + this.maxcodelength[i].GetHashCode();
+                    }
+                    for (var i = 0; i < this.huffval.Length; i++)
+                    {
+                        hash = hash + this.huffval[i].GetHashCode();
                     }
 
                     return hash;
@@ -165,40 +167,7 @@ namespace JpegRecovery
 
         static Huffman()
         {
-            // See if file exists, if exists meaning Huffman values are there
-            if (File.Exists("Huffman.txt"))
-            {
 
-                Console.WriteLine("Huffman table file exists");
-                //Check if file is valid
-                try{
-                   // JsonSerializer serializer = new JsonSerializer();
-                   // serializer.NullValueHandling = NullValueHandling.Ignore;
-
-                    //StreamReader sw = new StreamReader(@"Huffman.txt");
-                    //JsonReader reader = new JsonReader(sw);
-                    //JsonTextReader reader = new JsonTextReader(sw);
-
-                    //serializer.Deserialize(reader, product);
-                    //var jarray = JsonConvert.DeserializeObject<List<DHTStruct>>(sw.ToString());
-                    //DHTs.Union(jarray);
-                    using (StreamReader r = new StreamReader(@"Huffman.txt")) {
-                        String json = r.ReadToEnd();
-                        var jarray = JsonConvert.DeserializeObject<List<DHTStruct>>(json);
-
-                        Console.WriteLine("jarray:  " + jarray[0].huffval );
-
-                        DHTs.Union(jarray);
-                    }
-
-                        // {"ExpiryDate":new Date(1230375600000),"Price":0}
-                    Console.WriteLine("Huffman tables count" + DHTs);
-                }
-                catch(Exception e){
-                    Console.WriteLine("Error - " + e.Message);
-                }
-
-            }
             //Add 1st DHT
             DHT = new DHTStruct()
             {
@@ -210,6 +179,7 @@ namespace JpegRecovery
             };
             Console.WriteLine("DHT 1 hashcode" + DHT.GetHashCode() );
             DHTs.Add(DHT);
+            
 
             //Add 2nd DHT
             DHT = new DHTStruct()
@@ -276,6 +246,43 @@ namespace JpegRecovery
                 maxcodelength = maxcodelength7
             };
             DHTs.Add(DHT);
+
+            //Add DHTs from file, if any
+            String path = "Huffman.json";
+            // See if file exists, if exists meaning Huffman values are there
+            if (File.Exists(path))
+            {
+
+                Console.WriteLine("Huffman table file exists");
+                //Check if file is valid
+                try
+                {
+
+                    using (StreamReader r = new StreamReader(path))
+                    {
+                        String json = r.ReadToEnd();
+                        var jarray = JsonConvert.DeserializeObject<List<DHTStruct>>(json);
+
+                        //Console.WriteLine("jarray:  " + jarray[0].huffval);
+                        foreach (DHTStruct dhtRecord in jarray)
+                        {
+                            bool containsItem = DHTs.Any(item => item.id == dhtRecord.id);
+                            if (!containsItem)
+                            {
+                                DHTs.Add(dhtRecord);
+                            }
+                        }
+                        //DHTs.Union(jarray);
+                    }
+
+                    Console.WriteLine("Huffman tables count" + DHTs);
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine("Error - " + e.Message);
+                }
+
+            }
 
         }
 
