@@ -1,0 +1,77 @@
+﻿<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="JpegRecoveryUI.MainWindow"
+        Title="JpegRecoveryUI">
+
+	<Window.Styles>
+		<Style Selector="TextBlock.b">
+			<Setter Property="FontWeight" Value="Bold"/>
+			<Setter Property="FontSize" Value="24"/>
+		</Style>
+	</Window.Styles>
+
+	<Border Background="LightBlue"
+        BorderBrush="Black"
+        BorderThickness="2"
+        CornerRadius="45"
+        Padding="25">
+		<Grid Background="White" ShowGridLines="False">
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition Width="Auto"/>
+				<ColumnDefinition Width="*"/>
+				<ColumnDefinition Width="Auto"/>
+			</Grid.ColumnDefinitions>
+
+			<TextBlock Grid.Column="0" Grid.Row="0" Classes="b" Text="Jpeg Recovery" Margin="10,0,0,0"/>
+
+			<StackPanel Grid.Column="0" Grid.Row="1" HorizontalAlignment="Left" Name="StackPanel1" 
+						VerticalAlignment="Center" Margin="15 0 0 0" Spacing="5">
+
+				<TextBlock Grid.Column="0" Grid.Row="0" Classes="b" Text="Select mode of operation:"/>
+					<ComboBox Grid.Row="1" SelectedIndex="0">
+						<ComboBoxItem>Jpeg carving</ComboBoxItem>
+						<ComboBoxItem>Inline Item 2</ComboBoxItem>
+						<ComboBoxItem>Packet carving</ComboBoxItem>
+					</ComboBox>
+
+					<TextBox Grid.Row="2" Text="{Binding Path}" Margin="0 0 5 0" IsReadOnly="True" />
+					<Button Grid.Row="3" Classes="Primary" Content="Browse" Click="Browse_Clicked" Margin="0 0 0 0" />
+
+					<Button Grid.Row="4" Classes="Primary" Click="Run_Clicked" Margin="0 15 0 0">Run</Button>
+				
+				
+			</StackPanel>
+
+			<StackPanel Grid.Column="1" Grid.Row="0" HorizontalAlignment="Stretch" Name="StackPanel2"
+						VerticalAlignment="Top" Orientation="Vertical" Spacing="10" Margin="5 0 0 0">
+
+				<Grid HorizontalAlignment="Center">
+					<Grid.RowDefinitions>
+						<RowDefinition Height="*" />
+						<RowDefinition Height="Auto" />
+					</Grid.RowDefinitions>
+
+					<Grid.ColumnDefinitions>
+						<ColumnDefinition Width="Auto" />
+						<ColumnDefinition Width="*" />
+					</Grid.ColumnDefinitions>
+
+					<!--<Grid.ColumnDefinitions>
+						<ColumnDefinition Width="158" />
+					</Grid.ColumnDefinitions>-->
+
+					<TextBlock HorizontalAlignment="Stretch" Grid.Row="0" FontSize="18">Image Preview</TextBlock>
+
+					<Image Grid.Row="1" Name="drawingImage" VerticalAlignment="Center" Source="C:\Users\Ahmad\Desktop\sign.jpg" />
+				</Grid>
+				
+			</StackPanel>
+
+		</Grid>
+	</Border>
+
+
+</Window>

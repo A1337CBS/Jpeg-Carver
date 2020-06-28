@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "dg+7qL9COj56m8+1vEYtT1HZtKjTlamiaNB/xz6UiPP3HH2Rlsdc2oNx5SbYXleI4bRCfHcPa1ILxwOMD4g5oQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Ahmad\\Desktop\\QCRIInternship\\Code\\jpgscraper-master\\jpeg-carver-csharp-source\\JpegRecoveryLibrary\\JpegRecoveryLibrary.csproj",
+  "expectedPackageFiles": [
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
