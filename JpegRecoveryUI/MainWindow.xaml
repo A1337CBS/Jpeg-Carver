@@ -11,6 +11,10 @@
 			<Setter Property="FontWeight" Value="Bold"/>
 			<Setter Property="FontSize" Value="24"/>
 		</Style>
+		<Style Selector="TextBlock.b1">
+			<Setter Property="FontWeight" Value="Bold"/>
+			<Setter Property="FontSize" Value="12"/>
+		</Style>
 	</Window.Styles>
 
 	<Border Background="LightBlue"
@@ -24,28 +28,38 @@
 				<ColumnDefinition Width="*"/>
 				<ColumnDefinition Width="Auto"/>
 			</Grid.ColumnDefinitions>
-
+			
+			
 			<TextBlock Grid.Column="0" Grid.Row="0" Classes="b" Text="Jpeg Recovery" Margin="10,0,0,0"/>
 
-			<StackPanel Grid.Column="0" Grid.Row="1" HorizontalAlignment="Left" Name="StackPanel1" 
+
+			<StackPanel Grid.Column="0" Grid.Row="2" HorizontalAlignment="Left" Name="StackPanel_left" 
 						VerticalAlignment="Center" Margin="15 0 0 0" Spacing="5">
 
-				<TextBlock Grid.Column="0" Grid.Row="0" Classes="b" Text="Select mode of operation:"/>
-					<ComboBox Grid.Row="1" SelectedIndex="0">
-						<ComboBoxItem>Jpeg carving</ComboBoxItem>
-						<ComboBoxItem>Inline Item 2</ComboBoxItem>
+				<TextBlock Grid.Column="0" Grid.Row="0" Classes="b1" Text="Select mode of operation:"/>
+					<ComboBox x:Name="optComboBox" Grid.Row="1" SelectedIndex="0">
+						<ComboBoxItem>Jpeg carving(Single image)</ComboBoxItem>
+						<ComboBoxItem>Storage carving</ComboBoxItem>
 						<ComboBoxItem>Packet carving</ComboBoxItem>
 					</ComboBox>
 
-					<TextBox Grid.Row="2" Text="{Binding Path}" Margin="0 0 5 0" IsReadOnly="True" />
-					<Button Grid.Row="3" Classes="Primary" Content="Browse" Click="Browse_Clicked" Margin="0 0 0 0" />
 
-					<Button Grid.Row="4" Classes="Primary" Click="Run_Clicked" Margin="0 15 0 0">Run</Button>
+					<TextBlock Text="Input path" Classes="b1" Margin="0,10,0,0"/>
+					<TextBox Grid.Row="2" Text="{Binding Path}" MaxWidth="350" Margin="0 0 0 0" IsReadOnly="True" />
+
+					<TextBlock Text="Output path" Classes="b1" Margin="0,10,0,0"/>
+					<TextBox Grid.Row="3" Text="{Binding Path}" MaxWidth="350" Margin="0 0 0 0" IsReadOnly="True" />
+				
+					<Button Grid.Row="4" Classes="Primary" Content="Browse" Click="Browse_Clicked" Margin="0 0 0 0" />
+
+					<Button Grid.Row="5" Classes="Primary" Click="Run_Clicked" Margin="0 15 0 0">Run</Button>
+				
+				<ProgressBar></ProgressBar>
 				
 				
 			</StackPanel>
 
-			<StackPanel Grid.Column="1" Grid.Row="0" HorizontalAlignment="Stretch" Name="StackPanel2"
+			<StackPanel Grid.Column="1" Grid.Row="0" HorizontalAlignment="Stretch" Name="StackPanel_right"
 						VerticalAlignment="Top" Orientation="Vertical" Spacing="10" Margin="5 0 0 0">
 
 				<Grid HorizontalAlignment="Center">
@@ -63,10 +77,13 @@
 						<ColumnDefinition Width="158" />
 					</Grid.ColumnDefinitions>-->
 
-					<TextBlock HorizontalAlignment="Stretch" Grid.Row="0" FontSize="18">Image Preview</TextBlock>
+					<TextBlock HorizontalAlignment="Center" Classes="b1" Grid.Row="0" Margin="0 0 0 25" >Image Preview</TextBlock>
 
-					<Image Grid.Row="1" Name="drawingImage" VerticalAlignment="Center" Source="C:\Users\Ahmad\Desktop\sign.jpg" />
+					<Image Grid.Row="1" Name="drawingImage" VerticalAlignment="Center" MaxWidth="550" Source="{Binding Imagepath}" />
+
 				</Grid>
+
+				<!--<CheckBox Grid.Row="2" VerticalAlignment="Bottom" HorizontalAlignment="Center" IsEnabled="False"> Is it jpeg? </CheckBox>-->	
 				
 			</StackPanel>
 

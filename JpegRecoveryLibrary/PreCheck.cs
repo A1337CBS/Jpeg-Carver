@@ -10,7 +10,8 @@ namespace JpegRecoveryLibrary
     public class PreCheck
     {
         int chunk_size = 4 * 1024;
-        public bool isJpeg(FileStream fileStream)
+        //Stream fileStream argument mainly supports FileStream, MemoryStream objects 
+        public bool isJpeg(Stream fileStream)
         {
             //1)If the number of remaining byte boundaries is equal tozero, it is accepted as non - JPEG encoded data.
             //2)If the number of remaining byte boundaries is equal toexactly one, it is accepted as JPEG encoded data.
@@ -52,7 +53,7 @@ namespace JpegRecoveryLibrary
             }
         }
 
-        int get_cnt_rem_bnd(FileStream fileStream)
+        int get_cnt_rem_bnd(Stream fileStream)
         {
             //chunk_size=8,16,32 KB at most
             int cnt_rem_bnd = 8;
@@ -111,7 +112,7 @@ namespace JpegRecoveryLibrary
             dht.maxcodelength = new int[4];
 
             // Append to last line
-            for (int i = 0; i < 4; i++)
+            for (int i = 0; i < HuffInput.Length; i++)
             {
                 dht.mincode[i] = HuffInput[i].mincode;
                 dht.maxcode[i] = HuffInput[i].maxcode;
@@ -129,7 +130,7 @@ namespace JpegRecoveryLibrary
             return (UInt16)((value & 0xFFU) << 8 | (value & 0xFF00U) >> 8);
         }
 
-        public void parseDht(FileStream fileStream, long dht_point = 0)
+        public void parseDht(Stream fileStream, long dht_point = 0)
         {
 
             // Set the stream position to after dht marker.
@@ -142,7 +143,6 @@ namespace JpegRecoveryLibrary
             int length = (int)ReverseBytes(binReader.ReadUInt16());
             length -= 2;
             Console.WriteLine("Lenght:" + length);
-            //int[][] _dht = new int[4][];
             Huff[] _dht = new Huff[4];
             int index = 0;
 
@@ -399,7 +399,7 @@ namespace JpegRecoveryLibrary
 
         #endregion
 
-        int[] search_ff00_ffda_rst(FileStream fileStream)
+        int[] search_ff00_ffda_rst(Stream fileStream)
         {
 
             // cnt_ff00:cnt_ffda:rst_in_8_loop
@@ -476,7 +476,7 @@ namespace JpegRecoveryLibrary
         }
 
 
-        public Tuple<int, long> get_sos_cnt_and_point(FileStream fileStream, bool isChunk = false)
+        public Tuple<int, long> get_sos_cnt_and_point(Stream fileStream, bool isChunk = false)
         {
             //0xFFDA00 08010100 003F00
             //0xFFDA00 0C030100 02110311 003F00
@@ -556,7 +556,7 @@ namespace JpegRecoveryLibrary
 
         //find dht marker before SOS point 
         // public int get_dht_point(FileStream fileStream, int sos_point)
-        public Tuple<int, long> get_dht_point(FileStream fileStream)
+        public Tuple<int, long> get_dht_point(Stream fileStream)
         {
 
             // uint bit_buffer = readNexNBytes(fileStream, 4);
@@ -613,7 +613,7 @@ namespace JpegRecoveryLibrary
             return Tuple.Create(dht_i, dht_point);
         }
 
-        uint readNexNBytes(FileStream fileStream, int n)
+        uint readNexNBytes(Stream fileStream, int n)
         {
             // reads maximum next n bytes
             uint nextNBytes = 0;

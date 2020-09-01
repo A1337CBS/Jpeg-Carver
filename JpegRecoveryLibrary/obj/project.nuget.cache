@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "kAwGBxJB4nF0fglKNOtmO2HUVeSFFC7AbbG3/aH55xtIcvmKJz7SHzidkfbXq60kcYCYN0yHKzDlCbcpzriWjQ==",
+  "dgSpecHash": "iwUIbkeE93tTRVwNrzEubb91p1cnYIFcPG7RyOZeYPYWO2Ho4U+LiG3PzgUg7sj+hl29OXuaFsOsji61kIbUqQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Ahmad\\Desktop\\QCRIInternship\\Code\\jpgscraper-master\\jpeg-carver-csharp-source\\JpegRecoveryLibrary\\JpegRecoveryLibrary.csproj",
+  "projectFilePath": "G:\\HBKU\\QCRIInternship\\Code\\jpgscraper-master\\jpeg-carver-csharp-source\\JpegRecoveryLibrary\\JpegRecoveryLibrary.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Ahmad\\.nuget\\packages\\mathnet.numerics\\4.11.0\\mathnet.numerics.4.11.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",

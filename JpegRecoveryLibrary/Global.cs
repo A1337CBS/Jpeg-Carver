@@ -17,7 +17,7 @@ namespace JpegRecoveryLibrary
         public static int chr;// chroma subsampling 0--> 4:4:4, 1--> 4:4:0, 2--> 4:2:2, 3--> 4:2:0
         public static int maxWidth = 1280;// 10240 pixel
 
-        public static String baseDir = "C:\\Users\\user\\Desktop\\code\\new_DFRWS_2007\\";//"E:\\JpegProject\\proj_sd\\Rec_Orphan\\";
+        public static String baseDir = "G:\\HBKU\\QCRIInternship\\dfrws-2007-challenge\\";//C:\\Users\\user\\Desktop\\code\\new_DFRWS_2007\\ //"E:\\JpegProject\\proj_sd\\Rec_Orphan\\";
         public static String cand_rec_dir = baseDir + "cand_rec\\";
         public static String rec_par_head_dir = baseDir + "rec_par_head\\";
         public static String cand_non_head_dir = baseDir + "cand_non_head\\";

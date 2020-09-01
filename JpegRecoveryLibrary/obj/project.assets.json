@@ -305,11 +305,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Ahmad\\Desktop\\QCRIInternship\\Code\\jpgscraper-master\\jpeg-carver-csharp-source\\JpegRecoveryLibrary\\JpegRecoveryLibrary.csproj",
+      "projectUniqueName": "G:\\HBKU\\QCRIInternship\\Code\\jpgscraper-master\\jpeg-carver-csharp-source\\JpegRecoveryLibrary\\JpegRecoveryLibrary.csproj",
       "projectName": "JpegRecoveryLibrary",
-      "projectPath": "C:\\Users\\Ahmad\\Desktop\\QCRIInternship\\Code\\jpgscraper-master\\jpeg-carver-csharp-source\\JpegRecoveryLibrary\\JpegRecoveryLibrary.csproj",
+      "projectPath": "G:\\HBKU\\QCRIInternship\\Code\\jpgscraper-master\\jpeg-carver-csharp-source\\JpegRecoveryLibrary\\JpegRecoveryLibrary.csproj",
       "packagesPath": "C:\\Users\\Ahmad\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Ahmad\\Desktop\\QCRIInternship\\Code\\jpgscraper-master\\jpeg-carver-csharp-source\\JpegRecoveryLibrary\\obj\\",
+      "outputPath": "G:\\HBKU\\QCRIInternship\\Code\\jpgscraper-master\\jpeg-carver-csharp-source\\JpegRecoveryLibrary\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

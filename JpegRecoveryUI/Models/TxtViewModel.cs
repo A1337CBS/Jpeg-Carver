@@ -1,4 +1,7 @@
-﻿using System;
+﻿using Avalonia;
+using Avalonia.Media.Imaging;
+using Avalonia.Platform;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
@@ -9,6 +12,8 @@ namespace JpegRecoveryUI.Models
     class TxtViewModel : INotifyPropertyChanged
     {
         private string _path;
+        private Bitmap _imagepath;
+
 
         public string Path
         {
@@ -23,18 +28,22 @@ namespace JpegRecoveryUI.Models
             }
         }
 
-        public string imgSrc
+        public Bitmap Imagepath
         {
-            get => _path;
+            get => _imagepath;
             set
             {
-                if (value != _path)
+                //var assets = AvaloniaLocator.Current.GetService<IAssetLoader>();
+                //var bitmap = new Bitmap(imgSrc);
+
+                if (value != _imagepath)
                 {
-                    _path = value;
+                    _imagepath = value;
                     OnPropertyChanged();
                 }
             }
         }
+
 
         public event PropertyChangedEventHandler PropertyChanged;
 

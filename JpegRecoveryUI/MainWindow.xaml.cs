@@ -5,6 +5,7 @@ using Avalonia.Markup.Xaml;
 using JpegRecoveryUI.Models;
 using System.Threading.Tasks;
 using JpegRecoveryLibrary;
+using Avalonia.Media.Imaging;
 
 namespace JpegRecoveryUI
 {
@@ -13,7 +14,13 @@ namespace JpegRecoveryUI
         public MainWindow()
         {
             InitializeComponent();
-            this.DataContext = new TxtViewModel() { Path = @"C:\Users\Ahmad\Desktop\sign.jpg" };
+            this.DataContext = new TxtViewModel() {
+                Path = @"C:\Users\Ahmad\Desktop\QCRIInternship\Code\jpeg-carver-csharp-master\Dataset\Original\full_dragon.jpg",
+                //Imagepath = new Bitmap(@"C:\Users\Ahmad\Desktop\QCRIInternship\Code\jpeg-carver-csharp-master\Dataset\Original\full_dragon.jpg")
+            };
+
+
+
 #if DEBUG
             this.AttachDevTools();
 #endif
@@ -57,12 +64,22 @@ namespace JpegRecoveryUI
 
         public async void Run_Clicked(object sender, RoutedEventArgs args)
         {
-            
-            System.Console.WriteLine("Hello");
+            var optComboBox = this.Find<ComboBox>("optComboBox");
             var context = this.DataContext as TxtViewModel;
-            context.Path = "Hello";
-            
-       
+            if (optComboBox.SelectedIndex == 0)
+            {//Jpeg carving
+                Procedures p1 = new Procedures();
+                p1.procedure_1(context.Path);
+                context.Imagepath = new Bitmap(@"C:\Users\Ahmad\Desktop\QCRIInternship\Code\jpeg-carver-csharp-master\Dataset\Original\deagon_test_4kib_recov.jpg");
+            }
+            else if(optComboBox.SelectedIndex == 1)
+            {//Storage carving
+
+            }
+            else if (optComboBox.SelectedIndex == 2)
+            {//Network packet carving
+
+            }
         }
 
     }

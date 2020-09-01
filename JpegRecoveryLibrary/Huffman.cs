@@ -178,6 +178,7 @@ namespace JpegRecoveryLibrary
                 maxcodelength = maxcodelength1
             };
             Console.WriteLine("DHT 1 hashcode" + DHT.GetHashCode() );
+            Console.WriteLine(string.Join(", ", DHT.huffval[0] )   );
             DHTs.Add(DHT);
             
 
@@ -264,6 +265,7 @@ namespace JpegRecoveryLibrary
                         var jarray = JsonConvert.DeserializeObject<List<DHTStruct>>(json);
 
                         //Console.WriteLine("jarray:  " + jarray[0].huffval);
+                        
                         foreach (DHTStruct dhtRecord in jarray)
                         {
                             bool containsItem = DHTs.Any(item => item.id == dhtRecord.id);

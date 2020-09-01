@@ -59,8 +59,10 @@ namespace JpegRecoveryLibrary
         public Program(string file, MemoryStream memoryStream)
         {
             filePar = file;
-            fileStream = new FileStream(file, FileMode.Create, FileAccess.Write);
+            fileStream = new FileStream(file, FileMode.Create, FileAccess.ReadWrite);
+            memoryStream.Position = 0;
             memoryStream.CopyTo(fileStream);
+
             endOfStream = fileStream.Length;
             findByteBoundary();
             initPosition = 0;

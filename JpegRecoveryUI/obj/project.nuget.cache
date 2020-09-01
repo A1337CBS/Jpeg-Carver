@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "pIYV55kncWsAmmzGSdRWUkCPaHbRAEL2gQmUVE/6xIjuYLwYuCInooiE0Z10lTPABZ77NkTHpM2LmxGR6haXUA==",
+  "dgSpecHash": "zf+jRxBhSVacUoT8KwOE6PXlLHwlQhxKEOL2+tktVasRX9mAc/W1kECIwjSB8UPIU9I3t8WyjCTlxu1NmBi9bQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Ahmad\\Desktop\\QCRIInternship\\Code\\jpgscraper-master\\jpeg-carver-csharp-source\\JpegRecoveryUI\\JpegRecoveryUI.csproj",
+  "projectFilePath": "G:\\HBKU\\QCRIInternship\\Code\\jpgscraper-master\\jpeg-carver-csharp-source\\JpegRecoveryUI\\JpegRecoveryUI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Ahmad\\.nuget\\packages\\avalonia\\0.9.10\\avalonia.0.9.10.nupkg.sha512",
     "C:\\Users\\Ahmad\\.nuget\\packages\\avalonia.desktop\\0.9.10\\avalonia.desktop.0.9.10.nupkg.sha512",
