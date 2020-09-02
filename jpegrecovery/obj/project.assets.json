@@ -11,16 +11,19 @@
           "lib/net45-full/log4net.dll": {}
         }
       },
-      "MathNet.Numerics/3.6.0": {
+      "MathNet.Numerics/4.12.0": {
         "type": "package",
         "frameworkAssemblies": [
-          "System.Numerics"
+          "System",
+          "System.Core",
+          "System.Numerics",
+          "System.Runtime.Serialization"
         ],
         "compile": {
-          "lib/net40/MathNet.Numerics.dll": {}
+          "lib/net461/MathNet.Numerics.dll": {}
         },
         "runtime": {
-          "lib/net40/MathNet.Numerics.dll": {}
+          "lib/net461/MathNet.Numerics.dll": {}
         }
       },
       "Newtonsoft.Json/12.0.3": {
@@ -32,10 +35,10 @@
           "lib/net45/Newtonsoft.Json.dll": {}
         }
       },
-      "PacketDotNet/1.0.5": {
+      "PacketDotNet/1.0.1": {
         "type": "package",
         "dependencies": {
-          "System.Runtime.CompilerServices.Unsafe": "4.7.0"
+          "System.Runtime.CompilerServices.Unsafe": "4.5.2"
         },
         "compile": {
           "lib/net45/PacketDotNet.dll": {}
@@ -44,12 +47,12 @@
           "lib/net45/PacketDotNet.dll": {}
         }
       },
-      "packetnet-connections/1.0.0": {
+      "packetnet-connections/1.2.0": {
         "type": "package",
         "dependencies": {
           "log4net": "2.0.8",
-          "packetdotnet": "0.20.1",
-          "sharppcap": "4.6.0",
+          "packetdotnet": "1.0.1",
+          "sharppcap": "4.6.1",
           "sharpziplib": "1.1.0"
         },
         "compile": {
@@ -285,10 +288,10 @@
           "lib/netstandard2.0/netstandard.dll": {}
         }
       },
-      "SharpPcap/5.1.0": {
+      "SharpPcap/4.6.1": {
         "type": "package",
         "dependencies": {
-          "PacketDotNet": "1.0.3"
+          "PacketDotNet": "0.18.0"
         },
         "compile": {
           "lib/netstandard2.0/SharpPcap.dll": {}
@@ -379,9 +382,10 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "MathNet.Numerics": "4.11.0",
+          "MathNet.Numerics": "4.12.0",
           "Newtonsoft.Json": "12.0.3",
-          "System.Drawing.Common": "4.7.0"
+          "System.Drawing.Common": "4.7.0",
+          "packetnet-connections": "1.2.0"
         },
         "compile": {
           "bin/placeholder/JpegRecoveryLibrary.dll": {}
@@ -401,16 +405,19 @@
           "lib/net45-full/log4net.dll": {}
         }
       },
-      "MathNet.Numerics/3.6.0": {
+      "MathNet.Numerics/4.12.0": {
         "type": "package",
         "frameworkAssemblies": [
-          "System.Numerics"
+          "System",
+          "System.Core",
+          "System.Numerics",
+          "System.Runtime.Serialization"
         ],
         "compile": {
-          "lib/net40/MathNet.Numerics.dll": {}
+          "lib/net461/MathNet.Numerics.dll": {}
         },
         "runtime": {
-          "lib/net40/MathNet.Numerics.dll": {}
+          "lib/net461/MathNet.Numerics.dll": {}
         }
       },
       "Newtonsoft.Json/12.0.3": {
@@ -422,10 +429,10 @@
           "lib/net45/Newtonsoft.Json.dll": {}
         }
       },
-      "PacketDotNet/1.0.5": {
+      "PacketDotNet/1.0.1": {
         "type": "package",
         "dependencies": {
-          "System.Runtime.CompilerServices.Unsafe": "4.7.0"
+          "System.Runtime.CompilerServices.Unsafe": "4.5.2"
         },
         "compile": {
           "lib/net45/PacketDotNet.dll": {}
@@ -434,12 +441,12 @@
           "lib/net45/PacketDotNet.dll": {}
         }
       },
-      "packetnet-connections/1.0.0": {
+      "packetnet-connections/1.2.0": {
         "type": "package",
         "dependencies": {
           "log4net": "2.0.8",
-          "packetdotnet": "0.20.1",
-          "sharppcap": "4.6.0",
+          "packetdotnet": "1.0.1",
+          "sharppcap": "4.6.1",
           "sharpziplib": "1.1.0"
         },
         "compile": {
@@ -675,10 +682,10 @@
           "lib/netstandard2.0/netstandard.dll": {}
         }
       },
-      "SharpPcap/5.1.0": {
+      "SharpPcap/4.6.1": {
         "type": "package",
         "dependencies": {
-          "PacketDotNet": "1.0.3"
+          "PacketDotNet": "0.18.0"
         },
         "compile": {
           "lib/netstandard2.0/SharpPcap.dll": {}
@@ -769,9 +776,10 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "MathNet.Numerics": "4.11.0",
+          "MathNet.Numerics": "4.12.0",
           "Newtonsoft.Json": "12.0.3",
-          "System.Drawing.Common": "4.7.0"
+          "System.Drawing.Common": "4.7.0",
+          "packetnet-connections": "1.2.0"
         },
         "compile": {
           "bin/placeholder/JpegRecoveryLibrary.dll": {}
@@ -791,16 +799,19 @@
           "lib/net45-full/log4net.dll": {}
         }
       },
-      "MathNet.Numerics/3.6.0": {
+      "MathNet.Numerics/4.12.0": {
         "type": "package",
         "frameworkAssemblies": [
-          "System.Numerics"
+          "System",
+          "System.Core",
+          "System.Numerics",
+          "System.Runtime.Serialization"
         ],
         "compile": {
-          "lib/net40/MathNet.Numerics.dll": {}
+          "lib/net461/MathNet.Numerics.dll": {}
         },
         "runtime": {
-          "lib/net40/MathNet.Numerics.dll": {}
+          "lib/net461/MathNet.Numerics.dll": {}
         }
       },
       "Newtonsoft.Json/12.0.3": {
@@ -812,10 +823,10 @@
           "lib/net45/Newtonsoft.Json.dll": {}
         }
       },
-      "PacketDotNet/1.0.5": {
+      "PacketDotNet/1.0.1": {
         "type": "package",
         "dependencies": {
-          "System.Runtime.CompilerServices.Unsafe": "4.7.0"
+          "System.Runtime.CompilerServices.Unsafe": "4.5.2"
         },
         "compile": {
           "lib/net45/PacketDotNet.dll": {}
@@ -824,12 +835,12 @@
           "lib/net45/PacketDotNet.dll": {}
         }
       },
-      "packetnet-connections/1.0.0": {
+      "packetnet-connections/1.2.0": {
         "type": "package",
         "dependencies": {
           "log4net": "2.0.8",
-          "packetdotnet": "0.20.1",
-          "sharppcap": "4.6.0",
+          "packetdotnet": "1.0.1",
+          "sharppcap": "4.6.1",
           "sharpziplib": "1.1.0"
         },
         "compile": {
@@ -1065,10 +1076,10 @@
           "lib/netstandard2.0/netstandard.dll": {}
         }
       },
-      "SharpPcap/5.1.0": {
+      "SharpPcap/4.6.1": {
         "type": "package",
         "dependencies": {
-          "PacketDotNet": "1.0.3"
+          "PacketDotNet": "0.18.0"
         },
         "compile": {
           "lib/netstandard2.0/SharpPcap.dll": {}
@@ -1159,9 +1170,10 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "MathNet.Numerics": "4.11.0",
+          "MathNet.Numerics": "4.12.0",
           "Newtonsoft.Json": "12.0.3",
-          "System.Drawing.Common": "4.7.0"
+          "System.Drawing.Common": "4.7.0",
+          "packetnet-connections": "1.2.0"
         },
         "compile": {
           "bin/placeholder/JpegRecoveryLibrary.dll": {}
@@ -1181,16 +1193,19 @@
           "lib/net45-full/log4net.dll": {}
         }
       },
-      "MathNet.Numerics/3.6.0": {
+      "MathNet.Numerics/4.12.0": {
         "type": "package",
         "frameworkAssemblies": [
-          "System.Numerics"
+          "System",
+          "System.Core",
+          "System.Numerics",
+          "System.Runtime.Serialization"
         ],
         "compile": {
-          "lib/net40/MathNet.Numerics.dll": {}
+          "lib/net461/MathNet.Numerics.dll": {}
         },
         "runtime": {
-          "lib/net40/MathNet.Numerics.dll": {}
+          "lib/net461/MathNet.Numerics.dll": {}
         }
       },
       "Newtonsoft.Json/12.0.3": {
@@ -1202,10 +1217,10 @@
           "lib/net45/Newtonsoft.Json.dll": {}
         }
       },
-      "PacketDotNet/1.0.5": {
+      "PacketDotNet/1.0.1": {
         "type": "package",
         "dependencies": {
-          "System.Runtime.CompilerServices.Unsafe": "4.7.0"
+          "System.Runtime.CompilerServices.Unsafe": "4.5.2"
         },
         "compile": {
           "lib/net45/PacketDotNet.dll": {}
@@ -1214,12 +1229,12 @@
           "lib/net45/PacketDotNet.dll": {}
         }
       },
-      "packetnet-connections/1.0.0": {
+      "packetnet-connections/1.2.0": {
         "type": "package",
         "dependencies": {
           "log4net": "2.0.8",
-          "packetdotnet": "0.20.1",
-          "sharppcap": "4.6.0",
+          "packetdotnet": "1.0.1",
+          "sharppcap": "4.6.1",
           "sharpziplib": "1.1.0"
         },
         "compile": {
@@ -1455,10 +1470,10 @@
           "lib/netstandard2.0/netstandard.dll": {}
         }
       },
-      "SharpPcap/5.1.0": {
+      "SharpPcap/4.6.1": {
         "type": "package",
         "dependencies": {
-          "PacketDotNet": "1.0.3"
+          "PacketDotNet": "0.18.0"
         },
         "compile": {
           "lib/netstandard2.0/SharpPcap.dll": {}
@@ -1549,9 +1564,10 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "MathNet.Numerics": "4.11.0",
+          "MathNet.Numerics": "4.12.0",
           "Newtonsoft.Json": "12.0.3",
-          "System.Drawing.Common": "4.7.0"
+          "System.Drawing.Common": "4.7.0",
+          "packetnet-connections": "1.2.0"
         },
         "compile": {
           "bin/placeholder/JpegRecoveryLibrary.dll": {}
@@ -1587,31 +1603,24 @@
         "log4net.nuspec"
       ]
     },
-    "MathNet.Numerics/3.6.0": {
-      "sha512": "FRgPclXAmg1XqqMdFd/GJXBPA6X9dYY99DMV+BxR3A622ySyRj39S6eprWtGc7REu5zOebIgsFBMzbRK3aag8w==",
+    "MathNet.Numerics/4.12.0": {
+      "sha512": "U6R74mc1PHD3HbbevY5Z6AS07toye0PBooKPpCyD9sCc5HDPlRl+lmiWl+zy8L7IEHIH0Bvkx1sVqBY++5X5eA==",
       "type": "package",
-      "path": "mathnet.numerics/3.6.0",
+      "path": "mathnet.numerics/4.12.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "lib/net35/MathNet.Numerics.dll",
-        "lib/net35/MathNet.Numerics.xml",
+        "icon.png",
         "lib/net40/MathNet.Numerics.dll",
         "lib/net40/MathNet.Numerics.xml",
-        "lib/portable-net4+sl5+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1/MathNet.Numerics.XML",
-        "lib/portable-net4+sl5+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1/MathNet.Numerics.dll",
-        "lib/portable-net45+netcore45+MonoAndroid1+MonoTouch1/MathNet.Numerics.XML",
-        "lib/portable-net45+netcore45+MonoAndroid1+MonoTouch1/MathNet.Numerics.dll",
-        "lib/portable-net45+netcore45+wp8+MonoAndroid1+MonoTouch1/MathNet.Numerics.XML",
-        "lib/portable-net45+netcore45+wp8+MonoAndroid1+MonoTouch1/MathNet.Numerics.dll",
-        "lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1/MathNet.Numerics.XML",
-        "lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1/MathNet.Numerics.dll",
-        "lib/portable-net45+sl5+netcore45+MonoAndroid1+MonoTouch1/MathNet.Numerics.XML",
-        "lib/portable-net45+sl5+netcore45+MonoAndroid1+MonoTouch1/MathNet.Numerics.dll",
-        "license.txt",
-        "mathnet.numerics.3.6.0.nupkg.sha512",
-        "mathnet.numerics.nuspec",
-        "readme.txt"
+        "lib/net461/MathNet.Numerics.dll",
+        "lib/net461/MathNet.Numerics.xml",
+        "lib/netstandard1.3/MathNet.Numerics.dll",
+        "lib/netstandard1.3/MathNet.Numerics.xml",
+        "lib/netstandard2.0/MathNet.Numerics.dll",
+        "lib/netstandard2.0/MathNet.Numerics.xml",
+        "mathnet.numerics.4.12.0.nupkg.sha512",
+        "mathnet.numerics.nuspec"
       ]
     },
     "Newtonsoft.Json/12.0.3": {
@@ -1645,23 +1654,23 @@
         "packageIcon.png"
       ]
     },
-    "PacketDotNet/1.0.5": {
-      "sha512": "pOYdyeK4bfsBdIN+beUA8QYmOIlVRlFrh43Ut4w3P2gm8j7C4o3fTakldeNdami0060H12IJbSx1y32v88kM5g==",
+    "PacketDotNet/1.0.1": {
+      "sha512": "5DPDbVW+9FSl4L/WLQ4iLxPMeDXw2IxHgOEzVSKYlhaLXc67+/bT7uq4qroTIOj2ysCKY9rBujz0juLCHwFa5g==",
       "type": "package",
-      "path": "packetdotnet/1.0.5",
+      "path": "packetdotnet/1.0.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "lib/net45/PacketDotNet.dll",
         "lib/netstandard2.0/PacketDotNet.dll",
-        "packetdotnet.1.0.5.nupkg.sha512",
+        "packetdotnet.1.0.1.nupkg.sha512",
         "packetdotnet.nuspec"
       ]
     },
-    "packetnet-connections/1.0.0": {
-      "sha512": "F4QUefG0dT03DVD8ylhxWknLdhelI0XxiLvFdSxZ/JbHsTIGCsgfcSRJSbdTVKNij5skz2sxLm9+CA4ZaE2rZw==",
+    "packetnet-connections/1.2.0": {
+      "sha512": "8rZbS9RVJh4B3wsd6QtrgLGy930eeTLThP6YX1sa/QpEwmH79ZlUPx/E8p+BKauri1yGFyeGy/mBv8QjP2Foww==",
       "type": "package",
-      "path": "packetnet-connections/1.0.0",
+      "path": "packetnet-connections/1.2.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1780,19 +1789,19 @@
         "lib/netstandard2.0/System.dll",
         "lib/netstandard2.0/mscorlib.dll",
         "lib/netstandard2.0/netstandard.dll",
-        "packetnet-connections.1.0.0.nupkg.sha512",
+        "packetnet-connections.1.2.0.nupkg.sha512",
         "packetnet-connections.nuspec"
       ]
     },
-    "SharpPcap/5.1.0": {
-      "sha512": "INqQi8KGANmVIJyPS/iGdqbF6AA2030egIEbhT6p0CNryjC6+z8AdDEnSTmSQHj3veqf0SXfCB3JDe5NG4PNdQ==",
+    "SharpPcap/4.6.1": {
+      "sha512": "+Koy1nWgRiGqFpB89woVtr+D0yBf6FTb/6vG1VFrQZo8+LzmAszGaM2lmUlHEg8hQ3QKJt9ALt0Dh81/SVmG4A==",
       "type": "package",
-      "path": "sharppcap/5.1.0",
+      "path": "sharppcap/4.6.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "lib/netstandard2.0/SharpPcap.dll",
-        "sharppcap.5.1.0.nupkg.sha512",
+        "sharppcap.4.6.1.nupkg.sha512",
         "sharppcap.nuspec"
       ]
     },
@@ -1992,13 +2001,10 @@
   "projectFileDependencyGroups": {
     ".NETFramework,Version=v4.7.2": [
       "JpegRecoveryLibrary >= 1.0.0",
-      "MathNet.Numerics >= 3.6.0",
+      "MathNet.Numerics >= 4.12.0",
       "Newtonsoft.Json >= 12.0.3",
-      "PacketDotNet >= 1.0.5",
-      "SharpPcap >= 5.1.0",
       "System.Memory >= 4.5.4",
-      "System.Runtime.CompilerServices.Unsafe >= 4.7.1",
-      "packetnet-connections >= 1.0.0"
+      "System.Runtime.CompilerServices.Unsafe >= 4.7.1"
     ]
   },
   "packageFolders": {
@@ -2007,9 +2013,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "G:\\HBKU\\QCRIInternship\\Code\\jpgscraper-master\\jpeg-carver-csharp-source\\JpegRecovery\\JpegRecovery.csproj",
-      "projectName": "JpegRecovery",
-      "projectPath": "G:\\HBKU\\QCRIInternship\\Code\\jpgscraper-master\\jpeg-carver-csharp-source\\JpegRecovery\\JpegRecovery.csproj",
+      "projectUniqueName": "G:\\HBKU\\QCRIInternship\\Code\\jpgscraper-master\\jpeg-carver-csharp-source\\JpegRecovery\\JpegRecoveryCLI.csproj",
+      "projectName": "JpegRecoveryCLI",
+      "projectPath": "G:\\HBKU\\QCRIInternship\\Code\\jpgscraper-master\\jpeg-carver-csharp-source\\JpegRecovery\\JpegRecoveryCLI.csproj",
       "packagesPath": "C:\\Users\\Ahmad\\.nuget\\packages\\",
       "outputPath": "G:\\HBKU\\QCRIInternship\\Code\\jpgscraper-master\\jpeg-carver-csharp-source\\JpegRecovery\\obj\\",
       "projectStyle": "PackageReference",
@@ -2040,19 +2046,11 @@
         "dependencies": {
           "MathNet.Numerics": {
             "target": "Package",
-            "version": "[3.6.0, )"
+            "version": "[4.12.0, )"
           },
           "Newtonsoft.Json": {
             "target": "Package",
             "version": "[12.0.3, )"
-          },
-          "PacketDotNet": {
-            "target": "Package",
-            "version": "[1.0.5, )"
-          },
-          "SharpPcap": {
-            "target": "Package",
-            "version": "[5.1.0, )"
           },
           "System.Memory": {
             "target": "Package",
@@ -2061,10 +2059,6 @@
           "System.Runtime.CompilerServices.Unsafe": {
             "target": "Package",
             "version": "[4.7.1, )"
-          },
-          "packetnet-connections": {
-            "target": "Package",
-            "version": "[1.0.0, )"
           }
         }
       }
@@ -2080,20 +2074,5 @@
         "#import": []
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1605",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Detected package downgrade: MathNet.Numerics from 4.11.0 to 3.6.0. Reference the package directly from the project to select a different version. \r\n JpegRecovery -> JpegRecoveryLibrary -> MathNet.Numerics (>= 4.11.0) \r\n JpegRecovery -> MathNet.Numerics (>= 3.6.0)",
-      "libraryId": "MathNet.Numerics",
-      "targetGraphs": [
-        ".NETFramework,Version=v4.7.2",
-        ".NETFramework,Version=v4.7.2/win",
-        ".NETFramework,Version=v4.7.2/win-x64",
-        ".NETFramework,Version=v4.7.2/win-x86"
-      ]
-    }
-  ]
+  }
 }

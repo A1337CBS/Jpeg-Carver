@@ -117,6 +117,7 @@ namespace JpegRecoveryLibrary
                 dht.mincode[i] = HuffInput[i].mincode;
                 dht.maxcode[i] = HuffInput[i].maxcode;
                 dht.valptr[i] = HuffInput[i].valptr;
+                Console.WriteLine("Huff i" + i);
                 dht.huffval[i] = HuffInput[i].huffval.ToArray();
                 dht.maxcodelength[i] = HuffInput[i].maxcodelength;
             }
@@ -142,7 +143,8 @@ namespace JpegRecoveryLibrary
             //read length in BigEndian
             int length = (int)ReverseBytes(binReader.ReadUInt16());
             length -= 2;
-            Console.WriteLine("Lenght:" + length);
+            Console.WriteLine("DHT Length (bytes):" + length);
+           // Console.WriteLine("fileStream Length:" + fileStream.Length);
             Huff[] _dht = new Huff[4];
             int index = 0;
 
@@ -172,6 +174,7 @@ namespace JpegRecoveryLibrary
                 if (tableID > 3)
                 {
                     Console.WriteLine("Error - Invalid Huffman Table ID: " + tableID);
+                    return;
                 }
 
                 uint allSymbols = 0;
@@ -190,7 +193,7 @@ namespace JpegRecoveryLibrary
                 if (allSymbols > 162)
                 {
                     Console.WriteLine("Error - Too many symbols in Huffman table " + allSymbols);
-                    break;
+                    return;
                 }
 
                 for (int i = 0; i < 16; i++)
@@ -332,6 +335,11 @@ namespace JpegRecoveryLibrary
             //Write everything to file
             String path = "Huffman.json";
 
+            //Check if atleast four Huffman tables were present, otherwise invalid --> Change this limitation in the future
+            if (index < 4) {
+                return;
+            }
+
             //Convert to Huffman.DHTStruct format
             DHTStruct DHTrecord = Huff2DHTStruct(_dht);
             DHTrecord.id = DHTrecord.GetHashCode();
@@ -372,6 +380,7 @@ namespace JpegRecoveryLibrary
                 catch (Exception e)
                 {
                     Console.WriteLine("Error - " + e.Message);
+                    return;
                 }
             }
 

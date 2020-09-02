@@ -43,7 +43,7 @@
           "dependencies": {
             "MathNet.Numerics": {
               "target": "Package",
-              "version": "[4.11.0, )"
+              "version": "[4.12.0, )"
             },
             "NETStandard.Library": {
               "suppressParent": "All",
@@ -58,6 +58,10 @@
             "System.Drawing.Common": {
               "target": "Package",
               "version": "[4.7.0, )"
+            },
+            "packetnet-connections": {
+              "target": "Package",
+              "version": "[1.2.0, )"
             }
           },
           "imports": [
@@ -110,19 +114,11 @@
           "dependencies": {
             "MathNet.Numerics": {
               "target": "Package",
-              "version": "[3.6.0, )"
+              "version": "[4.12.0, )"
             },
             "Newtonsoft.Json": {
               "target": "Package",
               "version": "[12.0.3, )"
-            },
-            "PacketDotNet": {
-              "target": "Package",
-              "version": "[1.0.5, )"
-            },
-            "SharpPcap": {
-              "target": "Package",
-              "version": "[5.1.0, )"
             },
             "System.Memory": {
               "target": "Package",
@@ -131,10 +127,6 @@
             "System.Runtime.CompilerServices.Unsafe": {
               "target": "Package",
               "version": "[4.7.1, )"
-            },
-            "packetnet-connections": {
-              "target": "Package",
-              "version": "[1.0.0, )"
             }
           }
         }

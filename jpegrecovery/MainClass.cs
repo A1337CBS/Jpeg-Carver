@@ -6,13 +6,11 @@ using System.Threading.Tasks;
 using System.IO;
 using System.Diagnostics;
 using System.Windows.Forms;
-using PacketDotNet;
 using SharpPcap;
 using SharpPcap.LibPcap;
-using JpegRecoveryLibrary;
-using PacketDotNet;
 using PacketDotNet.Connections;
-//using PacketDotNet.Utils;
+using JpegRecoveryLibrary;
+using PacketDotNet.Utils;
 
 namespace JpegRecovery
 {
@@ -111,11 +109,14 @@ namespace JpegRecovery
 
             //Procedure 3: Network Packets
             
-            String packetPath = @"G:\HBKU\QCRIInternship\test1.pcapng";
-            String packetPathTemp = "raw_temp";
-            List<MemoryStream> memoryStreams = m.packetParser(packetPath);
+            String packetPath = @"G:\HBKU\QCRIInternship\exfil.pcap";
+            //Check if file exists or not
+            Console.WriteLine(File.Exists(packetPath) ? "File exists." : "File does not exist.");
 
-            const int fileSystemBlockSize = 8 * 1024; //4kib
+            String packetPathTemp = "raw_temp";
+            List<MemoryStream> memoryStreams = m.packetParserUsingDotnetConnections(packetPath);
+            
+            const int fileSystemBlockSize = 4 * 1024; //4kib
             byte[] byteArray = new byte[fileSystemBlockSize];
             MemoryStream memStream = new MemoryStream();
             MemoryStream jpegFragMemStream = new MemoryStream();
@@ -127,7 +128,51 @@ namespace JpegRecovery
                 while (memoryStreams[i].Read(byteArray, 0, fileSystemBlockSize) > 0)
                 {
                     memStream = new MemoryStream(byteArray);
+
+                    //Reading stream changes position, retain original
+                    long cpoint = memStream.Position;
                     bool isJpeg = preCheck.isJpeg(memStream);
+                    memStream.Position = cpoint;
+
+
+                    //Check if jpeg partial headers exist
+                    //Find SOS marker
+                    cpoint = memStream.Position;
+                    var sos = preCheck.get_sos_cnt_and_point(memStream);
+                    memStream.Position = cpoint;
+
+                    int sos_index = sos.Item1; // which SOS code is hit
+                    long sos_point = sos.Item2; // point of encoded data starts. go ahead and recover consequent jpeg
+                    if (sos_index == -1)
+                    {
+                        Console.WriteLine("SOS marker not found");
+                    }
+                    else
+                    {
+                        Console.WriteLine("SOS marker exists at:" + sos_point);
+                    }
+
+                    //If SOS exists then Check if DHT exists
+                    if (sos_index == 0)
+                    {
+                        cpoint = memStream.Position;
+                        var dht = preCheck.get_dht_point(memStream);
+                        memStream.Position = cpoint;
+                        int dht_index = dht.Item1; // DHT is hit or not
+                        long dht_point = dht.Item2; // point of DHT data starts.
+                        if (dht_index == -1)
+                        {
+                            Console.WriteLine("DHT marker not found");
+                        }
+                        else
+                        {
+                            Console.WriteLine("DHT marker starts at:" + dht_point);
+                            cpoint = memStream.Position;
+                            preCheck.parseDht(memStream, dht_point);
+                            memStream.Position = cpoint;
+                        }
+                    }
+
 
                     if (isJpeg)
                     {
@@ -749,7 +794,6 @@ namespace JpegRecovery
         }
 
 
-        
         private List<MemoryStream> packetParser(String capFile) {
             //Open packet file
             //String capFile = "";
@@ -783,7 +827,6 @@ namespace JpegRecovery
             List<byte> bytesList = new List<byte>();
             List<NetFlow> tcpNetFlows = new List<NetFlow>();
             List<NetFlow> udpNetFlows = new List<NetFlow>();
-            //TcpConnectionManager tcpConnectionManager = new TcpConnectionManager();
 
 
             // Capture packets using GetNextPacket()
@@ -804,7 +847,6 @@ namespace JpegRecovery
                 //tcpPacket, also requires assembling packets into proper sequences
                 if (tcpPacket != null)
                 {
-                    //tcpConnectionManager.ProcessPacket(packets.Timeval, tcpPacket);
 
                     var ipPacket = (PacketDotNet.IPPacket)tcpPacket.ParentPacket;
                     System.Net.IPAddress srcIp = ipPacket.SourceAddress;
@@ -928,6 +970,153 @@ namespace JpegRecovery
             }*/
 
         }
+
+
+        private static List<TcpConnection> OpenConnections = new List<TcpConnection>();
+        private static Dictionary<TcpFlow, List<Entry>> TcpPackets = new Dictionary<TcpFlow, List<Entry>>();
+
+        static void HandleTcpConnectionManagerOnConnectionFound(TcpConnection c)
+        {
+            OpenConnections.Add(c);
+            c.OnConnectionClosed += HandleCOnConnectionClosed;
+            c.Flows[0].OnPacketReceived += HandleOnPacketReceived;
+            c.Flows[0].OnFlowClosed += HandleOnFlowClosed;
+            c.Flows[1].OnPacketReceived += HandleOnPacketReceived;
+            c.Flows[1].OnFlowClosed += HandleOnFlowClosed;
+        }
+
+        static void HandleCOnConnectionClosed(PosixTimeval timeval, TcpConnection connection, PacketDotNet.TcpPacket tcp, TcpConnection.CloseType closeType)
+        {
+            connection.OnConnectionClosed -= HandleCOnConnectionClosed;
+            OpenConnections.Remove(connection);
+        }
+
+        static void HandleOnFlowClosed(PosixTimeval timeval, PacketDotNet.TcpPacket tcp, TcpConnection connection, TcpFlow flow)
+        {
+            // unhook the received handler
+            flow.OnPacketReceived -= HandleOnPacketReceived;
+        }
+
+        private static object DictionaryLock = new object();
+        static void HandleOnPacketReceived(PosixTimeval timeval, PacketDotNet.TcpPacket tcp, TcpConnection connection, TcpFlow flow)
+        {
+            lock (DictionaryLock)
+            {
+                if (!TcpPackets.ContainsKey(flow))
+                {
+                    TcpPackets[flow] = new List<Entry>();
+                }
+
+                var entry = new Entry(timeval, tcp);
+                TcpPackets[flow].Add(entry);
+            }
+        }
+
+        public class Entry
+        {
+            public SharpPcap.PosixTimeval Timeval;
+            public PacketDotNet.Packet Packet;
+
+            public Entry(SharpPcap.PosixTimeval timeval, PacketDotNet.Packet packet)
+            {
+                this.Timeval = timeval;
+                this.Packet = packet;
+            }
+        }
+
+
+        private List<MemoryStream> packetParserUsingDotnetConnections(String capFile) {
+            //Open packet file
+            //String capFile = "";
+            ICaptureDevice device;
+            
+            try
+            {
+                // Get an offline device
+                device = new CaptureFileReaderDevice(capFile);
+                // tcpdump filter to capture only TCP/IP packets
+                string filter = "ip and (tcp or udp)";
+                //Convert to flows
+                //string tcpFilter = "tcp.stream eq 1";
+                //string udpFilter = "udp.stream==1";
+
+                device.Filter = filter;
+
+                // Open the device
+                device.Open();
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("Error - Caught exception when opening file" + e.ToString());
+                return null;
+            }
+
+            
+  
+
+            RawCapture packets;
+            List<byte> bytesList = new List<byte>();
+            List<NetFlow> tcpNetFlows = new List<NetFlow>();
+            List<NetFlow> udpNetFlows = new List<NetFlow>();
+            TcpConnectionManager tcpConnectionManager = new TcpConnectionManager();
+            tcpConnectionManager.OnConnectionFound += HandleTcpConnectionManagerOnConnectionFound;
+
+
+            // Capture packets using GetNextPacket()
+            while ((packets = device.GetNextPacket()) != null)
+            {
+
+                var p = PacketDotNet.Packet.ParsePacket(packets.LinkLayerType, packets.Data);
+                var tcpPacket = p.Extract<PacketDotNet.TcpPacket>();
+                var udpPacket = p.Extract<PacketDotNet.UdpPacket>();
+
+                //tcpPacket, also requires assembling packets into proper sequences
+                if (tcpPacket != null)
+                {
+                    tcpConnectionManager.ProcessPacket(packets.Timeval, tcpPacket);
+
+                    var ipPacket = (PacketDotNet.IPPacket)tcpPacket.ParentPacket;
+                    System.Net.IPAddress srcIp = ipPacket.SourceAddress;
+                    System.Net.IPAddress dstIp = ipPacket.DestinationAddress;
+                    int srcPort = tcpPacket.SourcePort;
+                    int dstPort = tcpPacket.DestinationPort;                    
+
+                    
+                }
+
+                //Console.WriteLine(p.ToString());
+
+            }
+
+            // Print out the device statistics
+            //Console.WriteLine(device.Statistics.ToString());
+
+            //Close the pcap device
+            device.Close();
+
+            //MemoryStream memoryStream = new MemoryStream(bytesList.ToArray());
+            // Dictionary<TcpFlow, List<Entry>> TcpPackets
+
+            List<MemoryStream> memoryStreams = new List<MemoryStream>();
+            MemoryStream memoryStream = null;
+                
+            foreach (KeyValuePair<TcpFlow, List<Entry>> entry in TcpPackets)
+            {
+                // do something with entry.Value or entry.Key
+                foreach(var pkt in entry.Value) {
+                    if (pkt.Packet.HasPayloadData) {
+                        memoryStream = new MemoryStream();
+                        memoryStream.Write(pkt.Packet.PayloadData, 0, pkt.Packet.PayloadData.Length);
+                        memoryStreams.Add( memoryStream );
+                    }
+                }
+            }
+
+
+            return memoryStreams;
+
+        }
+
 
 
 

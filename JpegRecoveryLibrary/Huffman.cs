@@ -277,7 +277,7 @@ namespace JpegRecoveryLibrary
                         //DHTs.Union(jarray);
                     }
 
-                    Console.WriteLine("Huffman tables count" + DHTs);
+                    Console.WriteLine("Huffman tables count" + DHTs.Count);
                 }
                 catch (Exception e)
                 {

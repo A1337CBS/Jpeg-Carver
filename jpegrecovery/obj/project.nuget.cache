@@ -1,15 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "FtEbxWBPtJJeazleGNkRNt0CsJbh0GIuWxkHHQmjq4jj78bOLQbTkksSdKXhVPp39jYmBB+2qQ/Gskg0qrQ7FQ==",
+  "dgSpecHash": "jzSsOg89JiAyN3DO8A9g6iKzfB48n0gPiZQACjw2L/E+3dEcS+W0EzKy+Tj55bIMvP/2JTpqnBwHwMZuC3WTFA==",
   "success": true,
-  "projectFilePath": "G:\\HBKU\\QCRIInternship\\Code\\jpgscraper-master\\jpeg-carver-csharp-source\\JpegRecovery\\JpegRecovery.csproj",
+  "projectFilePath": "G:\\HBKU\\QCRIInternship\\Code\\jpgscraper-master\\jpeg-carver-csharp-source\\JpegRecovery\\JpegRecoveryCLI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Ahmad\\.nuget\\packages\\log4net\\2.0.8\\log4net.2.0.8.nupkg.sha512",
-    "C:\\Users\\Ahmad\\.nuget\\packages\\mathnet.numerics\\3.6.0\\mathnet.numerics.3.6.0.nupkg.sha512",
+    "C:\\Users\\Ahmad\\.nuget\\packages\\mathnet.numerics\\4.12.0\\mathnet.numerics.4.12.0.nupkg.sha512",
     "C:\\Users\\Ahmad\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
-    "C:\\Users\\Ahmad\\.nuget\\packages\\packetdotnet\\1.0.5\\packetdotnet.1.0.5.nupkg.sha512",
-    "C:\\Users\\Ahmad\\.nuget\\packages\\packetnet-connections\\1.0.0\\packetnet-connections.1.0.0.nupkg.sha512",
-    "C:\\Users\\Ahmad\\.nuget\\packages\\sharppcap\\5.1.0\\sharppcap.5.1.0.nupkg.sha512",
+    "C:\\Users\\Ahmad\\.nuget\\packages\\packetdotnet\\1.0.1\\packetdotnet.1.0.1.nupkg.sha512",
+    "C:\\Users\\Ahmad\\.nuget\\packages\\packetnet-connections\\1.2.0\\packetnet-connections.1.2.0.nupkg.sha512",
+    "C:\\Users\\Ahmad\\.nuget\\packages\\sharppcap\\4.6.1\\sharppcap.4.6.1.nupkg.sha512",
     "C:\\Users\\Ahmad\\.nuget\\packages\\sharpziplib\\1.1.0\\sharpziplib.1.1.0.nupkg.sha512",
     "C:\\Users\\Ahmad\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
     "C:\\Users\\Ahmad\\.nuget\\packages\\system.drawing.common\\4.7.0\\system.drawing.common.4.7.0.nupkg.sha512",
@@ -17,19 +17,5 @@
     "C:\\Users\\Ahmad\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "C:\\Users\\Ahmad\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.7.1\\system.runtime.compilerservices.unsafe.4.7.1.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1605",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Detected package downgrade: MathNet.Numerics from 4.11.0 to 3.6.0. Reference the package directly from the project to select a different version. \r\n JpegRecovery -> JpegRecoveryLibrary -> MathNet.Numerics (>= 4.11.0) \r\n JpegRecovery -> MathNet.Numerics (>= 3.6.0)",
-      "libraryId": "MathNet.Numerics",
-      "targetGraphs": [
-        ".NETFramework,Version=v4.7.2",
-        ".NETFramework,Version=v4.7.2/win",
-        ".NETFramework,Version=v4.7.2/win-x64",
-        ".NETFramework,Version=v4.7.2/win-x86"
-      ]
-    }
-  ]
+  "logs": []
 }
