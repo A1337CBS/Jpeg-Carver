@@ -42,7 +42,7 @@ To understand and contribute, start by reading the Jpeg standard and the papers 
 ## Dependencies
 * .NET Core 3.1 for GUI
 * .NET framework 4.7.2 for CLI 
-* .NET standard 2.0 for backend
+* .NET standard 2.0 for backend logic
 * Newtonsoft.Json
 * MathNet.Numerics
 * Sharppcap
