@@ -15,6 +15,8 @@ JpgScraper: An Advanced Carver for Baseline JPEG Files
 
 * Extracts huffman tables if available in file fragment and saves it for future use.
 
+* Display extracted image in the GUI window (supports only Jpeg Carving(Single image) mode for now )
+
 ## How to use
 This project has two parts, a CLI program (mostly for experimenting) and a GUI. To use the GUI follow the following steps:
 * Select a mode from the three modes of operation (e.g Jpeg Carving(Single image))
