@@ -1,0 +1,3 @@
+G:\HBKU\QCRIInternship\Code\jpgscraper-master\jpeg-carver-csharp-source\JpegRecovery\obj\Release\JpegRecovery.csprojAssemblyReference.cache
+G:\HBKU\QCRIInternship\Code\jpgscraper-master\jpeg-carver-csharp-source\JpegRecovery\obj\Release\JpegRecovery.exe.config
+G:\HBKU\QCRIInternship\Code\jpgscraper-master\jpeg-carver-csharp-source\JpegRecovery\obj\Release\JpegRecovery.csproj.CoreCompileInputs.cache

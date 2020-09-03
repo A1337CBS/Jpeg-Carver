@@ -1,0 +1,2078 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETFramework,Version=v4.7.2": {
+      "log4net/2.0.8": {
+        "type": "package",
+        "compile": {
+          "lib/net45-full/log4net.dll": {}
+        },
+        "runtime": {
+          "lib/net45-full/log4net.dll": {}
+        }
+      },
+      "MathNet.Numerics/4.12.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System",
+          "System.Core",
+          "System.Numerics",
+          "System.Runtime.Serialization"
+        ],
+        "compile": {
+          "lib/net461/MathNet.Numerics.dll": {}
+        },
+        "runtime": {
+          "lib/net461/MathNet.Numerics.dll": {}
+        }
+      },
+      "Newtonsoft.Json/12.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        }
+      },
+      "PacketDotNet/1.0.1": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "4.5.2"
+        },
+        "compile": {
+          "lib/net45/PacketDotNet.dll": {}
+        },
+        "runtime": {
+          "lib/net45/PacketDotNet.dll": {}
+        }
+      },
+      "packetnet-connections/1.2.0": {
+        "type": "package",
+        "dependencies": {
+          "log4net": "2.0.8",
+          "packetdotnet": "1.0.1",
+          "sharppcap": "4.6.1",
+          "sharpziplib": "1.1.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Win32.Primitives.dll": {},
+          "lib/netstandard2.0/PacketDotNetConnections.dll": {},
+          "lib/netstandard2.0/System.AppContext.dll": {},
+          "lib/netstandard2.0/System.Collections.Concurrent.dll": {},
+          "lib/netstandard2.0/System.Collections.NonGeneric.dll": {},
+          "lib/netstandard2.0/System.Collections.Specialized.dll": {},
+          "lib/netstandard2.0/System.Collections.dll": {},
+          "lib/netstandard2.0/System.ComponentModel.Composition.dll": {},
+          "lib/netstandard2.0/System.ComponentModel.EventBasedAsync.dll": {},
+          "lib/netstandard2.0/System.ComponentModel.Primitives.dll": {},
+          "lib/netstandard2.0/System.ComponentModel.TypeConverter.dll": {},
+          "lib/netstandard2.0/System.ComponentModel.dll": {},
+          "lib/netstandard2.0/System.Console.dll": {},
+          "lib/netstandard2.0/System.Core.dll": {},
+          "lib/netstandard2.0/System.Data.Common.dll": {},
+          "lib/netstandard2.0/System.Data.dll": {},
+          "lib/netstandard2.0/System.Diagnostics.Contracts.dll": {},
+          "lib/netstandard2.0/System.Diagnostics.Debug.dll": {},
+          "lib/netstandard2.0/System.Diagnostics.FileVersionInfo.dll": {},
+          "lib/netstandard2.0/System.Diagnostics.Process.dll": {},
+          "lib/netstandard2.0/System.Diagnostics.StackTrace.dll": {},
+          "lib/netstandard2.0/System.Diagnostics.TextWriterTraceListener.dll": {},
+          "lib/netstandard2.0/System.Diagnostics.Tools.dll": {},
+          "lib/netstandard2.0/System.Diagnostics.TraceSource.dll": {},
+          "lib/netstandard2.0/System.Diagnostics.Tracing.dll": {},
+          "lib/netstandard2.0/System.Drawing.Primitives.dll": {},
+          "lib/netstandard2.0/System.Drawing.dll": {},
+          "lib/netstandard2.0/System.Dynamic.Runtime.dll": {},
+          "lib/netstandard2.0/System.Globalization.Calendars.dll": {},
+          "lib/netstandard2.0/System.Globalization.Extensions.dll": {},
+          "lib/netstandard2.0/System.Globalization.dll": {},
+          "lib/netstandard2.0/System.IO.Compression.FileSystem.dll": {},
+          "lib/netstandard2.0/System.IO.Compression.ZipFile.dll": {},
+          "lib/netstandard2.0/System.IO.Compression.dll": {},
+          "lib/netstandard2.0/System.IO.FileSystem.DriveInfo.dll": {},
+          "lib/netstandard2.0/System.IO.FileSystem.Primitives.dll": {},
+          "lib/netstandard2.0/System.IO.FileSystem.Watcher.dll": {},
+          "lib/netstandard2.0/System.IO.FileSystem.dll": {},
+          "lib/netstandard2.0/System.IO.IsolatedStorage.dll": {},
+          "lib/netstandard2.0/System.IO.MemoryMappedFiles.dll": {},
+          "lib/netstandard2.0/System.IO.Pipes.dll": {},
+          "lib/netstandard2.0/System.IO.UnmanagedMemoryStream.dll": {},
+          "lib/netstandard2.0/System.IO.dll": {},
+          "lib/netstandard2.0/System.Linq.Expressions.dll": {},
+          "lib/netstandard2.0/System.Linq.Parallel.dll": {},
+          "lib/netstandard2.0/System.Linq.Queryable.dll": {},
+          "lib/netstandard2.0/System.Linq.dll": {},
+          "lib/netstandard2.0/System.Net.Http.dll": {},
+          "lib/netstandard2.0/System.Net.NameResolution.dll": {},
+          "lib/netstandard2.0/System.Net.NetworkInformation.dll": {},
+          "lib/netstandard2.0/System.Net.Ping.dll": {},
+          "lib/netstandard2.0/System.Net.Primitives.dll": {},
+          "lib/netstandard2.0/System.Net.Requests.dll": {},
+          "lib/netstandard2.0/System.Net.Security.dll": {},
+          "lib/netstandard2.0/System.Net.Sockets.dll": {},
+          "lib/netstandard2.0/System.Net.WebHeaderCollection.dll": {},
+          "lib/netstandard2.0/System.Net.WebSockets.Client.dll": {},
+          "lib/netstandard2.0/System.Net.WebSockets.dll": {},
+          "lib/netstandard2.0/System.Net.dll": {},
+          "lib/netstandard2.0/System.Numerics.dll": {},
+          "lib/netstandard2.0/System.ObjectModel.dll": {},
+          "lib/netstandard2.0/System.Reflection.Extensions.dll": {},
+          "lib/netstandard2.0/System.Reflection.Primitives.dll": {},
+          "lib/netstandard2.0/System.Reflection.dll": {},
+          "lib/netstandard2.0/System.Resources.Reader.dll": {},
+          "lib/netstandard2.0/System.Resources.ResourceManager.dll": {},
+          "lib/netstandard2.0/System.Resources.Writer.dll": {},
+          "lib/netstandard2.0/System.Runtime.CompilerServices.VisualC.dll": {},
+          "lib/netstandard2.0/System.Runtime.Extensions.dll": {},
+          "lib/netstandard2.0/System.Runtime.Handles.dll": {},
+          "lib/netstandard2.0/System.Runtime.InteropServices.RuntimeInformation.dll": {},
+          "lib/netstandard2.0/System.Runtime.InteropServices.dll": {},
+          "lib/netstandard2.0/System.Runtime.Numerics.dll": {},
+          "lib/netstandard2.0/System.Runtime.Serialization.Formatters.dll": {},
+          "lib/netstandard2.0/System.Runtime.Serialization.Json.dll": {},
+          "lib/netstandard2.0/System.Runtime.Serialization.Primitives.dll": {},
+          "lib/netstandard2.0/System.Runtime.Serialization.Xml.dll": {},
+          "lib/netstandard2.0/System.Runtime.Serialization.dll": {},
+          "lib/netstandard2.0/System.Runtime.dll": {},
+          "lib/netstandard2.0/System.Security.Claims.dll": {},
+          "lib/netstandard2.0/System.Security.Cryptography.Algorithms.dll": {},
+          "lib/netstandard2.0/System.Security.Cryptography.Csp.dll": {},
+          "lib/netstandard2.0/System.Security.Cryptography.Encoding.dll": {},
+          "lib/netstandard2.0/System.Security.Cryptography.Primitives.dll": {},
+          "lib/netstandard2.0/System.Security.Cryptography.X509Certificates.dll": {},
+          "lib/netstandard2.0/System.Security.Principal.dll": {},
+          "lib/netstandard2.0/System.Security.SecureString.dll": {},
+          "lib/netstandard2.0/System.ServiceModel.Web.dll": {},
+          "lib/netstandard2.0/System.Text.Encoding.Extensions.dll": {},
+          "lib/netstandard2.0/System.Text.Encoding.dll": {},
+          "lib/netstandard2.0/System.Text.RegularExpressions.dll": {},
+          "lib/netstandard2.0/System.Threading.Overlapped.dll": {},
+          "lib/netstandard2.0/System.Threading.Tasks.Parallel.dll": {},
+          "lib/netstandard2.0/System.Threading.Tasks.dll": {},
+          "lib/netstandard2.0/System.Threading.Thread.dll": {},
+          "lib/netstandard2.0/System.Threading.ThreadPool.dll": {},
+          "lib/netstandard2.0/System.Threading.Timer.dll": {},
+          "lib/netstandard2.0/System.Threading.dll": {},
+          "lib/netstandard2.0/System.Transactions.dll": {},
+          "lib/netstandard2.0/System.ValueTuple.dll": {},
+          "lib/netstandard2.0/System.Web.dll": {},
+          "lib/netstandard2.0/System.Windows.dll": {},
+          "lib/netstandard2.0/System.Xml.Linq.dll": {},
+          "lib/netstandard2.0/System.Xml.ReaderWriter.dll": {},
+          "lib/netstandard2.0/System.Xml.Serialization.dll": {},
+          "lib/netstandard2.0/System.Xml.XDocument.dll": {},
+          "lib/netstandard2.0/System.Xml.XPath.XDocument.dll": {},
+          "lib/netstandard2.0/System.Xml.XPath.dll": {},
+          "lib/netstandard2.0/System.Xml.XmlDocument.dll": {},
+          "lib/netstandard2.0/System.Xml.XmlSerializer.dll": {},
+          "lib/netstandard2.0/System.Xml.dll": {},
+          "lib/netstandard2.0/System.dll": {},
+          "lib/netstandard2.0/mscorlib.dll": {},
+          "lib/netstandard2.0/netstandard.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Win32.Primitives.dll": {},
+          "lib/netstandard2.0/PacketDotNetConnections.dll": {},
+          "lib/netstandard2.0/System.AppContext.dll": {},
+          "lib/netstandard2.0/System.Collections.Concurrent.dll": {},
+          "lib/netstandard2.0/System.Collections.NonGeneric.dll": {},
+          "lib/netstandard2.0/System.Collections.Specialized.dll": {},
+          "lib/netstandard2.0/System.Collections.dll": {},
+          "lib/netstandard2.0/System.ComponentModel.Composition.dll": {},
+          "lib/netstandard2.0/System.ComponentModel.EventBasedAsync.dll": {},
+          "lib/netstandard2.0/System.ComponentModel.Primitives.dll": {},
+          "lib/netstandard2.0/System.ComponentModel.TypeConverter.dll": {},
+          "lib/netstandard2.0/System.ComponentModel.dll": {},
+          "lib/netstandard2.0/System.Console.dll": {},
+          "lib/netstandard2.0/System.Core.dll": {},
+          "lib/netstandard2.0/System.Data.Common.dll": {},
+          "lib/netstandard2.0/System.Data.dll": {},
+          "lib/netstandard2.0/System.Diagnostics.Contracts.dll": {},
+          "lib/netstandard2.0/System.Diagnostics.Debug.dll": {},
+          "lib/netstandard2.0/System.Diagnostics.FileVersionInfo.dll": {},
+          "lib/netstandard2.0/System.Diagnostics.Process.dll": {},
+          "lib/netstandard2.0/System.Diagnostics.StackTrace.dll": {},
+          "lib/netstandard2.0/System.Diagnostics.TextWriterTraceListener.dll": {},
+          "lib/netstandard2.0/System.Diagnostics.Tools.dll": {},
+          "lib/netstandard2.0/System.Diagnostics.TraceSource.dll": {},
+          "lib/netstandard2.0/System.Diagnostics.Tracing.dll": {},
+          "lib/netstandard2.0/System.Drawing.Primitives.dll": {},
+          "lib/netstandard2.0/System.Drawing.dll": {},
+          "lib/netstandard2.0/System.Dynamic.Runtime.dll": {},
+          "lib/netstandard2.0/System.Globalization.Calendars.dll": {},
+          "lib/netstandard2.0/System.Globalization.Extensions.dll": {},
+          "lib/netstandard2.0/System.Globalization.dll": {},
+          "lib/netstandard2.0/System.IO.Compression.FileSystem.dll": {},
+          "lib/netstandard2.0/System.IO.Compression.ZipFile.dll": {},
+          "lib/netstandard2.0/System.IO.Compression.dll": {},
+          "lib/netstandard2.0/System.IO.FileSystem.DriveInfo.dll": {},
+          "lib/netstandard2.0/System.IO.FileSystem.Primitives.dll": {},
+          "lib/netstandard2.0/System.IO.FileSystem.Watcher.dll": {},
+          "lib/netstandard2.0/System.IO.FileSystem.dll": {},
+          "lib/netstandard2.0/System.IO.IsolatedStorage.dll": {},
+          "lib/netstandard2.0/System.IO.MemoryMappedFiles.dll": {},
+          "lib/netstandard2.0/System.IO.Pipes.dll": {},
+          "lib/netstandard2.0/System.IO.UnmanagedMemoryStream.dll": {},
+          "lib/netstandard2.0/System.IO.dll": {},
+          "lib/netstandard2.0/System.Linq.Expressions.dll": {},
+          "lib/netstandard2.0/System.Linq.Parallel.dll": {},
+          "lib/netstandard2.0/System.Linq.Queryable.dll": {},
+          "lib/netstandard2.0/System.Linq.dll": {},
+          "lib/netstandard2.0/System.Net.Http.dll": {},
+          "lib/netstandard2.0/System.Net.NameResolution.dll": {},
+          "lib/netstandard2.0/System.Net.NetworkInformation.dll": {},
+          "lib/netstandard2.0/System.Net.Ping.dll": {},
+          "lib/netstandard2.0/System.Net.Primitives.dll": {},
+          "lib/netstandard2.0/System.Net.Requests.dll": {},
+          "lib/netstandard2.0/System.Net.Security.dll": {},
+          "lib/netstandard2.0/System.Net.Sockets.dll": {},
+          "lib/netstandard2.0/System.Net.WebHeaderCollection.dll": {},
+          "lib/netstandard2.0/System.Net.WebSockets.Client.dll": {},
+          "lib/netstandard2.0/System.Net.WebSockets.dll": {},
+          "lib/netstandard2.0/System.Net.dll": {},
+          "lib/netstandard2.0/System.Numerics.dll": {},
+          "lib/netstandard2.0/System.ObjectModel.dll": {},
+          "lib/netstandard2.0/System.Reflection.Extensions.dll": {},
+          "lib/netstandard2.0/System.Reflection.Primitives.dll": {},
+          "lib/netstandard2.0/System.Reflection.dll": {},
+          "lib/netstandard2.0/System.Resources.Reader.dll": {},
+          "lib/netstandard2.0/System.Resources.ResourceManager.dll": {},
+          "lib/netstandard2.0/System.Resources.Writer.dll": {},
+          "lib/netstandard2.0/System.Runtime.CompilerServices.VisualC.dll": {},
+          "lib/netstandard2.0/System.Runtime.Extensions.dll": {},
+          "lib/netstandard2.0/System.Runtime.Handles.dll": {},
+          "lib/netstandard2.0/System.Runtime.InteropServices.RuntimeInformation.dll": {},
+          "lib/netstandard2.0/System.Runtime.InteropServices.dll": {},
+          "lib/netstandard2.0/System.Runtime.Numerics.dll": {},
+          "lib/netstandard2.0/System.Runtime.Serialization.Formatters.dll": {},
+          "lib/netstandard2.0/System.Runtime.Serialization.Json.dll": {},
+          "lib/netstandard2.0/System.Runtime.Serialization.Primitives.dll": {},
+          "lib/netstandard2.0/System.Runtime.Serialization.Xml.dll": {},
+          "lib/netstandard2.0/System.Runtime.Serialization.dll": {},
+          "lib/netstandard2.0/System.Runtime.dll": {},
+          "lib/netstandard2.0/System.Security.Claims.dll": {},
+          "lib/netstandard2.0/System.Security.Cryptography.Algorithms.dll": {},
+          "lib/netstandard2.0/System.Security.Cryptography.Csp.dll": {},
+          "lib/netstandard2.0/System.Security.Cryptography.Encoding.dll": {},
+          "lib/netstandard2.0/System.Security.Cryptography.Primitives.dll": {},
+          "lib/netstandard2.0/System.Security.Cryptography.X509Certificates.dll": {},
+          "lib/netstandard2.0/System.Security.Principal.dll": {},
+          "lib/netstandard2.0/System.Security.SecureString.dll": {},
+          "lib/netstandard2.0/System.ServiceModel.Web.dll": {},
+          "lib/netstandard2.0/System.Text.Encoding.Extensions.dll": {},
+          "lib/netstandard2.0/System.Text.Encoding.dll": {},
+          "lib/netstandard2.0/System.Text.RegularExpressions.dll": {},
+          "lib/netstandard2.0/System.Threading.Overlapped.dll": {},
+          "lib/netstandard2.0/System.Threading.Tasks.Parallel.dll": {},
+          "lib/netstandard2.0/System.Threading.Tasks.dll": {},
+          "lib/netstandard2.0/System.Threading.Thread.dll": {},
+          "lib/netstandard2.0/System.Threading.ThreadPool.dll": {},
+          "lib/netstandard2.0/System.Threading.Timer.dll": {},
+          "lib/netstandard2.0/System.Threading.dll": {},
+          "lib/netstandard2.0/System.Transactions.dll": {},
+          "lib/netstandard2.0/System.ValueTuple.dll": {},
+          "lib/netstandard2.0/System.Web.dll": {},
+          "lib/netstandard2.0/System.Windows.dll": {},
+          "lib/netstandard2.0/System.Xml.Linq.dll": {},
+          "lib/netstandard2.0/System.Xml.ReaderWriter.dll": {},
+          "lib/netstandard2.0/System.Xml.Serialization.dll": {},
+          "lib/netstandard2.0/System.Xml.XDocument.dll": {},
+          "lib/netstandard2.0/System.Xml.XPath.XDocument.dll": {},
+          "lib/netstandard2.0/System.Xml.XPath.dll": {},
+          "lib/netstandard2.0/System.Xml.XmlDocument.dll": {},
+          "lib/netstandard2.0/System.Xml.XmlSerializer.dll": {},
+          "lib/netstandard2.0/System.Xml.dll": {},
+          "lib/netstandard2.0/System.dll": {},
+          "lib/netstandard2.0/mscorlib.dll": {},
+          "lib/netstandard2.0/netstandard.dll": {}
+        }
+      },
+      "SharpPcap/4.6.1": {
+        "type": "package",
+        "dependencies": {
+          "PacketDotNet": "0.18.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/SharpPcap.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/SharpPcap.dll": {}
+        }
+      },
+      "SharpZipLib/1.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/net45/ICSharpCode.SharpZipLib.dll": {}
+        },
+        "runtime": {
+          "lib/net45/ICSharpCode.SharpZipLib.dll": {}
+        }
+      },
+      "System.Buffers/4.5.1": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net45/System.Buffers.dll": {}
+        },
+        "runtime": {
+          "lib/net461/System.Buffers.dll": {}
+        }
+      },
+      "System.Drawing.Common/4.7.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System",
+          "System.Drawing",
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net461/System.Drawing.Common.dll": {}
+        },
+        "runtime": {
+          "lib/net461/System.Drawing.Common.dll": {}
+        }
+      },
+      "System.Memory/4.5.4": {
+        "type": "package",
+        "dependencies": {
+          "System.Buffers": "4.5.1",
+          "System.Numerics.Vectors": "4.5.0",
+          "System.Runtime.CompilerServices.Unsafe": "4.5.3"
+        },
+        "frameworkAssemblies": [
+          "System",
+          "mscorlib"
+        ],
+        "compile": {
+          "lib/net461/System.Memory.dll": {}
+        },
+        "runtime": {
+          "lib/net461/System.Memory.dll": {}
+        }
+      },
+      "System.Numerics.Vectors/4.5.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.Numerics",
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net46/System.Numerics.Vectors.dll": {}
+        },
+        "runtime": {
+          "lib/net46/System.Numerics.Vectors.dll": {}
+        }
+      },
+      "System.Runtime.CompilerServices.Unsafe/4.7.1": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net461/System.Runtime.CompilerServices.Unsafe.dll": {}
+        },
+        "runtime": {
+          "lib/net461/System.Runtime.CompilerServices.Unsafe.dll": {}
+        }
+      },
+      "JpegRecoveryLibrary/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "MathNet.Numerics": "4.12.0",
+          "Newtonsoft.Json": "12.0.3",
+          "System.Drawing.Common": "4.7.0",
+          "packetnet-connections": "1.2.0"
+        },
+        "compile": {
+          "bin/placeholder/JpegRecoveryLibrary.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/JpegRecoveryLibrary.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.7.2/win": {
+      "log4net/2.0.8": {
+        "type": "package",
+        "compile": {
+          "lib/net45-full/log4net.dll": {}
+        },
+        "runtime": {
+          "lib/net45-full/log4net.dll": {}
+        }
+      },
+      "MathNet.Numerics/4.12.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System",
+          "System.Core",
+          "System.Numerics",
+          "System.Runtime.Serialization"
+        ],
+        "compile": {
+          "lib/net461/MathNet.Numerics.dll": {}
+        },
+        "runtime": {
+          "lib/net461/MathNet.Numerics.dll": {}
+        }
+      },
+      "Newtonsoft.Json/12.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        }
+      },
+      "PacketDotNet/1.0.1": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "4.5.2"
+        },
+        "compile": {
+          "lib/net45/PacketDotNet.dll": {}
+        },
+        "runtime": {
+          "lib/net45/PacketDotNet.dll": {}
+        }
+      },
+      "packetnet-connections/1.2.0": {
+        "type": "package",
+        "dependencies": {
+          "log4net": "2.0.8",
+          "packetdotnet": "1.0.1",
+          "sharppcap": "4.6.1",
+          "sharpziplib": "1.1.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Win32.Primitives.dll": {},
+          "lib/netstandard2.0/PacketDotNetConnections.dll": {},
+          "lib/netstandard2.0/System.AppContext.dll": {},
+          "lib/netstandard2.0/System.Collections.Concurrent.dll": {},
+          "lib/netstandard2.0/System.Collections.NonGeneric.dll": {},
+          "lib/netstandard2.0/System.Collections.Specialized.dll": {},
+          "lib/netstandard2.0/System.Collections.dll": {},
+          "lib/netstandard2.0/System.ComponentModel.Composition.dll": {},
+          "lib/netstandard2.0/System.ComponentModel.EventBasedAsync.dll": {},
+          "lib/netstandard2.0/System.ComponentModel.Primitives.dll": {},
+          "lib/netstandard2.0/System.ComponentModel.TypeConverter.dll": {},
+          "lib/netstandard2.0/System.ComponentModel.dll": {},
+          "lib/netstandard2.0/System.Console.dll": {},
+          "lib/netstandard2.0/System.Core.dll": {},
+          "lib/netstandard2.0/System.Data.Common.dll": {},
+          "lib/netstandard2.0/System.Data.dll": {},
+          "lib/netstandard2.0/System.Diagnostics.Contracts.dll": {},
+          "lib/netstandard2.0/System.Diagnostics.Debug.dll": {},
+          "lib/netstandard2.0/System.Diagnostics.FileVersionInfo.dll": {},
+          "lib/netstandard2.0/System.Diagnostics.Process.dll": {},
+          "lib/netstandard2.0/System.Diagnostics.StackTrace.dll": {},
+          "lib/netstandard2.0/System.Diagnostics.TextWriterTraceListener.dll": {},
+          "lib/netstandard2.0/System.Diagnostics.Tools.dll": {},
+          "lib/netstandard2.0/System.Diagnostics.TraceSource.dll": {},
+          "lib/netstandard2.0/System.Diagnostics.Tracing.dll": {},
+          "lib/netstandard2.0/System.Drawing.Primitives.dll": {},
+          "lib/netstandard2.0/System.Drawing.dll": {},
+          "lib/netstandard2.0/System.Dynamic.Runtime.dll": {},
+          "lib/netstandard2.0/System.Globalization.Calendars.dll": {},
+          "lib/netstandard2.0/System.Globalization.Extensions.dll": {},
+          "lib/netstandard2.0/System.Globalization.dll": {},
+          "lib/netstandard2.0/System.IO.Compression.FileSystem.dll": {},
+          "lib/netstandard2.0/System.IO.Compression.ZipFile.dll": {},
+          "lib/netstandard2.0/System.IO.Compression.dll": {},
+          "lib/netstandard2.0/System.IO.FileSystem.DriveInfo.dll": {},
+          "lib/netstandard2.0/System.IO.FileSystem.Primitives.dll": {},
+          "lib/netstandard2.0/System.IO.FileSystem.Watcher.dll": {},
+          "lib/netstandard2.0/System.IO.FileSystem.dll": {},
+          "lib/netstandard2.0/System.IO.IsolatedStorage.dll": {},
+          "lib/netstandard2.0/System.IO.MemoryMappedFiles.dll": {},
+          "lib/netstandard2.0/System.IO.Pipes.dll": {},
+          "lib/netstandard2.0/System.IO.UnmanagedMemoryStream.dll": {},
+          "lib/netstandard2.0/System.IO.dll": {},
+          "lib/netstandard2.0/System.Linq.Expressions.dll": {},
+          "lib/netstandard2.0/System.Linq.Parallel.dll": {},
+          "lib/netstandard2.0/System.Linq.Queryable.dll": {},
+          "lib/netstandard2.0/System.Linq.dll": {},
+          "lib/netstandard2.0/System.Net.Http.dll": {},
+          "lib/netstandard2.0/System.Net.NameResolution.dll": {},
+          "lib/netstandard2.0/System.Net.NetworkInformation.dll": {},
+          "lib/netstandard2.0/System.Net.Ping.dll": {},
+          "lib/netstandard2.0/System.Net.Primitives.dll": {},
+          "lib/netstandard2.0/System.Net.Requests.dll": {},
+          "lib/netstandard2.0/System.Net.Security.dll": {},
+          "lib/netstandard2.0/System.Net.Sockets.dll": {},
+          "lib/netstandard2.0/System.Net.WebHeaderCollection.dll": {},
+          "lib/netstandard2.0/System.Net.WebSockets.Client.dll": {},
+          "lib/netstandard2.0/System.Net.WebSockets.dll": {},
+          "lib/netstandard2.0/System.Net.dll": {},
+          "lib/netstandard2.0/System.Numerics.dll": {},
+          "lib/netstandard2.0/System.ObjectModel.dll": {},
+          "lib/netstandard2.0/System.Reflection.Extensions.dll": {},
+          "lib/netstandard2.0/System.Reflection.Primitives.dll": {},
+          "lib/netstandard2.0/System.Reflection.dll": {},
+          "lib/netstandard2.0/System.Resources.Reader.dll": {},
+          "lib/netstandard2.0/System.Resources.ResourceManager.dll": {},
+          "lib/netstandard2.0/System.Resources.Writer.dll": {},
+          "lib/netstandard2.0/System.Runtime.CompilerServices.VisualC.dll": {},
+          "lib/netstandard2.0/System.Runtime.Extensions.dll": {},
+          "lib/netstandard2.0/System.Runtime.Handles.dll": {},
+          "lib/netstandard2.0/System.Runtime.InteropServices.RuntimeInformation.dll": {},
+          "lib/netstandard2.0/System.Runtime.InteropServices.dll": {},
+          "lib/netstandard2.0/System.Runtime.Numerics.dll": {},
+          "lib/netstandard2.0/System.Runtime.Serialization.Formatters.dll": {},
+          "lib/netstandard2.0/System.Runtime.Serialization.Json.dll": {},
+          "lib/netstandard2.0/System.Runtime.Serialization.Primitives.dll": {},
+          "lib/netstandard2.0/System.Runtime.Serialization.Xml.dll": {},
+          "lib/netstandard2.0/System.Runtime.Serialization.dll": {},
+          "lib/netstandard2.0/System.Runtime.dll": {},
+          "lib/netstandard2.0/System.Security.Claims.dll": {},
+          "lib/netstandard2.0/System.Security.Cryptography.Algorithms.dll": {},
+          "lib/netstandard2.0/System.Security.Cryptography.Csp.dll": {},
+          "lib/netstandard2.0/System.Security.Cryptography.Encoding.dll": {},
+          "lib/netstandard2.0/System.Security.Cryptography.Primitives.dll": {},
+          "lib/netstandard2.0/System.Security.Cryptography.X509Certificates.dll": {},
+          "lib/netstandard2.0/System.Security.Principal.dll": {},
+          "lib/netstandard2.0/System.Security.SecureString.dll": {},
+          "lib/netstandard2.0/System.ServiceModel.Web.dll": {},
+          "lib/netstandard2.0/System.Text.Encoding.Extensions.dll": {},
+          "lib/netstandard2.0/System.Text.Encoding.dll": {},
+          "lib/netstandard2.0/System.Text.RegularExpressions.dll": {},
+          "lib/netstandard2.0/System.Threading.Overlapped.dll": {},
+          "lib/netstandard2.0/System.Threading.Tasks.Parallel.dll": {},
+          "lib/netstandard2.0/System.Threading.Tasks.dll": {},
+          "lib/netstandard2.0/System.Threading.Thread.dll": {},
+          "lib/netstandard2.0/System.Threading.ThreadPool.dll": {},
+          "lib/netstandard2.0/System.Threading.Timer.dll": {},
+          "lib/netstandard2.0/System.Threading.dll": {},
+          "lib/netstandard2.0/System.Transactions.dll": {},
+          "lib/netstandard2.0/System.ValueTuple.dll": {},
+          "lib/netstandard2.0/System.Web.dll": {},
+          "lib/netstandard2.0/System.Windows.dll": {},
+          "lib/netstandard2.0/System.Xml.Linq.dll": {},
+          "lib/netstandard2.0/System.Xml.ReaderWriter.dll": {},
+          "lib/netstandard2.0/System.Xml.Serialization.dll": {},
+          "lib/netstandard2.0/System.Xml.XDocument.dll": {},
+          "lib/netstandard2.0/System.Xml.XPath.XDocument.dll": {},
+          "lib/netstandard2.0/System.Xml.XPath.dll": {},
+          "lib/netstandard2.0/System.Xml.XmlDocument.dll": {},
+          "lib/netstandard2.0/System.Xml.XmlSerializer.dll": {},
+          "lib/netstandard2.0/System.Xml.dll": {},
+          "lib/netstandard2.0/System.dll": {},
+          "lib/netstandard2.0/mscorlib.dll": {},
+          "lib/netstandard2.0/netstandard.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Win32.Primitives.dll": {},
+          "lib/netstandard2.0/PacketDotNetConnections.dll": {},
+          "lib/netstandard2.0/System.AppContext.dll": {},
+          "lib/netstandard2.0/System.Collections.Concurrent.dll": {},
+          "lib/netstandard2.0/System.Collections.NonGeneric.dll": {},
+          "lib/netstandard2.0/System.Collections.Specialized.dll": {},
+          "lib/netstandard2.0/System.Collections.dll": {},
+          "lib/netstandard2.0/System.ComponentModel.Composition.dll": {},
+          "lib/netstandard2.0/System.ComponentModel.EventBasedAsync.dll": {},
+          "lib/netstandard2.0/System.ComponentModel.Primitives.dll": {},
+          "lib/netstandard2.0/System.ComponentModel.TypeConverter.dll": {},
+          "lib/netstandard2.0/System.ComponentModel.dll": {},
+          "lib/netstandard2.0/System.Console.dll": {},
+          "lib/netstandard2.0/System.Core.dll": {},
+          "lib/netstandard2.0/System.Data.Common.dll": {},
+          "lib/netstandard2.0/System.Data.dll": {},
+          "lib/netstandard2.0/System.Diagnostics.Contracts.dll": {},
+          "lib/netstandard2.0/System.Diagnostics.Debug.dll": {},
+          "lib/netstandard2.0/System.Diagnostics.FileVersionInfo.dll": {},
+          "lib/netstandard2.0/System.Diagnostics.Process.dll": {},
+          "lib/netstandard2.0/System.Diagnostics.StackTrace.dll": {},
+          "lib/netstandard2.0/System.Diagnostics.TextWriterTraceListener.dll": {},
+          "lib/netstandard2.0/System.Diagnostics.Tools.dll": {},
+          "lib/netstandard2.0/System.Diagnostics.TraceSource.dll": {},
+          "lib/netstandard2.0/System.Diagnostics.Tracing.dll": {},
+          "lib/netstandard2.0/System.Drawing.Primitives.dll": {},
+          "lib/netstandard2.0/System.Drawing.dll": {},
+          "lib/netstandard2.0/System.Dynamic.Runtime.dll": {},
+          "lib/netstandard2.0/System.Globalization.Calendars.dll": {},
+          "lib/netstandard2.0/System.Globalization.Extensions.dll": {},
+          "lib/netstandard2.0/System.Globalization.dll": {},
+          "lib/netstandard2.0/System.IO.Compression.FileSystem.dll": {},
+          "lib/netstandard2.0/System.IO.Compression.ZipFile.dll": {},
+          "lib/netstandard2.0/System.IO.Compression.dll": {},
+          "lib/netstandard2.0/System.IO.FileSystem.DriveInfo.dll": {},
+          "lib/netstandard2.0/System.IO.FileSystem.Primitives.dll": {},
+          "lib/netstandard2.0/System.IO.FileSystem.Watcher.dll": {},
+          "lib/netstandard2.0/System.IO.FileSystem.dll": {},
+          "lib/netstandard2.0/System.IO.IsolatedStorage.dll": {},
+          "lib/netstandard2.0/System.IO.MemoryMappedFiles.dll": {},
+          "lib/netstandard2.0/System.IO.Pipes.dll": {},
+          "lib/netstandard2.0/System.IO.UnmanagedMemoryStream.dll": {},
+          "lib/netstandard2.0/System.IO.dll": {},
+          "lib/netstandard2.0/System.Linq.Expressions.dll": {},
+          "lib/netstandard2.0/System.Linq.Parallel.dll": {},
+          "lib/netstandard2.0/System.Linq.Queryable.dll": {},
+          "lib/netstandard2.0/System.Linq.dll": {},
+          "lib/netstandard2.0/System.Net.Http.dll": {},
+          "lib/netstandard2.0/System.Net.NameResolution.dll": {},
+          "lib/netstandard2.0/System.Net.NetworkInformation.dll": {},
+          "lib/netstandard2.0/System.Net.Ping.dll": {},
+          "lib/netstandard2.0/System.Net.Primitives.dll": {},
+          "lib/netstandard2.0/System.Net.Requests.dll": {},
+          "lib/netstandard2.0/System.Net.Security.dll": {},
+          "lib/netstandard2.0/System.Net.Sockets.dll": {},
+          "lib/netstandard2.0/System.Net.WebHeaderCollection.dll": {},
+          "lib/netstandard2.0/System.Net.WebSockets.Client.dll": {},
+          "lib/netstandard2.0/System.Net.WebSockets.dll": {},
+          "lib/netstandard2.0/System.Net.dll": {},
+          "lib/netstandard2.0/System.Numerics.dll": {},
+          "lib/netstandard2.0/System.ObjectModel.dll": {},
+          "lib/netstandard2.0/System.Reflection.Extensions.dll": {},
+          "lib/netstandard2.0/System.Reflection.Primitives.dll": {},
+          "lib/netstandard2.0/System.Reflection.dll": {},
+          "lib/netstandard2.0/System.Resources.Reader.dll": {},
+          "lib/netstandard2.0/System.Resources.ResourceManager.dll": {},
+          "lib/netstandard2.0/System.Resources.Writer.dll": {},
+          "lib/netstandard2.0/System.Runtime.CompilerServices.VisualC.dll": {},
+          "lib/netstandard2.0/System.Runtime.Extensions.dll": {},
+          "lib/netstandard2.0/System.Runtime.Handles.dll": {},
+          "lib/netstandard2.0/System.Runtime.InteropServices.RuntimeInformation.dll": {},
+          "lib/netstandard2.0/System.Runtime.InteropServices.dll": {},
+          "lib/netstandard2.0/System.Runtime.Numerics.dll": {},
+          "lib/netstandard2.0/System.Runtime.Serialization.Formatters.dll": {},
+          "lib/netstandard2.0/System.Runtime.Serialization.Json.dll": {},
+          "lib/netstandard2.0/System.Runtime.Serialization.Primitives.dll": {},
+          "lib/netstandard2.0/System.Runtime.Serialization.Xml.dll": {},
+          "lib/netstandard2.0/System.Runtime.Serialization.dll": {},
+          "lib/netstandard2.0/System.Runtime.dll": {},
+          "lib/netstandard2.0/System.Security.Claims.dll": {},
+          "lib/netstandard2.0/System.Security.Cryptography.Algorithms.dll": {},
+          "lib/netstandard2.0/System.Security.Cryptography.Csp.dll": {},
+          "lib/netstandard2.0/System.Security.Cryptography.Encoding.dll": {},
+          "lib/netstandard2.0/System.Security.Cryptography.Primitives.dll": {},
+          "lib/netstandard2.0/System.Security.Cryptography.X509Certificates.dll": {},
+          "lib/netstandard2.0/System.Security.Principal.dll": {},
+          "lib/netstandard2.0/System.Security.SecureString.dll": {},
+          "lib/netstandard2.0/System.ServiceModel.Web.dll": {},
+          "lib/netstandard2.0/System.Text.Encoding.Extensions.dll": {},
+          "lib/netstandard2.0/System.Text.Encoding.dll": {},
+          "lib/netstandard2.0/System.Text.RegularExpressions.dll": {},
+          "lib/netstandard2.0/System.Threading.Overlapped.dll": {},
+          "lib/netstandard2.0/System.Threading.Tasks.Parallel.dll": {},
+          "lib/netstandard2.0/System.Threading.Tasks.dll": {},
+          "lib/netstandard2.0/System.Threading.Thread.dll": {},
+          "lib/netstandard2.0/System.Threading.ThreadPool.dll": {},
+          "lib/netstandard2.0/System.Threading.Timer.dll": {},
+          "lib/netstandard2.0/System.Threading.dll": {},
+          "lib/netstandard2.0/System.Transactions.dll": {},
+          "lib/netstandard2.0/System.ValueTuple.dll": {},
+          "lib/netstandard2.0/System.Web.dll": {},
+          "lib/netstandard2.0/System.Windows.dll": {},
+          "lib/netstandard2.0/System.Xml.Linq.dll": {},
+          "lib/netstandard2.0/System.Xml.ReaderWriter.dll": {},
+          "lib/netstandard2.0/System.Xml.Serialization.dll": {},
+          "lib/netstandard2.0/System.Xml.XDocument.dll": {},
+          "lib/netstandard2.0/System.Xml.XPath.XDocument.dll": {},
+          "lib/netstandard2.0/System.Xml.XPath.dll": {},
+          "lib/netstandard2.0/System.Xml.XmlDocument.dll": {},
+          "lib/netstandard2.0/System.Xml.XmlSerializer.dll": {},
+          "lib/netstandard2.0/System.Xml.dll": {},
+          "lib/netstandard2.0/System.dll": {},
+          "lib/netstandard2.0/mscorlib.dll": {},
+          "lib/netstandard2.0/netstandard.dll": {}
+        }
+      },
+      "SharpPcap/4.6.1": {
+        "type": "package",
+        "dependencies": {
+          "PacketDotNet": "0.18.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/SharpPcap.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/SharpPcap.dll": {}
+        }
+      },
+      "SharpZipLib/1.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/net45/ICSharpCode.SharpZipLib.dll": {}
+        },
+        "runtime": {
+          "lib/net45/ICSharpCode.SharpZipLib.dll": {}
+        }
+      },
+      "System.Buffers/4.5.1": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net45/System.Buffers.dll": {}
+        },
+        "runtime": {
+          "lib/net461/System.Buffers.dll": {}
+        }
+      },
+      "System.Drawing.Common/4.7.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System",
+          "System.Drawing",
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net461/System.Drawing.Common.dll": {}
+        },
+        "runtime": {
+          "lib/net461/System.Drawing.Common.dll": {}
+        }
+      },
+      "System.Memory/4.5.4": {
+        "type": "package",
+        "dependencies": {
+          "System.Buffers": "4.5.1",
+          "System.Numerics.Vectors": "4.5.0",
+          "System.Runtime.CompilerServices.Unsafe": "4.5.3"
+        },
+        "frameworkAssemblies": [
+          "System",
+          "mscorlib"
+        ],
+        "compile": {
+          "lib/net461/System.Memory.dll": {}
+        },
+        "runtime": {
+          "lib/net461/System.Memory.dll": {}
+        }
+      },
+      "System.Numerics.Vectors/4.5.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.Numerics",
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net46/System.Numerics.Vectors.dll": {}
+        },
+        "runtime": {
+          "lib/net46/System.Numerics.Vectors.dll": {}
+        }
+      },
+      "System.Runtime.CompilerServices.Unsafe/4.7.1": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net461/System.Runtime.CompilerServices.Unsafe.dll": {}
+        },
+        "runtime": {
+          "lib/net461/System.Runtime.CompilerServices.Unsafe.dll": {}
+        }
+      },
+      "JpegRecoveryLibrary/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "MathNet.Numerics": "4.12.0",
+          "Newtonsoft.Json": "12.0.3",
+          "System.Drawing.Common": "4.7.0",
+          "packetnet-connections": "1.2.0"
+        },
+        "compile": {
+          "bin/placeholder/JpegRecoveryLibrary.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/JpegRecoveryLibrary.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.7.2/win-x64": {
+      "log4net/2.0.8": {
+        "type": "package",
+        "compile": {
+          "lib/net45-full/log4net.dll": {}
+        },
+        "runtime": {
+          "lib/net45-full/log4net.dll": {}
+        }
+      },
+      "MathNet.Numerics/4.12.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System",
+          "System.Core",
+          "System.Numerics",
+          "System.Runtime.Serialization"
+        ],
+        "compile": {
+          "lib/net461/MathNet.Numerics.dll": {}
+        },
+        "runtime": {
+          "lib/net461/MathNet.Numerics.dll": {}
+        }
+      },
+      "Newtonsoft.Json/12.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        }
+      },
+      "PacketDotNet/1.0.1": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "4.5.2"
+        },
+        "compile": {
+          "lib/net45/PacketDotNet.dll": {}
+        },
+        "runtime": {
+          "lib/net45/PacketDotNet.dll": {}
+        }
+      },
+      "packetnet-connections/1.2.0": {
+        "type": "package",
+        "dependencies": {
+          "log4net": "2.0.8",
+          "packetdotnet": "1.0.1",
+          "sharppcap": "4.6.1",
+          "sharpziplib": "1.1.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Win32.Primitives.dll": {},
+          "lib/netstandard2.0/PacketDotNetConnections.dll": {},
+          "lib/netstandard2.0/System.AppContext.dll": {},
+          "lib/netstandard2.0/System.Collections.Concurrent.dll": {},
+          "lib/netstandard2.0/System.Collections.NonGeneric.dll": {},
+          "lib/netstandard2.0/System.Collections.Specialized.dll": {},
+          "lib/netstandard2.0/System.Collections.dll": {},
+          "lib/netstandard2.0/System.ComponentModel.Composition.dll": {},
+          "lib/netstandard2.0/System.ComponentModel.EventBasedAsync.dll": {},
+          "lib/netstandard2.0/System.ComponentModel.Primitives.dll": {},
+          "lib/netstandard2.0/System.ComponentModel.TypeConverter.dll": {},
+          "lib/netstandard2.0/System.ComponentModel.dll": {},
+          "lib/netstandard2.0/System.Console.dll": {},
+          "lib/netstandard2.0/System.Core.dll": {},
+          "lib/netstandard2.0/System.Data.Common.dll": {},
+          "lib/netstandard2.0/System.Data.dll": {},
+          "lib/netstandard2.0/System.Diagnostics.Contracts.dll": {},
+          "lib/netstandard2.0/System.Diagnostics.Debug.dll": {},
+          "lib/netstandard2.0/System.Diagnostics.FileVersionInfo.dll": {},
+          "lib/netstandard2.0/System.Diagnostics.Process.dll": {},
+          "lib/netstandard2.0/System.Diagnostics.StackTrace.dll": {},
+          "lib/netstandard2.0/System.Diagnostics.TextWriterTraceListener.dll": {},
+          "lib/netstandard2.0/System.Diagnostics.Tools.dll": {},
+          "lib/netstandard2.0/System.Diagnostics.TraceSource.dll": {},
+          "lib/netstandard2.0/System.Diagnostics.Tracing.dll": {},
+          "lib/netstandard2.0/System.Drawing.Primitives.dll": {},
+          "lib/netstandard2.0/System.Drawing.dll": {},
+          "lib/netstandard2.0/System.Dynamic.Runtime.dll": {},
+          "lib/netstandard2.0/System.Globalization.Calendars.dll": {},
+          "lib/netstandard2.0/System.Globalization.Extensions.dll": {},
+          "lib/netstandard2.0/System.Globalization.dll": {},
+          "lib/netstandard2.0/System.IO.Compression.FileSystem.dll": {},
+          "lib/netstandard2.0/System.IO.Compression.ZipFile.dll": {},
+          "lib/netstandard2.0/System.IO.Compression.dll": {},
+          "lib/netstandard2.0/System.IO.FileSystem.DriveInfo.dll": {},
+          "lib/netstandard2.0/System.IO.FileSystem.Primitives.dll": {},
+          "lib/netstandard2.0/System.IO.FileSystem.Watcher.dll": {},
+          "lib/netstandard2.0/System.IO.FileSystem.dll": {},
+          "lib/netstandard2.0/System.IO.IsolatedStorage.dll": {},
+          "lib/netstandard2.0/System.IO.MemoryMappedFiles.dll": {},
+          "lib/netstandard2.0/System.IO.Pipes.dll": {},
+          "lib/netstandard2.0/System.IO.UnmanagedMemoryStream.dll": {},
+          "lib/netstandard2.0/System.IO.dll": {},
+          "lib/netstandard2.0/System.Linq.Expressions.dll": {},
+          "lib/netstandard2.0/System.Linq.Parallel.dll": {},
+          "lib/netstandard2.0/System.Linq.Queryable.dll": {},
+          "lib/netstandard2.0/System.Linq.dll": {},
+          "lib/netstandard2.0/System.Net.Http.dll": {},
+          "lib/netstandard2.0/System.Net.NameResolution.dll": {},
+          "lib/netstandard2.0/System.Net.NetworkInformation.dll": {},
+          "lib/netstandard2.0/System.Net.Ping.dll": {},
+          "lib/netstandard2.0/System.Net.Primitives.dll": {},
+          "lib/netstandard2.0/System.Net.Requests.dll": {},
+          "lib/netstandard2.0/System.Net.Security.dll": {},
+          "lib/netstandard2.0/System.Net.Sockets.dll": {},
+          "lib/netstandard2.0/System.Net.WebHeaderCollection.dll": {},
+          "lib/netstandard2.0/System.Net.WebSockets.Client.dll": {},
+          "lib/netstandard2.0/System.Net.WebSockets.dll": {},
+          "lib/netstandard2.0/System.Net.dll": {},
+          "lib/netstandard2.0/System.Numerics.dll": {},
+          "lib/netstandard2.0/System.ObjectModel.dll": {},
+          "lib/netstandard2.0/System.Reflection.Extensions.dll": {},
+          "lib/netstandard2.0/System.Reflection.Primitives.dll": {},
+          "lib/netstandard2.0/System.Reflection.dll": {},
+          "lib/netstandard2.0/System.Resources.Reader.dll": {},
+          "lib/netstandard2.0/System.Resources.ResourceManager.dll": {},
+          "lib/netstandard2.0/System.Resources.Writer.dll": {},
+          "lib/netstandard2.0/System.Runtime.CompilerServices.VisualC.dll": {},
+          "lib/netstandard2.0/System.Runtime.Extensions.dll": {},
+          "lib/netstandard2.0/System.Runtime.Handles.dll": {},
+          "lib/netstandard2.0/System.Runtime.InteropServices.RuntimeInformation.dll": {},
+          "lib/netstandard2.0/System.Runtime.InteropServices.dll": {},
+          "lib/netstandard2.0/System.Runtime.Numerics.dll": {},
+          "lib/netstandard2.0/System.Runtime.Serialization.Formatters.dll": {},
+          "lib/netstandard2.0/System.Runtime.Serialization.Json.dll": {},
+          "lib/netstandard2.0/System.Runtime.Serialization.Primitives.dll": {},
+          "lib/netstandard2.0/System.Runtime.Serialization.Xml.dll": {},
+          "lib/netstandard2.0/System.Runtime.Serialization.dll": {},
+          "lib/netstandard2.0/System.Runtime.dll": {},
+          "lib/netstandard2.0/System.Security.Claims.dll": {},
+          "lib/netstandard2.0/System.Security.Cryptography.Algorithms.dll": {},
+          "lib/netstandard2.0/System.Security.Cryptography.Csp.dll": {},
+          "lib/netstandard2.0/System.Security.Cryptography.Encoding.dll": {},
+          "lib/netstandard2.0/System.Security.Cryptography.Primitives.dll": {},
+          "lib/netstandard2.0/System.Security.Cryptography.X509Certificates.dll": {},
+          "lib/netstandard2.0/System.Security.Principal.dll": {},
+          "lib/netstandard2.0/System.Security.SecureString.dll": {},
+          "lib/netstandard2.0/System.ServiceModel.Web.dll": {},
+          "lib/netstandard2.0/System.Text.Encoding.Extensions.dll": {},
+          "lib/netstandard2.0/System.Text.Encoding.dll": {},
+          "lib/netstandard2.0/System.Text.RegularExpressions.dll": {},
+          "lib/netstandard2.0/System.Threading.Overlapped.dll": {},
+          "lib/netstandard2.0/System.Threading.Tasks.Parallel.dll": {},
+          "lib/netstandard2.0/System.Threading.Tasks.dll": {},
+          "lib/netstandard2.0/System.Threading.Thread.dll": {},
+          "lib/netstandard2.0/System.Threading.ThreadPool.dll": {},
+          "lib/netstandard2.0/System.Threading.Timer.dll": {},
+          "lib/netstandard2.0/System.Threading.dll": {},
+          "lib/netstandard2.0/System.Transactions.dll": {},
+          "lib/netstandard2.0/System.ValueTuple.dll": {},
+          "lib/netstandard2.0/System.Web.dll": {},
+          "lib/netstandard2.0/System.Windows.dll": {},
+          "lib/netstandard2.0/System.Xml.Linq.dll": {},
+          "lib/netstandard2.0/System.Xml.ReaderWriter.dll": {},
+          "lib/netstandard2.0/System.Xml.Serialization.dll": {},
+          "lib/netstandard2.0/System.Xml.XDocument.dll": {},
+          "lib/netstandard2.0/System.Xml.XPath.XDocument.dll": {},
+          "lib/netstandard2.0/System.Xml.XPath.dll": {},
+          "lib/netstandard2.0/System.Xml.XmlDocument.dll": {},
+          "lib/netstandard2.0/System.Xml.XmlSerializer.dll": {},
+          "lib/netstandard2.0/System.Xml.dll": {},
+          "lib/netstandard2.0/System.dll": {},
+          "lib/netstandard2.0/mscorlib.dll": {},
+          "lib/netstandard2.0/netstandard.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Win32.Primitives.dll": {},
+          "lib/netstandard2.0/PacketDotNetConnections.dll": {},
+          "lib/netstandard2.0/System.AppContext.dll": {},
+          "lib/netstandard2.0/System.Collections.Concurrent.dll": {},
+          "lib/netstandard2.0/System.Collections.NonGeneric.dll": {},
+          "lib/netstandard2.0/System.Collections.Specialized.dll": {},
+          "lib/netstandard2.0/System.Collections.dll": {},
+          "lib/netstandard2.0/System.ComponentModel.Composition.dll": {},
+          "lib/netstandard2.0/System.ComponentModel.EventBasedAsync.dll": {},
+          "lib/netstandard2.0/System.ComponentModel.Primitives.dll": {},
+          "lib/netstandard2.0/System.ComponentModel.TypeConverter.dll": {},
+          "lib/netstandard2.0/System.ComponentModel.dll": {},
+          "lib/netstandard2.0/System.Console.dll": {},
+          "lib/netstandard2.0/System.Core.dll": {},
+          "lib/netstandard2.0/System.Data.Common.dll": {},
+          "lib/netstandard2.0/System.Data.dll": {},
+          "lib/netstandard2.0/System.Diagnostics.Contracts.dll": {},
+          "lib/netstandard2.0/System.Diagnostics.Debug.dll": {},
+          "lib/netstandard2.0/System.Diagnostics.FileVersionInfo.dll": {},
+          "lib/netstandard2.0/System.Diagnostics.Process.dll": {},
+          "lib/netstandard2.0/System.Diagnostics.StackTrace.dll": {},
+          "lib/netstandard2.0/System.Diagnostics.TextWriterTraceListener.dll": {},
+          "lib/netstandard2.0/System.Diagnostics.Tools.dll": {},
+          "lib/netstandard2.0/System.Diagnostics.TraceSource.dll": {},
+          "lib/netstandard2.0/System.Diagnostics.Tracing.dll": {},
+          "lib/netstandard2.0/System.Drawing.Primitives.dll": {},
+          "lib/netstandard2.0/System.Drawing.dll": {},
+          "lib/netstandard2.0/System.Dynamic.Runtime.dll": {},
+          "lib/netstandard2.0/System.Globalization.Calendars.dll": {},
+          "lib/netstandard2.0/System.Globalization.Extensions.dll": {},
+          "lib/netstandard2.0/System.Globalization.dll": {},
+          "lib/netstandard2.0/System.IO.Compression.FileSystem.dll": {},
+          "lib/netstandard2.0/System.IO.Compression.ZipFile.dll": {},
+          "lib/netstandard2.0/System.IO.Compression.dll": {},
+          "lib/netstandard2.0/System.IO.FileSystem.DriveInfo.dll": {},
+          "lib/netstandard2.0/System.IO.FileSystem.Primitives.dll": {},
+          "lib/netstandard2.0/System.IO.FileSystem.Watcher.dll": {},
+          "lib/netstandard2.0/System.IO.FileSystem.dll": {},
+          "lib/netstandard2.0/System.IO.IsolatedStorage.dll": {},
+          "lib/netstandard2.0/System.IO.MemoryMappedFiles.dll": {},
+          "lib/netstandard2.0/System.IO.Pipes.dll": {},
+          "lib/netstandard2.0/System.IO.UnmanagedMemoryStream.dll": {},
+          "lib/netstandard2.0/System.IO.dll": {},
+          "lib/netstandard2.0/System.Linq.Expressions.dll": {},
+          "lib/netstandard2.0/System.Linq.Parallel.dll": {},
+          "lib/netstandard2.0/System.Linq.Queryable.dll": {},
+          "lib/netstandard2.0/System.Linq.dll": {},
+          "lib/netstandard2.0/System.Net.Http.dll": {},
+          "lib/netstandard2.0/System.Net.NameResolution.dll": {},
+          "lib/netstandard2.0/System.Net.NetworkInformation.dll": {},
+          "lib/netstandard2.0/System.Net.Ping.dll": {},
+          "lib/netstandard2.0/System.Net.Primitives.dll": {},
+          "lib/netstandard2.0/System.Net.Requests.dll": {},
+          "lib/netstandard2.0/System.Net.Security.dll": {},
+          "lib/netstandard2.0/System.Net.Sockets.dll": {},
+          "lib/netstandard2.0/System.Net.WebHeaderCollection.dll": {},
+          "lib/netstandard2.0/System.Net.WebSockets.Client.dll": {},
+          "lib/netstandard2.0/System.Net.WebSockets.dll": {},
+          "lib/netstandard2.0/System.Net.dll": {},
+          "lib/netstandard2.0/System.Numerics.dll": {},
+          "lib/netstandard2.0/System.ObjectModel.dll": {},
+          "lib/netstandard2.0/System.Reflection.Extensions.dll": {},
+          "lib/netstandard2.0/System.Reflection.Primitives.dll": {},
+          "lib/netstandard2.0/System.Reflection.dll": {},
+          "lib/netstandard2.0/System.Resources.Reader.dll": {},
+          "lib/netstandard2.0/System.Resources.ResourceManager.dll": {},
+          "lib/netstandard2.0/System.Resources.Writer.dll": {},
+          "lib/netstandard2.0/System.Runtime.CompilerServices.VisualC.dll": {},
+          "lib/netstandard2.0/System.Runtime.Extensions.dll": {},
+          "lib/netstandard2.0/System.Runtime.Handles.dll": {},
+          "lib/netstandard2.0/System.Runtime.InteropServices.RuntimeInformation.dll": {},
+          "lib/netstandard2.0/System.Runtime.InteropServices.dll": {},
+          "lib/netstandard2.0/System.Runtime.Numerics.dll": {},
+          "lib/netstandard2.0/System.Runtime.Serialization.Formatters.dll": {},
+          "lib/netstandard2.0/System.Runtime.Serialization.Json.dll": {},
+          "lib/netstandard2.0/System.Runtime.Serialization.Primitives.dll": {},
+          "lib/netstandard2.0/System.Runtime.Serialization.Xml.dll": {},
+          "lib/netstandard2.0/System.Runtime.Serialization.dll": {},
+          "lib/netstandard2.0/System.Runtime.dll": {},
+          "lib/netstandard2.0/System.Security.Claims.dll": {},
+          "lib/netstandard2.0/System.Security.Cryptography.Algorithms.dll": {},
+          "lib/netstandard2.0/System.Security.Cryptography.Csp.dll": {},
+          "lib/netstandard2.0/System.Security.Cryptography.Encoding.dll": {},
+          "lib/netstandard2.0/System.Security.Cryptography.Primitives.dll": {},
+          "lib/netstandard2.0/System.Security.Cryptography.X509Certificates.dll": {},
+          "lib/netstandard2.0/System.Security.Principal.dll": {},
+          "lib/netstandard2.0/System.Security.SecureString.dll": {},
+          "lib/netstandard2.0/System.ServiceModel.Web.dll": {},
+          "lib/netstandard2.0/System.Text.Encoding.Extensions.dll": {},
+          "lib/netstandard2.0/System.Text.Encoding.dll": {},
+          "lib/netstandard2.0/System.Text.RegularExpressions.dll": {},
+          "lib/netstandard2.0/System.Threading.Overlapped.dll": {},
+          "lib/netstandard2.0/System.Threading.Tasks.Parallel.dll": {},
+          "lib/netstandard2.0/System.Threading.Tasks.dll": {},
+          "lib/netstandard2.0/System.Threading.Thread.dll": {},
+          "lib/netstandard2.0/System.Threading.ThreadPool.dll": {},
+          "lib/netstandard2.0/System.Threading.Timer.dll": {},
+          "lib/netstandard2.0/System.Threading.dll": {},
+          "lib/netstandard2.0/System.Transactions.dll": {},
+          "lib/netstandard2.0/System.ValueTuple.dll": {},
+          "lib/netstandard2.0/System.Web.dll": {},
+          "lib/netstandard2.0/System.Windows.dll": {},
+          "lib/netstandard2.0/System.Xml.Linq.dll": {},
+          "lib/netstandard2.0/System.Xml.ReaderWriter.dll": {},
+          "lib/netstandard2.0/System.Xml.Serialization.dll": {},
+          "lib/netstandard2.0/System.Xml.XDocument.dll": {},
+          "lib/netstandard2.0/System.Xml.XPath.XDocument.dll": {},
+          "lib/netstandard2.0/System.Xml.XPath.dll": {},
+          "lib/netstandard2.0/System.Xml.XmlDocument.dll": {},
+          "lib/netstandard2.0/System.Xml.XmlSerializer.dll": {},
+          "lib/netstandard2.0/System.Xml.dll": {},
+          "lib/netstandard2.0/System.dll": {},
+          "lib/netstandard2.0/mscorlib.dll": {},
+          "lib/netstandard2.0/netstandard.dll": {}
+        }
+      },
+      "SharpPcap/4.6.1": {
+        "type": "package",
+        "dependencies": {
+          "PacketDotNet": "0.18.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/SharpPcap.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/SharpPcap.dll": {}
+        }
+      },
+      "SharpZipLib/1.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/net45/ICSharpCode.SharpZipLib.dll": {}
+        },
+        "runtime": {
+          "lib/net45/ICSharpCode.SharpZipLib.dll": {}
+        }
+      },
+      "System.Buffers/4.5.1": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net45/System.Buffers.dll": {}
+        },
+        "runtime": {
+          "lib/net461/System.Buffers.dll": {}
+        }
+      },
+      "System.Drawing.Common/4.7.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System",
+          "System.Drawing",
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net461/System.Drawing.Common.dll": {}
+        },
+        "runtime": {
+          "lib/net461/System.Drawing.Common.dll": {}
+        }
+      },
+      "System.Memory/4.5.4": {
+        "type": "package",
+        "dependencies": {
+          "System.Buffers": "4.5.1",
+          "System.Numerics.Vectors": "4.5.0",
+          "System.Runtime.CompilerServices.Unsafe": "4.5.3"
+        },
+        "frameworkAssemblies": [
+          "System",
+          "mscorlib"
+        ],
+        "compile": {
+          "lib/net461/System.Memory.dll": {}
+        },
+        "runtime": {
+          "lib/net461/System.Memory.dll": {}
+        }
+      },
+      "System.Numerics.Vectors/4.5.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.Numerics",
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net46/System.Numerics.Vectors.dll": {}
+        },
+        "runtime": {
+          "lib/net46/System.Numerics.Vectors.dll": {}
+        }
+      },
+      "System.Runtime.CompilerServices.Unsafe/4.7.1": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net461/System.Runtime.CompilerServices.Unsafe.dll": {}
+        },
+        "runtime": {
+          "lib/net461/System.Runtime.CompilerServices.Unsafe.dll": {}
+        }
+      },
+      "JpegRecoveryLibrary/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "MathNet.Numerics": "4.12.0",
+          "Newtonsoft.Json": "12.0.3",
+          "System.Drawing.Common": "4.7.0",
+          "packetnet-connections": "1.2.0"
+        },
+        "compile": {
+          "bin/placeholder/JpegRecoveryLibrary.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/JpegRecoveryLibrary.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.7.2/win-x86": {
+      "log4net/2.0.8": {
+        "type": "package",
+        "compile": {
+          "lib/net45-full/log4net.dll": {}
+        },
+        "runtime": {
+          "lib/net45-full/log4net.dll": {}
+        }
+      },
+      "MathNet.Numerics/4.12.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System",
+          "System.Core",
+          "System.Numerics",
+          "System.Runtime.Serialization"
+        ],
+        "compile": {
+          "lib/net461/MathNet.Numerics.dll": {}
+        },
+        "runtime": {
+          "lib/net461/MathNet.Numerics.dll": {}
+        }
+      },
+      "Newtonsoft.Json/12.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        }
+      },
+      "PacketDotNet/1.0.1": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "4.5.2"
+        },
+        "compile": {
+          "lib/net45/PacketDotNet.dll": {}
+        },
+        "runtime": {
+          "lib/net45/PacketDotNet.dll": {}
+        }
+      },
+      "packetnet-connections/1.2.0": {
+        "type": "package",
+        "dependencies": {
+          "log4net": "2.0.8",
+          "packetdotnet": "1.0.1",
+          "sharppcap": "4.6.1",
+          "sharpziplib": "1.1.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Win32.Primitives.dll": {},
+          "lib/netstandard2.0/PacketDotNetConnections.dll": {},
+          "lib/netstandard2.0/System.AppContext.dll": {},
+          "lib/netstandard2.0/System.Collections.Concurrent.dll": {},
+          "lib/netstandard2.0/System.Collections.NonGeneric.dll": {},
+          "lib/netstandard2.0/System.Collections.Specialized.dll": {},
+          "lib/netstandard2.0/System.Collections.dll": {},
+          "lib/netstandard2.0/System.ComponentModel.Composition.dll": {},
+          "lib/netstandard2.0/System.ComponentModel.EventBasedAsync.dll": {},
+          "lib/netstandard2.0/System.ComponentModel.Primitives.dll": {},
+          "lib/netstandard2.0/System.ComponentModel.TypeConverter.dll": {},
+          "lib/netstandard2.0/System.ComponentModel.dll": {},
+          "lib/netstandard2.0/System.Console.dll": {},
+          "lib/netstandard2.0/System.Core.dll": {},
+          "lib/netstandard2.0/System.Data.Common.dll": {},
+          "lib/netstandard2.0/System.Data.dll": {},
+          "lib/netstandard2.0/System.Diagnostics.Contracts.dll": {},
+          "lib/netstandard2.0/System.Diagnostics.Debug.dll": {},
+          "lib/netstandard2.0/System.Diagnostics.FileVersionInfo.dll": {},
+          "lib/netstandard2.0/System.Diagnostics.Process.dll": {},
+          "lib/netstandard2.0/System.Diagnostics.StackTrace.dll": {},
+          "lib/netstandard2.0/System.Diagnostics.TextWriterTraceListener.dll": {},
+          "lib/netstandard2.0/System.Diagnostics.Tools.dll": {},
+          "lib/netstandard2.0/System.Diagnostics.TraceSource.dll": {},
+          "lib/netstandard2.0/System.Diagnostics.Tracing.dll": {},
+          "lib/netstandard2.0/System.Drawing.Primitives.dll": {},
+          "lib/netstandard2.0/System.Drawing.dll": {},
+          "lib/netstandard2.0/System.Dynamic.Runtime.dll": {},
+          "lib/netstandard2.0/System.Globalization.Calendars.dll": {},
+          "lib/netstandard2.0/System.Globalization.Extensions.dll": {},
+          "lib/netstandard2.0/System.Globalization.dll": {},
+          "lib/netstandard2.0/System.IO.Compression.FileSystem.dll": {},
+          "lib/netstandard2.0/System.IO.Compression.ZipFile.dll": {},
+          "lib/netstandard2.0/System.IO.Compression.dll": {},
+          "lib/netstandard2.0/System.IO.FileSystem.DriveInfo.dll": {},
+          "lib/netstandard2.0/System.IO.FileSystem.Primitives.dll": {},
+          "lib/netstandard2.0/System.IO.FileSystem.Watcher.dll": {},
+          "lib/netstandard2.0/System.IO.FileSystem.dll": {},
+          "lib/netstandard2.0/System.IO.IsolatedStorage.dll": {},
+          "lib/netstandard2.0/System.IO.MemoryMappedFiles.dll": {},
+          "lib/netstandard2.0/System.IO.Pipes.dll": {},
+          "lib/netstandard2.0/System.IO.UnmanagedMemoryStream.dll": {},
+          "lib/netstandard2.0/System.IO.dll": {},
+          "lib/netstandard2.0/System.Linq.Expressions.dll": {},
+          "lib/netstandard2.0/System.Linq.Parallel.dll": {},
+          "lib/netstandard2.0/System.Linq.Queryable.dll": {},
+          "lib/netstandard2.0/System.Linq.dll": {},
+          "lib/netstandard2.0/System.Net.Http.dll": {},
+          "lib/netstandard2.0/System.Net.NameResolution.dll": {},
+          "lib/netstandard2.0/System.Net.NetworkInformation.dll": {},
+          "lib/netstandard2.0/System.Net.Ping.dll": {},
+          "lib/netstandard2.0/System.Net.Primitives.dll": {},
+          "lib/netstandard2.0/System.Net.Requests.dll": {},
+          "lib/netstandard2.0/System.Net.Security.dll": {},
+          "lib/netstandard2.0/System.Net.Sockets.dll": {},
+          "lib/netstandard2.0/System.Net.WebHeaderCollection.dll": {},
+          "lib/netstandard2.0/System.Net.WebSockets.Client.dll": {},
+          "lib/netstandard2.0/System.Net.WebSockets.dll": {},
+          "lib/netstandard2.0/System.Net.dll": {},
+          "lib/netstandard2.0/System.Numerics.dll": {},
+          "lib/netstandard2.0/System.ObjectModel.dll": {},
+          "lib/netstandard2.0/System.Reflection.Extensions.dll": {},
+          "lib/netstandard2.0/System.Reflection.Primitives.dll": {},
+          "lib/netstandard2.0/System.Reflection.dll": {},
+          "lib/netstandard2.0/System.Resources.Reader.dll": {},
+          "lib/netstandard2.0/System.Resources.ResourceManager.dll": {},
+          "lib/netstandard2.0/System.Resources.Writer.dll": {},
+          "lib/netstandard2.0/System.Runtime.CompilerServices.VisualC.dll": {},
+          "lib/netstandard2.0/System.Runtime.Extensions.dll": {},
+          "lib/netstandard2.0/System.Runtime.Handles.dll": {},
+          "lib/netstandard2.0/System.Runtime.InteropServices.RuntimeInformation.dll": {},
+          "lib/netstandard2.0/System.Runtime.InteropServices.dll": {},
+          "lib/netstandard2.0/System.Runtime.Numerics.dll": {},
+          "lib/netstandard2.0/System.Runtime.Serialization.Formatters.dll": {},
+          "lib/netstandard2.0/System.Runtime.Serialization.Json.dll": {},
+          "lib/netstandard2.0/System.Runtime.Serialization.Primitives.dll": {},
+          "lib/netstandard2.0/System.Runtime.Serialization.Xml.dll": {},
+          "lib/netstandard2.0/System.Runtime.Serialization.dll": {},
+          "lib/netstandard2.0/System.Runtime.dll": {},
+          "lib/netstandard2.0/System.Security.Claims.dll": {},
+          "lib/netstandard2.0/System.Security.Cryptography.Algorithms.dll": {},
+          "lib/netstandard2.0/System.Security.Cryptography.Csp.dll": {},
+          "lib/netstandard2.0/System.Security.Cryptography.Encoding.dll": {},
+          "lib/netstandard2.0/System.Security.Cryptography.Primitives.dll": {},
+          "lib/netstandard2.0/System.Security.Cryptography.X509Certificates.dll": {},
+          "lib/netstandard2.0/System.Security.Principal.dll": {},
+          "lib/netstandard2.0/System.Security.SecureString.dll": {},
+          "lib/netstandard2.0/System.ServiceModel.Web.dll": {},
+          "lib/netstandard2.0/System.Text.Encoding.Extensions.dll": {},
+          "lib/netstandard2.0/System.Text.Encoding.dll": {},
+          "lib/netstandard2.0/System.Text.RegularExpressions.dll": {},
+          "lib/netstandard2.0/System.Threading.Overlapped.dll": {},
+          "lib/netstandard2.0/System.Threading.Tasks.Parallel.dll": {},
+          "lib/netstandard2.0/System.Threading.Tasks.dll": {},
+          "lib/netstandard2.0/System.Threading.Thread.dll": {},
+          "lib/netstandard2.0/System.Threading.ThreadPool.dll": {},
+          "lib/netstandard2.0/System.Threading.Timer.dll": {},
+          "lib/netstandard2.0/System.Threading.dll": {},
+          "lib/netstandard2.0/System.Transactions.dll": {},
+          "lib/netstandard2.0/System.ValueTuple.dll": {},
+          "lib/netstandard2.0/System.Web.dll": {},
+          "lib/netstandard2.0/System.Windows.dll": {},
+          "lib/netstandard2.0/System.Xml.Linq.dll": {},
+          "lib/netstandard2.0/System.Xml.ReaderWriter.dll": {},
+          "lib/netstandard2.0/System.Xml.Serialization.dll": {},
+          "lib/netstandard2.0/System.Xml.XDocument.dll": {},
+          "lib/netstandard2.0/System.Xml.XPath.XDocument.dll": {},
+          "lib/netstandard2.0/System.Xml.XPath.dll": {},
+          "lib/netstandard2.0/System.Xml.XmlDocument.dll": {},
+          "lib/netstandard2.0/System.Xml.XmlSerializer.dll": {},
+          "lib/netstandard2.0/System.Xml.dll": {},
+          "lib/netstandard2.0/System.dll": {},
+          "lib/netstandard2.0/mscorlib.dll": {},
+          "lib/netstandard2.0/netstandard.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Win32.Primitives.dll": {},
+          "lib/netstandard2.0/PacketDotNetConnections.dll": {},
+          "lib/netstandard2.0/System.AppContext.dll": {},
+          "lib/netstandard2.0/System.Collections.Concurrent.dll": {},
+          "lib/netstandard2.0/System.Collections.NonGeneric.dll": {},
+          "lib/netstandard2.0/System.Collections.Specialized.dll": {},
+          "lib/netstandard2.0/System.Collections.dll": {},
+          "lib/netstandard2.0/System.ComponentModel.Composition.dll": {},
+          "lib/netstandard2.0/System.ComponentModel.EventBasedAsync.dll": {},
+          "lib/netstandard2.0/System.ComponentModel.Primitives.dll": {},
+          "lib/netstandard2.0/System.ComponentModel.TypeConverter.dll": {},
+          "lib/netstandard2.0/System.ComponentModel.dll": {},
+          "lib/netstandard2.0/System.Console.dll": {},
+          "lib/netstandard2.0/System.Core.dll": {},
+          "lib/netstandard2.0/System.Data.Common.dll": {},
+          "lib/netstandard2.0/System.Data.dll": {},
+          "lib/netstandard2.0/System.Diagnostics.Contracts.dll": {},
+          "lib/netstandard2.0/System.Diagnostics.Debug.dll": {},
+          "lib/netstandard2.0/System.Diagnostics.FileVersionInfo.dll": {},
+          "lib/netstandard2.0/System.Diagnostics.Process.dll": {},
+          "lib/netstandard2.0/System.Diagnostics.StackTrace.dll": {},
+          "lib/netstandard2.0/System.Diagnostics.TextWriterTraceListener.dll": {},
+          "lib/netstandard2.0/System.Diagnostics.Tools.dll": {},
+          "lib/netstandard2.0/System.Diagnostics.TraceSource.dll": {},
+          "lib/netstandard2.0/System.Diagnostics.Tracing.dll": {},
+          "lib/netstandard2.0/System.Drawing.Primitives.dll": {},
+          "lib/netstandard2.0/System.Drawing.dll": {},
+          "lib/netstandard2.0/System.Dynamic.Runtime.dll": {},
+          "lib/netstandard2.0/System.Globalization.Calendars.dll": {},
+          "lib/netstandard2.0/System.Globalization.Extensions.dll": {},
+          "lib/netstandard2.0/System.Globalization.dll": {},
+          "lib/netstandard2.0/System.IO.Compression.FileSystem.dll": {},
+          "lib/netstandard2.0/System.IO.Compression.ZipFile.dll": {},
+          "lib/netstandard2.0/System.IO.Compression.dll": {},
+          "lib/netstandard2.0/System.IO.FileSystem.DriveInfo.dll": {},
+          "lib/netstandard2.0/System.IO.FileSystem.Primitives.dll": {},
+          "lib/netstandard2.0/System.IO.FileSystem.Watcher.dll": {},
+          "lib/netstandard2.0/System.IO.FileSystem.dll": {},
+          "lib/netstandard2.0/System.IO.IsolatedStorage.dll": {},
+          "lib/netstandard2.0/System.IO.MemoryMappedFiles.dll": {},
+          "lib/netstandard2.0/System.IO.Pipes.dll": {},
+          "lib/netstandard2.0/System.IO.UnmanagedMemoryStream.dll": {},
+          "lib/netstandard2.0/System.IO.dll": {},
+          "lib/netstandard2.0/System.Linq.Expressions.dll": {},
+          "lib/netstandard2.0/System.Linq.Parallel.dll": {},
+          "lib/netstandard2.0/System.Linq.Queryable.dll": {},
+          "lib/netstandard2.0/System.Linq.dll": {},
+          "lib/netstandard2.0/System.Net.Http.dll": {},
+          "lib/netstandard2.0/System.Net.NameResolution.dll": {},
+          "lib/netstandard2.0/System.Net.NetworkInformation.dll": {},
+          "lib/netstandard2.0/System.Net.Ping.dll": {},
+          "lib/netstandard2.0/System.Net.Primitives.dll": {},
+          "lib/netstandard2.0/System.Net.Requests.dll": {},
+          "lib/netstandard2.0/System.Net.Security.dll": {},
+          "lib/netstandard2.0/System.Net.Sockets.dll": {},
+          "lib/netstandard2.0/System.Net.WebHeaderCollection.dll": {},
+          "lib/netstandard2.0/System.Net.WebSockets.Client.dll": {},
+          "lib/netstandard2.0/System.Net.WebSockets.dll": {},
+          "lib/netstandard2.0/System.Net.dll": {},
+          "lib/netstandard2.0/System.Numerics.dll": {},
+          "lib/netstandard2.0/System.ObjectModel.dll": {},
+          "lib/netstandard2.0/System.Reflection.Extensions.dll": {},
+          "lib/netstandard2.0/System.Reflection.Primitives.dll": {},
+          "lib/netstandard2.0/System.Reflection.dll": {},
+          "lib/netstandard2.0/System.Resources.Reader.dll": {},
+          "lib/netstandard2.0/System.Resources.ResourceManager.dll": {},
+          "lib/netstandard2.0/System.Resources.Writer.dll": {},
+          "lib/netstandard2.0/System.Runtime.CompilerServices.VisualC.dll": {},
+          "lib/netstandard2.0/System.Runtime.Extensions.dll": {},
+          "lib/netstandard2.0/System.Runtime.Handles.dll": {},
+          "lib/netstandard2.0/System.Runtime.InteropServices.RuntimeInformation.dll": {},
+          "lib/netstandard2.0/System.Runtime.InteropServices.dll": {},
+          "lib/netstandard2.0/System.Runtime.Numerics.dll": {},
+          "lib/netstandard2.0/System.Runtime.Serialization.Formatters.dll": {},
+          "lib/netstandard2.0/System.Runtime.Serialization.Json.dll": {},
+          "lib/netstandard2.0/System.Runtime.Serialization.Primitives.dll": {},
+          "lib/netstandard2.0/System.Runtime.Serialization.Xml.dll": {},
+          "lib/netstandard2.0/System.Runtime.Serialization.dll": {},
+          "lib/netstandard2.0/System.Runtime.dll": {},
+          "lib/netstandard2.0/System.Security.Claims.dll": {},
+          "lib/netstandard2.0/System.Security.Cryptography.Algorithms.dll": {},
+          "lib/netstandard2.0/System.Security.Cryptography.Csp.dll": {},
+          "lib/netstandard2.0/System.Security.Cryptography.Encoding.dll": {},
+          "lib/netstandard2.0/System.Security.Cryptography.Primitives.dll": {},
+          "lib/netstandard2.0/System.Security.Cryptography.X509Certificates.dll": {},
+          "lib/netstandard2.0/System.Security.Principal.dll": {},
+          "lib/netstandard2.0/System.Security.SecureString.dll": {},
+          "lib/netstandard2.0/System.ServiceModel.Web.dll": {},
+          "lib/netstandard2.0/System.Text.Encoding.Extensions.dll": {},
+          "lib/netstandard2.0/System.Text.Encoding.dll": {},
+          "lib/netstandard2.0/System.Text.RegularExpressions.dll": {},
+          "lib/netstandard2.0/System.Threading.Overlapped.dll": {},
+          "lib/netstandard2.0/System.Threading.Tasks.Parallel.dll": {},
+          "lib/netstandard2.0/System.Threading.Tasks.dll": {},
+          "lib/netstandard2.0/System.Threading.Thread.dll": {},
+          "lib/netstandard2.0/System.Threading.ThreadPool.dll": {},
+          "lib/netstandard2.0/System.Threading.Timer.dll": {},
+          "lib/netstandard2.0/System.Threading.dll": {},
+          "lib/netstandard2.0/System.Transactions.dll": {},
+          "lib/netstandard2.0/System.ValueTuple.dll": {},
+          "lib/netstandard2.0/System.Web.dll": {},
+          "lib/netstandard2.0/System.Windows.dll": {},
+          "lib/netstandard2.0/System.Xml.Linq.dll": {},
+          "lib/netstandard2.0/System.Xml.ReaderWriter.dll": {},
+          "lib/netstandard2.0/System.Xml.Serialization.dll": {},
+          "lib/netstandard2.0/System.Xml.XDocument.dll": {},
+          "lib/netstandard2.0/System.Xml.XPath.XDocument.dll": {},
+          "lib/netstandard2.0/System.Xml.XPath.dll": {},
+          "lib/netstandard2.0/System.Xml.XmlDocument.dll": {},
+          "lib/netstandard2.0/System.Xml.XmlSerializer.dll": {},
+          "lib/netstandard2.0/System.Xml.dll": {},
+          "lib/netstandard2.0/System.dll": {},
+          "lib/netstandard2.0/mscorlib.dll": {},
+          "lib/netstandard2.0/netstandard.dll": {}
+        }
+      },
+      "SharpPcap/4.6.1": {
+        "type": "package",
+        "dependencies": {
+          "PacketDotNet": "0.18.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/SharpPcap.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/SharpPcap.dll": {}
+        }
+      },
+      "SharpZipLib/1.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/net45/ICSharpCode.SharpZipLib.dll": {}
+        },
+        "runtime": {
+          "lib/net45/ICSharpCode.SharpZipLib.dll": {}
+        }
+      },
+      "System.Buffers/4.5.1": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net45/System.Buffers.dll": {}
+        },
+        "runtime": {
+          "lib/net461/System.Buffers.dll": {}
+        }
+      },
+      "System.Drawing.Common/4.7.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System",
+          "System.Drawing",
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net461/System.Drawing.Common.dll": {}
+        },
+        "runtime": {
+          "lib/net461/System.Drawing.Common.dll": {}
+        }
+      },
+      "System.Memory/4.5.4": {
+        "type": "package",
+        "dependencies": {
+          "System.Buffers": "4.5.1",
+          "System.Numerics.Vectors": "4.5.0",
+          "System.Runtime.CompilerServices.Unsafe": "4.5.3"
+        },
+        "frameworkAssemblies": [
+          "System",
+          "mscorlib"
+        ],
+        "compile": {
+          "lib/net461/System.Memory.dll": {}
+        },
+        "runtime": {
+          "lib/net461/System.Memory.dll": {}
+        }
+      },
+      "System.Numerics.Vectors/4.5.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.Numerics",
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net46/System.Numerics.Vectors.dll": {}
+        },
+        "runtime": {
+          "lib/net46/System.Numerics.Vectors.dll": {}
+        }
+      },
+      "System.Runtime.CompilerServices.Unsafe/4.7.1": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net461/System.Runtime.CompilerServices.Unsafe.dll": {}
+        },
+        "runtime": {
+          "lib/net461/System.Runtime.CompilerServices.Unsafe.dll": {}
+        }
+      },
+      "JpegRecoveryLibrary/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "MathNet.Numerics": "4.12.0",
+          "Newtonsoft.Json": "12.0.3",
+          "System.Drawing.Common": "4.7.0",
+          "packetnet-connections": "1.2.0"
+        },
+        "compile": {
+          "bin/placeholder/JpegRecoveryLibrary.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/JpegRecoveryLibrary.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "log4net/2.0.8": {
+      "sha512": "N41MQGHZImiCfn0cUuSBjZxrcNfIQCuCgQP0rpgB3J/NWponEh3lc1LxJEuIsPAR9Oc1jVvfkNNFCY1C5hf9LA==",
+      "type": "package",
+      "path": "log4net/2.0.8",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net20-full/log4net.dll",
+        "lib/net20-full/log4net.xml",
+        "lib/net35-client/log4net.dll",
+        "lib/net35-client/log4net.xml",
+        "lib/net35-full/log4net.dll",
+        "lib/net35-full/log4net.xml",
+        "lib/net40-client/log4net.dll",
+        "lib/net40-client/log4net.xml",
+        "lib/net40-full/log4net.dll",
+        "lib/net40-full/log4net.xml",
+        "lib/net45-full/log4net.dll",
+        "lib/net45-full/log4net.xml",
+        "lib/netstandard1.3/log4net.dll",
+        "log4net.2.0.8.nupkg.sha512",
+        "log4net.nuspec"
+      ]
+    },
+    "MathNet.Numerics/4.12.0": {
+      "sha512": "U6R74mc1PHD3HbbevY5Z6AS07toye0PBooKPpCyD9sCc5HDPlRl+lmiWl+zy8L7IEHIH0Bvkx1sVqBY++5X5eA==",
+      "type": "package",
+      "path": "mathnet.numerics/4.12.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "icon.png",
+        "lib/net40/MathNet.Numerics.dll",
+        "lib/net40/MathNet.Numerics.xml",
+        "lib/net461/MathNet.Numerics.dll",
+        "lib/net461/MathNet.Numerics.xml",
+        "lib/netstandard1.3/MathNet.Numerics.dll",
+        "lib/netstandard1.3/MathNet.Numerics.xml",
+        "lib/netstandard2.0/MathNet.Numerics.dll",
+        "lib/netstandard2.0/MathNet.Numerics.xml",
+        "mathnet.numerics.4.12.0.nupkg.sha512",
+        "mathnet.numerics.nuspec"
+      ]
+    },
+    "Newtonsoft.Json/12.0.3": {
+      "sha512": "6mgjfnRB4jKMlzHSl+VD+oUc1IebOZabkbyWj2RiTgWwYPPuaK1H97G1sHqGwPlS5npiF5Q0OrxN1wni2n5QWg==",
+      "type": "package",
+      "path": "newtonsoft.json/12.0.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "lib/net20/Newtonsoft.Json.dll",
+        "lib/net20/Newtonsoft.Json.xml",
+        "lib/net35/Newtonsoft.Json.dll",
+        "lib/net35/Newtonsoft.Json.xml",
+        "lib/net40/Newtonsoft.Json.dll",
+        "lib/net40/Newtonsoft.Json.xml",
+        "lib/net45/Newtonsoft.Json.dll",
+        "lib/net45/Newtonsoft.Json.xml",
+        "lib/netstandard1.0/Newtonsoft.Json.dll",
+        "lib/netstandard1.0/Newtonsoft.Json.xml",
+        "lib/netstandard1.3/Newtonsoft.Json.dll",
+        "lib/netstandard1.3/Newtonsoft.Json.xml",
+        "lib/netstandard2.0/Newtonsoft.Json.dll",
+        "lib/netstandard2.0/Newtonsoft.Json.xml",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.dll",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.xml",
+        "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.dll",
+        "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.xml",
+        "newtonsoft.json.12.0.3.nupkg.sha512",
+        "newtonsoft.json.nuspec",
+        "packageIcon.png"
+      ]
+    },
+    "PacketDotNet/1.0.1": {
+      "sha512": "5DPDbVW+9FSl4L/WLQ4iLxPMeDXw2IxHgOEzVSKYlhaLXc67+/bT7uq4qroTIOj2ysCKY9rBujz0juLCHwFa5g==",
+      "type": "package",
+      "path": "packetdotnet/1.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/PacketDotNet.dll",
+        "lib/netstandard2.0/PacketDotNet.dll",
+        "packetdotnet.1.0.1.nupkg.sha512",
+        "packetdotnet.nuspec"
+      ]
+    },
+    "packetnet-connections/1.2.0": {
+      "sha512": "8rZbS9RVJh4B3wsd6QtrgLGy930eeTLThP6YX1sa/QpEwmH79ZlUPx/E8p+BKauri1yGFyeGy/mBv8QjP2Foww==",
+      "type": "package",
+      "path": "packetnet-connections/1.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Microsoft.Win32.Primitives.dll",
+        "lib/netstandard2.0/PacketDotNetConnections.dll",
+        "lib/netstandard2.0/PacketDotNetConnections.pdb",
+        "lib/netstandard2.0/System.AppContext.dll",
+        "lib/netstandard2.0/System.Collections.Concurrent.dll",
+        "lib/netstandard2.0/System.Collections.NonGeneric.dll",
+        "lib/netstandard2.0/System.Collections.Specialized.dll",
+        "lib/netstandard2.0/System.Collections.dll",
+        "lib/netstandard2.0/System.ComponentModel.Composition.dll",
+        "lib/netstandard2.0/System.ComponentModel.EventBasedAsync.dll",
+        "lib/netstandard2.0/System.ComponentModel.Primitives.dll",
+        "lib/netstandard2.0/System.ComponentModel.TypeConverter.dll",
+        "lib/netstandard2.0/System.ComponentModel.dll",
+        "lib/netstandard2.0/System.Console.dll",
+        "lib/netstandard2.0/System.Core.dll",
+        "lib/netstandard2.0/System.Data.Common.dll",
+        "lib/netstandard2.0/System.Data.dll",
+        "lib/netstandard2.0/System.Diagnostics.Contracts.dll",
+        "lib/netstandard2.0/System.Diagnostics.Debug.dll",
+        "lib/netstandard2.0/System.Diagnostics.FileVersionInfo.dll",
+        "lib/netstandard2.0/System.Diagnostics.Process.dll",
+        "lib/netstandard2.0/System.Diagnostics.StackTrace.dll",
+        "lib/netstandard2.0/System.Diagnostics.TextWriterTraceListener.dll",
+        "lib/netstandard2.0/System.Diagnostics.Tools.dll",
+        "lib/netstandard2.0/System.Diagnostics.TraceSource.dll",
+        "lib/netstandard2.0/System.Diagnostics.Tracing.dll",
+        "lib/netstandard2.0/System.Drawing.Primitives.dll",
+        "lib/netstandard2.0/System.Drawing.dll",
+        "lib/netstandard2.0/System.Dynamic.Runtime.dll",
+        "lib/netstandard2.0/System.Globalization.Calendars.dll",
+        "lib/netstandard2.0/System.Globalization.Extensions.dll",
+        "lib/netstandard2.0/System.Globalization.dll",
+        "lib/netstandard2.0/System.IO.Compression.FileSystem.dll",
+        "lib/netstandard2.0/System.IO.Compression.ZipFile.dll",
+        "lib/netstandard2.0/System.IO.Compression.dll",
+        "lib/netstandard2.0/System.IO.FileSystem.DriveInfo.dll",
+        "lib/netstandard2.0/System.IO.FileSystem.Primitives.dll",
+        "lib/netstandard2.0/System.IO.FileSystem.Watcher.dll",
+        "lib/netstandard2.0/System.IO.FileSystem.dll",
+        "lib/netstandard2.0/System.IO.IsolatedStorage.dll",
+        "lib/netstandard2.0/System.IO.MemoryMappedFiles.dll",
+        "lib/netstandard2.0/System.IO.Pipes.dll",
+        "lib/netstandard2.0/System.IO.UnmanagedMemoryStream.dll",
+        "lib/netstandard2.0/System.IO.dll",
+        "lib/netstandard2.0/System.Linq.Expressions.dll",
+        "lib/netstandard2.0/System.Linq.Parallel.dll",
+        "lib/netstandard2.0/System.Linq.Queryable.dll",
+        "lib/netstandard2.0/System.Linq.dll",
+        "lib/netstandard2.0/System.Net.Http.dll",
+        "lib/netstandard2.0/System.Net.NameResolution.dll",
+        "lib/netstandard2.0/System.Net.NetworkInformation.dll",
+        "lib/netstandard2.0/System.Net.Ping.dll",
+        "lib/netstandard2.0/System.Net.Primitives.dll",
+        "lib/netstandard2.0/System.Net.Requests.dll",
+        "lib/netstandard2.0/System.Net.Security.dll",
+        "lib/netstandard2.0/System.Net.Sockets.dll",
+        "lib/netstandard2.0/System.Net.WebHeaderCollection.dll",
+        "lib/netstandard2.0/System.Net.WebSockets.Client.dll",
+        "lib/netstandard2.0/System.Net.WebSockets.dll",
+        "lib/netstandard2.0/System.Net.dll",
+        "lib/netstandard2.0/System.Numerics.dll",
+        "lib/netstandard2.0/System.ObjectModel.dll",
+        "lib/netstandard2.0/System.Reflection.Extensions.dll",
+        "lib/netstandard2.0/System.Reflection.Primitives.dll",
+        "lib/netstandard2.0/System.Reflection.dll",
+        "lib/netstandard2.0/System.Resources.Reader.dll",
+        "lib/netstandard2.0/System.Resources.ResourceManager.dll",
+        "lib/netstandard2.0/System.Resources.Writer.dll",
+        "lib/netstandard2.0/System.Runtime.CompilerServices.VisualC.dll",
+        "lib/netstandard2.0/System.Runtime.Extensions.dll",
+        "lib/netstandard2.0/System.Runtime.Handles.dll",
+        "lib/netstandard2.0/System.Runtime.InteropServices.RuntimeInformation.dll",
+        "lib/netstandard2.0/System.Runtime.InteropServices.dll",
+        "lib/netstandard2.0/System.Runtime.Numerics.dll",
+        "lib/netstandard2.0/System.Runtime.Serialization.Formatters.dll",
+        "lib/netstandard2.0/System.Runtime.Serialization.Json.dll",
+        "lib/netstandard2.0/System.Runtime.Serialization.Primitives.dll",
+        "lib/netstandard2.0/System.Runtime.Serialization.Xml.dll",
+        "lib/netstandard2.0/System.Runtime.Serialization.dll",
+        "lib/netstandard2.0/System.Runtime.dll",
+        "lib/netstandard2.0/System.Security.Claims.dll",
+        "lib/netstandard2.0/System.Security.Cryptography.Algorithms.dll",
+        "lib/netstandard2.0/System.Security.Cryptography.Csp.dll",
+        "lib/netstandard2.0/System.Security.Cryptography.Encoding.dll",
+        "lib/netstandard2.0/System.Security.Cryptography.Primitives.dll",
+        "lib/netstandard2.0/System.Security.Cryptography.X509Certificates.dll",
+        "lib/netstandard2.0/System.Security.Principal.dll",
+        "lib/netstandard2.0/System.Security.SecureString.dll",
+        "lib/netstandard2.0/System.ServiceModel.Web.dll",
+        "lib/netstandard2.0/System.Text.Encoding.Extensions.dll",
+        "lib/netstandard2.0/System.Text.Encoding.dll",
+        "lib/netstandard2.0/System.Text.RegularExpressions.dll",
+        "lib/netstandard2.0/System.Threading.Overlapped.dll",
+        "lib/netstandard2.0/System.Threading.Tasks.Parallel.dll",
+        "lib/netstandard2.0/System.Threading.Tasks.dll",
+        "lib/netstandard2.0/System.Threading.Thread.dll",
+        "lib/netstandard2.0/System.Threading.ThreadPool.dll",
+        "lib/netstandard2.0/System.Threading.Timer.dll",
+        "lib/netstandard2.0/System.Threading.dll",
+        "lib/netstandard2.0/System.Transactions.dll",
+        "lib/netstandard2.0/System.ValueTuple.dll",
+        "lib/netstandard2.0/System.Web.dll",
+        "lib/netstandard2.0/System.Windows.dll",
+        "lib/netstandard2.0/System.Xml.Linq.dll",
+        "lib/netstandard2.0/System.Xml.ReaderWriter.dll",
+        "lib/netstandard2.0/System.Xml.Serialization.dll",
+        "lib/netstandard2.0/System.Xml.XDocument.dll",
+        "lib/netstandard2.0/System.Xml.XPath.XDocument.dll",
+        "lib/netstandard2.0/System.Xml.XPath.dll",
+        "lib/netstandard2.0/System.Xml.XmlDocument.dll",
+        "lib/netstandard2.0/System.Xml.XmlSerializer.dll",
+        "lib/netstandard2.0/System.Xml.dll",
+        "lib/netstandard2.0/System.dll",
+        "lib/netstandard2.0/mscorlib.dll",
+        "lib/netstandard2.0/netstandard.dll",
+        "packetnet-connections.1.2.0.nupkg.sha512",
+        "packetnet-connections.nuspec"
+      ]
+    },
+    "SharpPcap/4.6.1": {
+      "sha512": "+Koy1nWgRiGqFpB89woVtr+D0yBf6FTb/6vG1VFrQZo8+LzmAszGaM2lmUlHEg8hQ3QKJt9ALt0Dh81/SVmG4A==",
+      "type": "package",
+      "path": "sharppcap/4.6.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/SharpPcap.dll",
+        "sharppcap.4.6.1.nupkg.sha512",
+        "sharppcap.nuspec"
+      ]
+    },
+    "SharpZipLib/1.1.0": {
+      "sha512": "6cwSz51tzupsfb8q5AVRDqvD4vSeDDJuv3CYWCvQ+T3wrAjQtniICiczb+++j93z3NNuCZN+TiRjZ5lnfWtleQ==",
+      "type": "package",
+      "path": "sharpziplib/1.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/ICSharpCode.SharpZipLib.dll",
+        "lib/net45/ICSharpCode.SharpZipLib.pdb",
+        "lib/net45/ICSharpCode.SharpZipLib.xml",
+        "lib/netstandard2.0/ICSharpCode.SharpZipLib.dll",
+        "lib/netstandard2.0/ICSharpCode.SharpZipLib.pdb",
+        "lib/netstandard2.0/ICSharpCode.SharpZipLib.xml",
+        "sharpziplib.1.1.0.nupkg.sha512",
+        "sharpziplib.nuspec"
+      ]
+    },
+    "System.Buffers/4.5.1": {
+      "sha512": "Rw7ijyl1qqRS0YQD/WycNst8hUUMgrMH4FCn1nNm27M4VxchZ1js3fVjQaANHO5f3sN4isvP4a+Met9Y4YomAg==",
+      "type": "package",
+      "path": "system.buffers/4.5.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/System.Buffers.dll",
+        "lib/net461/System.Buffers.xml",
+        "lib/netcoreapp2.0/_._",
+        "lib/netstandard1.1/System.Buffers.dll",
+        "lib/netstandard1.1/System.Buffers.xml",
+        "lib/netstandard2.0/System.Buffers.dll",
+        "lib/netstandard2.0/System.Buffers.xml",
+        "lib/uap10.0.16299/_._",
+        "ref/net45/System.Buffers.dll",
+        "ref/net45/System.Buffers.xml",
+        "ref/netcoreapp2.0/_._",
+        "ref/netstandard1.1/System.Buffers.dll",
+        "ref/netstandard1.1/System.Buffers.xml",
+        "ref/netstandard2.0/System.Buffers.dll",
+        "ref/netstandard2.0/System.Buffers.xml",
+        "ref/uap10.0.16299/_._",
+        "system.buffers.4.5.1.nupkg.sha512",
+        "system.buffers.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.Drawing.Common/4.7.0": {
+      "sha512": "v+XbyYHaZjDfn0ENmJEV1VYLgGgCTx1gnfOBcppowbpOAriglYgGCvFCPr2EEZyBvXlpxbEsTwkOlInl107ahA==",
+      "type": "package",
+      "path": "system.drawing.common/4.7.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net461/System.Drawing.Common.dll",
+        "lib/netstandard2.0/System.Drawing.Common.dll",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net461/System.Drawing.Common.dll",
+        "ref/netcoreapp3.0/System.Drawing.Common.dll",
+        "ref/netcoreapp3.0/System.Drawing.Common.xml",
+        "ref/netstandard2.0/System.Drawing.Common.dll",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "runtimes/unix/lib/netcoreapp2.0/System.Drawing.Common.dll",
+        "runtimes/unix/lib/netcoreapp3.0/System.Drawing.Common.dll",
+        "runtimes/unix/lib/netcoreapp3.0/System.Drawing.Common.xml",
+        "runtimes/win/lib/netcoreapp2.0/System.Drawing.Common.dll",
+        "runtimes/win/lib/netcoreapp3.0/System.Drawing.Common.dll",
+        "runtimes/win/lib/netcoreapp3.0/System.Drawing.Common.xml",
+        "system.drawing.common.4.7.0.nupkg.sha512",
+        "system.drawing.common.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.Memory/4.5.4": {
+      "sha512": "1MbJTHS1lZ4bS4FmsJjnuGJOu88ZzTT2rLvrhW7Ygic+pC0NWA+3hgAen0HRdsocuQXCkUTdFn9yHJJhsijDXw==",
+      "type": "package",
+      "path": "system.memory/4.5.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/System.Memory.dll",
+        "lib/net461/System.Memory.xml",
+        "lib/netcoreapp2.1/_._",
+        "lib/netstandard1.1/System.Memory.dll",
+        "lib/netstandard1.1/System.Memory.xml",
+        "lib/netstandard2.0/System.Memory.dll",
+        "lib/netstandard2.0/System.Memory.xml",
+        "ref/netcoreapp2.1/_._",
+        "system.memory.4.5.4.nupkg.sha512",
+        "system.memory.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.Numerics.Vectors/4.5.0": {
+      "sha512": "QQTlPTl06J/iiDbJCiepZ4H//BVraReU4O4EoRw1U02H5TLUIT7xn3GnDp9AXPSlJUDyFs4uWjWafNX6WrAojQ==",
+      "type": "package",
+      "path": "system.numerics.vectors/4.5.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net46/System.Numerics.Vectors.dll",
+        "lib/net46/System.Numerics.Vectors.xml",
+        "lib/netcoreapp2.0/_._",
+        "lib/netstandard1.0/System.Numerics.Vectors.dll",
+        "lib/netstandard1.0/System.Numerics.Vectors.xml",
+        "lib/netstandard2.0/System.Numerics.Vectors.dll",
+        "lib/netstandard2.0/System.Numerics.Vectors.xml",
+        "lib/portable-net45+win8+wp8+wpa81/System.Numerics.Vectors.dll",
+        "lib/portable-net45+win8+wp8+wpa81/System.Numerics.Vectors.xml",
+        "lib/uap10.0.16299/_._",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net45/System.Numerics.Vectors.dll",
+        "ref/net45/System.Numerics.Vectors.xml",
+        "ref/net46/System.Numerics.Vectors.dll",
+        "ref/net46/System.Numerics.Vectors.xml",
+        "ref/netcoreapp2.0/_._",
+        "ref/netstandard1.0/System.Numerics.Vectors.dll",
+        "ref/netstandard1.0/System.Numerics.Vectors.xml",
+        "ref/netstandard2.0/System.Numerics.Vectors.dll",
+        "ref/netstandard2.0/System.Numerics.Vectors.xml",
+        "ref/uap10.0.16299/_._",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "system.numerics.vectors.4.5.0.nupkg.sha512",
+        "system.numerics.vectors.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.Runtime.CompilerServices.Unsafe/4.7.1": {
+      "sha512": "zOHkQmzPCn5zm/BH+cxC1XbUS3P4Yoi3xzW7eRgVpDR2tPGSzyMZ17Ig1iRkfJuY0nhxkQQde8pgePNiA7z7TQ==",
+      "type": "package",
+      "path": "system.runtime.compilerservices.unsafe/4.7.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/net461/System.Runtime.CompilerServices.Unsafe.xml",
+        "lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "lib/netstandard1.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/netstandard1.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "ref/net461/System.Runtime.CompilerServices.Unsafe.dll",
+        "ref/net461/System.Runtime.CompilerServices.Unsafe.xml",
+        "ref/netstandard1.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "ref/netstandard1.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "system.runtime.compilerservices.unsafe.4.7.1.nupkg.sha512",
+        "system.runtime.compilerservices.unsafe.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "JpegRecoveryLibrary/1.0.0": {
+      "type": "project",
+      "path": "../JpegRecoveryLibrary/JpegRecoveryLibrary.csproj",
+      "msbuildProject": "../JpegRecoveryLibrary/JpegRecoveryLibrary.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETFramework,Version=v4.7.2": [
+      "JpegRecoveryLibrary >= 1.0.0",
+      "MathNet.Numerics >= 4.12.0",
+      "Newtonsoft.Json >= 12.0.3",
+      "System.Memory >= 4.5.4",
+      "System.Runtime.CompilerServices.Unsafe >= 4.7.1"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Ahmad\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "G:\\HBKU\\QCRIInternship\\Code\\jpgscraper-master\\jpeg-carver-csharp-source\\src\\JpegRecovery\\JpegRecoveryCLI.csproj",
+      "projectName": "JpegRecoveryCLI",
+      "projectPath": "G:\\HBKU\\QCRIInternship\\Code\\jpgscraper-master\\jpeg-carver-csharp-source\\src\\JpegRecovery\\JpegRecoveryCLI.csproj",
+      "packagesPath": "C:\\Users\\Ahmad\\.nuget\\packages\\",
+      "outputPath": "G:\\HBKU\\QCRIInternship\\Code\\jpgscraper-master\\jpeg-carver-csharp-source\\src\\JpegRecovery\\obj\\",
+      "projectStyle": "PackageReference",
+      "skipContentFileWrite": true,
+      "configFilePaths": [
+        "C:\\Users\\Ahmad\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net472"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net472": {
+          "projectReferences": {
+            "G:\\HBKU\\QCRIInternship\\Code\\jpgscraper-master\\jpeg-carver-csharp-source\\src\\JpegRecoveryLibrary\\JpegRecoveryLibrary.csproj": {
+              "projectPath": "G:\\HBKU\\QCRIInternship\\Code\\jpgscraper-master\\jpeg-carver-csharp-source\\src\\JpegRecoveryLibrary\\JpegRecoveryLibrary.csproj"
+            }
+          }
+        }
+      }
+    },
+    "frameworks": {
+      "net472": {
+        "dependencies": {
+          "MathNet.Numerics": {
+            "target": "Package",
+            "version": "[4.12.0, )"
+          },
+          "Newtonsoft.Json": {
+            "target": "Package",
+            "version": "[12.0.3, )"
+          },
+          "System.Memory": {
+            "target": "Package",
+            "version": "[4.5.4, )"
+          },
+          "System.Runtime.CompilerServices.Unsafe": {
+            "target": "Package",
+            "version": "[4.7.1, )"
+          }
+        }
+      }
+    },
+    "runtimes": {
+      "win": {
+        "#import": []
+      },
+      "win-x64": {
+        "#import": []
+      },
+      "win-x86": {
+        "#import": []
+      }
+    }
+  }
+}

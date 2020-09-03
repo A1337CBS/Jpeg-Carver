@@ -224,5 +224,37 @@ namespace JpegRecoveryLibrary
 
             return Tuple.Create(outFile, "Success");
         }
+
+        /*
+         *Procedure 4 - Check if file fragment contains jpeg
+         * 
+         */
+        public Tuple<String, String> procedure_4(String rawPath)
+        {
+            String outFile = "" + rawPath;
+            Console.WriteLine("Running Procedure 4");
+            if (!File.Exists(rawPath))
+            {
+                String msg = "Error - File does not exists.";
+                return Tuple.Create(outFile, msg);
+            }
+            Stopwatch watch = Stopwatch.StartNew();
+          
+            //Check if file is jpeg or not
+            FileStream tempFileStream = new FileStream(rawPath, FileMode.Open);
+
+            bool isJpeg = preCheck.isJpeg(tempFileStream);
+
+            tempFileStream.Close();
+
+            if (isJpeg) {
+                return Tuple.Create(outFile, "File fragment contains jpeg");
+            }
+
+
+            return Tuple.Create(outFile, "Does not seem to contain Jpeg");
+        }
+
+
     }
 }

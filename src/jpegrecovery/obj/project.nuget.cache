@@ -1,0 +1,21 @@
+{
+  "version": 2,
+  "dgSpecHash": "QunxtU3bMVKCAT8eH4xZvQ0AKPOpiN4uqMCL/w98kjfCPFlH/TQ/+fa23R7okz7Crmwy/HuEBQwlkBuoTeowSg==",
+  "success": true,
+  "projectFilePath": "G:\\HBKU\\QCRIInternship\\Code\\jpgscraper-master\\jpeg-carver-csharp-source\\src\\JpegRecovery\\JpegRecoveryCLI.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Ahmad\\.nuget\\packages\\log4net\\2.0.8\\log4net.2.0.8.nupkg.sha512",
+    "C:\\Users\\Ahmad\\.nuget\\packages\\mathnet.numerics\\4.12.0\\mathnet.numerics.4.12.0.nupkg.sha512",
+    "C:\\Users\\Ahmad\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\Ahmad\\.nuget\\packages\\packetdotnet\\1.0.1\\packetdotnet.1.0.1.nupkg.sha512",
+    "C:\\Users\\Ahmad\\.nuget\\packages\\packetnet-connections\\1.2.0\\packetnet-connections.1.2.0.nupkg.sha512",
+    "C:\\Users\\Ahmad\\.nuget\\packages\\sharppcap\\4.6.1\\sharppcap.4.6.1.nupkg.sha512",
+    "C:\\Users\\Ahmad\\.nuget\\packages\\sharpziplib\\1.1.0\\sharpziplib.1.1.0.nupkg.sha512",
+    "C:\\Users\\Ahmad\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
+    "C:\\Users\\Ahmad\\.nuget\\packages\\system.drawing.common\\4.7.0\\system.drawing.common.4.7.0.nupkg.sha512",
+    "C:\\Users\\Ahmad\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
+    "C:\\Users\\Ahmad\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\Ahmad\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.7.1\\system.runtime.compilerservices.unsafe.4.7.1.nupkg.sha512"
+  ],
+  "logs": []
+}

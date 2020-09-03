@@ -41,6 +41,7 @@
 						<ComboBoxItem>Jpeg carving(Single image)</ComboBoxItem>
 						<ComboBoxItem>Storage carving</ComboBoxItem>
 						<ComboBoxItem>Packet carving</ComboBoxItem>
+						<ComboBoxItem>Check if file fragment contains Jpeg</ComboBoxItem>
 					</ComboBox>
 
 

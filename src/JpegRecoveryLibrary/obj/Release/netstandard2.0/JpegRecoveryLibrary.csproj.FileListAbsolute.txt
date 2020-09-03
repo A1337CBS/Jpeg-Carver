@@ -6,3 +6,12 @@ G:\HBKU\QCRIInternship\Code\jpgscraper-master\jpeg-carver-csharp-source\JpegReco
 G:\HBKU\QCRIInternship\Code\jpgscraper-master\jpeg-carver-csharp-source\JpegRecoveryLibrary\obj\Release\netstandard2.0\JpegRecoveryLibrary.csproj.CoreCompileInputs.cache
 G:\HBKU\QCRIInternship\Code\jpgscraper-master\jpeg-carver-csharp-source\JpegRecoveryLibrary\obj\Release\netstandard2.0\JpegRecoveryLibrary.dll
 G:\HBKU\QCRIInternship\Code\jpgscraper-master\jpeg-carver-csharp-source\JpegRecoveryLibrary\obj\Release\netstandard2.0\JpegRecoveryLibrary.pdb
+G:\HBKU\QCRIInternship\Code\jpgscraper-master\jpeg-carver-csharp-source\src\JpegRecoveryLibrary\bin\Release\netstandard2.0\JpegRecoveryLibrary.deps.json
+G:\HBKU\QCRIInternship\Code\jpgscraper-master\jpeg-carver-csharp-source\src\JpegRecoveryLibrary\bin\Release\netstandard2.0\JpegRecoveryLibrary.dll
+G:\HBKU\QCRIInternship\Code\jpgscraper-master\jpeg-carver-csharp-source\src\JpegRecoveryLibrary\bin\Release\netstandard2.0\JpegRecoveryLibrary.pdb
+G:\HBKU\QCRIInternship\Code\jpgscraper-master\jpeg-carver-csharp-source\src\JpegRecoveryLibrary\obj\Release\netstandard2.0\JpegRecoveryLibrary.AssemblyInfoInputs.cache
+G:\HBKU\QCRIInternship\Code\jpgscraper-master\jpeg-carver-csharp-source\src\JpegRecoveryLibrary\obj\Release\netstandard2.0\JpegRecoveryLibrary.AssemblyInfo.cs
+G:\HBKU\QCRIInternship\Code\jpgscraper-master\jpeg-carver-csharp-source\src\JpegRecoveryLibrary\obj\Release\netstandard2.0\JpegRecoveryLibrary.csproj.CoreCompileInputs.cache
+G:\HBKU\QCRIInternship\Code\jpgscraper-master\jpeg-carver-csharp-source\src\JpegRecoveryLibrary\obj\Release\netstandard2.0\JpegRecoveryLibrary.dll
+G:\HBKU\QCRIInternship\Code\jpgscraper-master\jpeg-carver-csharp-source\src\JpegRecoveryLibrary\obj\Release\netstandard2.0\JpegRecoveryLibrary.pdb
+G:\HBKU\QCRIInternship\Code\jpgscraper-master\jpeg-carver-csharp-source\src\JpegRecoveryLibrary\obj\Release\netstandard2.0\JpegRecoveryLibrary.csprojAssemblyReference.cache
