@@ -9,10 +9,10 @@ JpgScraper: An Advanced Carver for Baseline JPEG Files
 
 ## Features
 * Four modes of operation:  </br>
-&ensp; 1) Single image carving from fragment of jpeg
-&ensp; 2) Storage carving of files recovered from media
-&ensp; 3) Network packets carving
-&ensp; 4) Check if an image fragment is jpeg or not
+&ensp; 1) Single image carving from fragment of jpeg <br />
+&ensp; 2) Storage carving of files recovered from media <br />
+&ensp; 3) Network packets carving <br />
+&ensp; 4) Check if an image fragment is jpeg or not <br />
 
 * Extracts huffman tables if available in file fragment and saves it for future use.
 
