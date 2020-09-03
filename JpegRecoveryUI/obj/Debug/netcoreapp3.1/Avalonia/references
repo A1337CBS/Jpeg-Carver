@@ -24,9 +24,11 @@ C:\Users\Ahmad\.nuget\packages\avalonia\0.9.10\lib\netcoreapp2.0\Avalonia.Themes
 C:\Users\Ahmad\.nuget\packages\avalonia\0.9.10\lib\netcoreapp2.0\Avalonia.Visuals.dll
 C:\Users\Ahmad\.nuget\packages\avalonia.win32\0.9.10\lib\netstandard2.0\Avalonia.Win32.dll
 C:\Users\Ahmad\.nuget\packages\avalonia.x11\0.9.10\lib\netstandard2.0\Avalonia.X11.dll
+C:\Users\Ahmad\.nuget\packages\sharpziplib\1.1.0\lib\netstandard2.0\ICSharpCode.SharpZipLib.dll
 C:\Users\Ahmad\.nuget\packages\jetbrains.annotations\10.3.0\lib\netstandard1.0\JetBrains.Annotations.dll
 G:\HBKU\QCRIInternship\Code\jpgscraper-master\jpeg-carver-csharp-source\JpegRecoveryLibrary\bin\Debug\netstandard2.0\JpegRecoveryLibrary.dll
-C:\Users\Ahmad\.nuget\packages\mathnet.numerics\4.11.0\lib\netstandard2.0\MathNet.Numerics.dll
+C:\Users\Ahmad\.nuget\packages\log4net\2.0.8\lib\netstandard1.3\log4net.dll
+C:\Users\Ahmad\.nuget\packages\mathnet.numerics\4.12.0\lib\netstandard2.0\MathNet.Numerics.dll
 C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\3.1.0\ref\netcoreapp3.1\Microsoft.CSharp.dll
 C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\3.1.0\ref\netcoreapp3.1\Microsoft.VisualBasic.Core.dll
 C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\3.1.0\ref\netcoreapp3.1\Microsoft.VisualBasic.dll
@@ -34,6 +36,8 @@ C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\3.1.0\ref\netcoreapp3.1\
 C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\3.1.0\ref\netcoreapp3.1\mscorlib.dll
 C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\3.1.0\ref\netcoreapp3.1\netstandard.dll
 C:\Users\Ahmad\.nuget\packages\newtonsoft.json\12.0.3\lib\netstandard2.0\Newtonsoft.Json.dll
+C:\Users\Ahmad\.nuget\packages\packetdotnet\1.0.1\lib\netstandard2.0\PacketDotNet.dll
+C:\Users\Ahmad\.nuget\packages\packetnet-connections\1.2.0\lib\netstandard2.0\PacketDotNetConnections.dll
 C:\Users\Ahmad\.nuget\packages\serilog\2.5.0\lib\netstandard1.3\Serilog.dll
 C:\Users\Ahmad\.nuget\packages\serilog.sinks.debug\1.0.0\lib\netstandard1.0\Serilog.Sinks.Debug.dll
 C:\Users\Ahmad\.nuget\packages\serilog.sinks.trace\2.1.0\lib\netstandard1.3\Serilog.Sinks.Trace.dll
@@ -43,6 +47,7 @@ C:\Users\Ahmad\.nuget\packages\sharpdx\4.0.1\lib\netcoreapp1.0\SharpDX.dll
 C:\Users\Ahmad\.nuget\packages\sharpdx.dxgi\4.0.1\lib\netcoreapp1.0\SharpDX.DXGI.dll
 C:\Users\Ahmad\.nuget\packages\sharpgen.runtime.com\1.2.0\lib\netstandard1.1\SharpGen.Runtime.COM.dll
 C:\Users\Ahmad\.nuget\packages\sharpgen.runtime\1.2.1\lib\netstandard2.0\SharpGen.Runtime.dll
+C:\Users\Ahmad\.nuget\packages\sharppcap\4.6.1\lib\netstandard2.0\SharpPcap.dll
 C:\Users\Ahmad\.nuget\packages\skiasharp\1.68.0\lib\netstandard1.3\SkiaSharp.dll
 C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\3.1.0\ref\netcoreapp3.1\System.AppContext.dll
 C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\3.1.0\ref\netcoreapp3.1\System.Buffers.dll
@@ -52,6 +57,7 @@ C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\3.1.0\ref\netcoreapp3.1\
 C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\3.1.0\ref\netcoreapp3.1\System.Collections.NonGeneric.dll
 C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\3.1.0\ref\netcoreapp3.1\System.Collections.Specialized.dll
 C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\3.1.0\ref\netcoreapp3.1\System.ComponentModel.Annotations.dll
+C:\Users\Ahmad\.nuget\packages\packetnet-connections\1.2.0\lib\netstandard2.0\System.ComponentModel.Composition.dll
 C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\3.1.0\ref\netcoreapp3.1\System.ComponentModel.DataAnnotations.dll
 C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\3.1.0\ref\netcoreapp3.1\System.ComponentModel.dll
 C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\3.1.0\ref\netcoreapp3.1\System.ComponentModel.EventBasedAsync.dll
