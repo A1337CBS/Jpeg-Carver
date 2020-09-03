@@ -25,6 +25,9 @@ This project was tested on Windows 10 and has two parts, a CLI program (mostly f
 * Click on run
 * Enjoy the results!
 
+## Sample data
+The sampleData folder contains an image fragment that can be used in Jpeg Carving(Single image)) mode. For more data try DFRWS 2007 dataset for storage carving or getting network packets with jpeg images. Currently the tool only supports baseline jpeg images.
+
 
 ## For developers
 The project was build using Visual Studio 2019 and Windows 10.
