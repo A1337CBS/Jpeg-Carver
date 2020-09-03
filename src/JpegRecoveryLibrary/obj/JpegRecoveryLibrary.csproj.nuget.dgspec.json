@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "G:\\HBKU\\QCRIInternship\\Code\\jpgscraper-master\\jpeg-carver-csharp-source\\JpegRecoveryLibrary\\JpegRecoveryLibrary.csproj": {}
+    "G:\\HBKU\\QCRIInternship\\Code\\jpgscraper-master\\jpeg-carver-csharp-source\\src\\JpegRecoveryLibrary\\JpegRecoveryLibrary.csproj": {}
   },
   "projects": {
-    "G:\\HBKU\\QCRIInternship\\Code\\jpgscraper-master\\jpeg-carver-csharp-source\\JpegRecoveryLibrary\\JpegRecoveryLibrary.csproj": {
+    "G:\\HBKU\\QCRIInternship\\Code\\jpgscraper-master\\jpeg-carver-csharp-source\\src\\JpegRecoveryLibrary\\JpegRecoveryLibrary.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\HBKU\\QCRIInternship\\Code\\jpgscraper-master\\jpeg-carver-csharp-source\\JpegRecoveryLibrary\\JpegRecoveryLibrary.csproj",
+        "projectUniqueName": "G:\\HBKU\\QCRIInternship\\Code\\jpgscraper-master\\jpeg-carver-csharp-source\\src\\JpegRecoveryLibrary\\JpegRecoveryLibrary.csproj",
         "projectName": "JpegRecoveryLibrary",
-        "projectPath": "G:\\HBKU\\QCRIInternship\\Code\\jpgscraper-master\\jpeg-carver-csharp-source\\JpegRecoveryLibrary\\JpegRecoveryLibrary.csproj",
+        "projectPath": "G:\\HBKU\\QCRIInternship\\Code\\jpgscraper-master\\jpeg-carver-csharp-source\\src\\JpegRecoveryLibrary\\JpegRecoveryLibrary.csproj",
         "packagesPath": "C:\\Users\\Ahmad\\.nuget\\packages\\",
-        "outputPath": "G:\\HBKU\\QCRIInternship\\Code\\jpgscraper-master\\jpeg-carver-csharp-source\\JpegRecoveryLibrary\\obj\\",
+        "outputPath": "G:\\HBKU\\QCRIInternship\\Code\\jpgscraper-master\\jpeg-carver-csharp-source\\src\\JpegRecoveryLibrary\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

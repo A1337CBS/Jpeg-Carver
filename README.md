@@ -8,16 +8,17 @@ JpgScraper: An Advanced Carver for Baseline JPEG Files
 
 
 ## Features
-Three modes of operation:
+* Three modes of operation:
 1) Single image carving from fragment of jpeg
 2) Storage carving of files recovered from media
 3) Network packets carving
 
+* Extracts huffman tables if available in file fragment and saves it for future use.
+
 ## How to use
 This project has two parts, a CLI program (mostly for experimenting) and a GUI. To use the GUI follow the following steps:
-* Execute the GUI program.
-* Select mode from the three modes of operation
-* Select input file path
+* Select a mode from the three modes of operation (e.g Jpeg Carving(Single image))
+* Select input file path (e.g choose raw_dragon from Sampledata folder given in this repository)
 * Click on run
 * Enjoy the results!
 
@@ -37,10 +38,8 @@ This is a wrapper repository introducing tools used and proposed in following pa
 
 
 ## For developers
-
-Read JPEG compression specification by the International Telecommunication Union (ITU) as Recommendation T.81
-
-https://www.w3.org/Graphics/JPEG/itu-t81.pdf
+To understand and contribute, start by reading the Jpeg standard 
+* JPEG compression specification by the International Telecommunication Union (ITU) as Recommendation T.81 (https://www.w3.org/Graphics/JPEG/itu-t81.pdf)
 
 # Developers
 - Ahmed Aziz             <br />
