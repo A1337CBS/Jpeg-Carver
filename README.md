@@ -27,7 +27,7 @@ This project was tested on Windows 10 and has two parts, a CLI program (mostly f
 
 
 ## For developers
-The project was build using Visual Studio 2019 and Windows 10/
+The project was build using Visual Studio 2019 and Windows 10.
 The source code is divided into two layers:
 * Frontend layer: GUI and CLI are part of this
 * Backend layer: Contains all the necessary logic to 
