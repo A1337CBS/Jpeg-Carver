@@ -8,11 +8,11 @@ JpgScraper: An Advanced Carver for Baseline JPEG Files
 
 
 ## Features
-* Four modes of operation:
-1) Single image carving from fragment of jpeg
-2) Storage carving of files recovered from media
-3) Network packets carving
-4) Check if an image fragment is jpeg or not
+* Four modes of operation:  </br>
+&ensp; 1) Single image carving from fragment of jpeg
+&ensp; 2) Storage carving of files recovered from media
+&ensp; 3) Network packets carving
+&ensp; 4) Check if an image fragment is jpeg or not
 
 * Extracts huffman tables if available in file fragment and saves it for future use.
 
@@ -35,6 +35,7 @@ The source code is divided into two layers:
 To understand and contribute, start by reading the Jpeg standard and the papers given in citation
 * JPEG compression specification by the International Telecommunication Union (ITU) as Recommendation T.81 (https://www.w3.org/Graphics/JPEG/itu-t81.pdf)
 
+</br>
 ##Dependencies
 * .NET Core 3.1 for GUI
 * .NET framework 4.7.2 for CLI 
