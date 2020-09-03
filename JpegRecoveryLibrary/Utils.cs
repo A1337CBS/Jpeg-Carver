@@ -97,9 +97,9 @@ namespace JpegRecoveryLibrary
                     Console.WriteLine("DHT marker starts at:" + dht_point);
                     cpoint = fileStream.Position;
                     preCheck.parseDht(fileStream, dht_point);
-                    fileStream.Position = cpoint;
                 }
             }
+            fileStream.Position = cpoint;
 
         }
 

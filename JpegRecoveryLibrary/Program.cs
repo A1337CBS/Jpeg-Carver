@@ -52,7 +52,7 @@ namespace JpegRecoveryLibrary
             endOfStream = fileStream.Length;
             findByteBoundary();
             initPosition = 0;
-            outName = file + "_recov.jpg";
+            outName = file + ".jpg";
         }
 
         //Initialize filestream from (bytes) MemoryStream
@@ -66,7 +66,7 @@ namespace JpegRecoveryLibrary
             endOfStream = fileStream.Length;
             findByteBoundary();
             initPosition = 0;
-            outName = file + "_pktRecov.jpg";
+            outName = file + ".jpg";
         }
 
         public Program(string file, FileStream _fileStream, long _initPosition)

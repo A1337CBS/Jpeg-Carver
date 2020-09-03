@@ -1,16 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.IO;
 using System.Diagnostics;
 using System.Windows.Forms;
-using SharpPcap;
-using SharpPcap.LibPcap;
-using PacketDotNet.Connections;
 using JpegRecoveryLibrary;
-using PacketDotNet.Utils;
 
 namespace JpegRecovery
 {
@@ -34,194 +27,66 @@ namespace JpegRecovery
             MainClass m = new MainClass();
             Huffman.switchHuffman(1);
 
-
-            /*
-             *Procedur 1- Recover single jpeg encoded data.
-             * 
-             */
             Program p;
             OpenFileDialog openfiledialog1 = new OpenFileDialog();
             openfiledialog1.InitialDirectory = @"e:\";
 
-                //  int counter = m.initializeorphanedfragments(openfiledialog1.FileName);
-                //  m.recoverOrphanedFragments(counter, "");
-                Stopwatch watch = Stopwatch.StartNew();
+            //  int counter = m.initializeorphanedfragments(openfiledialog1.FileName);
+            //  m.recoverOrphanedFragments(counter, "");
+            Stopwatch watch = Stopwatch.StartNew();
             //p = new Program(openfiledialog1.FileName);
-            /*
-            String rawPath = @"C:\Users\Ahmad\Desktop\QCRIInternship\Code\jpeg-carver-csharp-master\Dataset\Original\deagon_test_4kib";
-
-            //Check if file is jpeg or not
-            FileStream testFileStream = new FileStream(rawPath, FileMode.Open);
-            bool isJpeg = preCheck.isJpeg(testFileStream);
-            Console.WriteLine("Is Jpeg File?: "+isJpeg);
-
-            //Check if jpeg partial headers exist
-            //Find SOS marker
-            var sos = preCheck.get_sos_cnt_and_point(testFileStream);
-            int sos_index = sos.Item1; // which SOS code is hit
-            long sos_point = sos.Item2; // point of encoded data starts. go ahead and recover consequent jpeg
-            if (sos_index == -1)
+           
+            Console.WriteLine("Which procedure would you like to run(1-3)?");
+            string input = Console.ReadLine();
+            int choice;
+            Int32.TryParse(input, out choice);
+            if (choice == 1)
             {
-                Console.WriteLine("SOS marker not found");
+                /*
+                 *Procedure 1- Recover single jpeg encoded data.
+                 * 
+                */
+                //String basePath = "G:\\HBKU\\QCRIInternship\\dfrws-2007-challenge\\dfrws-2007-challenge.img";
+                Console.WriteLine("Enter image fragment file path: ");
+                string basePath = Console.ReadLine();
+                Procedures procedures = new Procedures();
+                var result = procedures.procedure_1(basePath);
+                Console.WriteLine(result.Item1);
+
+                //End of Procedure 1
+            }
+            else if (choice == 2)
+            {
+                ///* 
+                // * Procedure 2- Recover whole storage volume.
+                // * 
+                // */
+                //String basePath = "G:\\HBKU\\QCRIInternship\\dfrws-2007-challenge\\dfrws-2007-challenge.img";
+                Console.WriteLine("Enter full file path: ");
+                string basePath = Console.ReadLine();
+                Procedures procedures = new Procedures();
+                var result = procedures.procedure_2(basePath);
+                Console.WriteLine(result.Item1);
+
+                //End of Procedure 2
+            }
+            else if (choice == 3)
+            {
+
+                //Procedure 3: Network Packets
+
+                //String packetPath = @"G:\HBKU\QCRIInternship\pcap.pcap";
+                Console.WriteLine("Enter network(pcap) file path: ");
+                string basePath = Console.ReadLine();
+                Procedures procedures = new Procedures();
+                var result = procedures.procedure_3(basePath);
+                Console.WriteLine(result.Item1);
+
+                //End Procedure 3
             }
             else {
-                Console.WriteLine("SOS marker exists at:" + sos_point);
+                Console.WriteLine("Not valid choice");
             }
-
-
-        //Find DHT marker
-        // Set the stream position to the beginning of the file.
-        testFileStream.Seek(0, SeekOrigin.Begin);
-            */
-
-            /*DHT
-             * FF C4 - Marker(2 bytes)
-             * XX XX - Length(2 bytes)
-             * XX    - Table info(1 byte) Upper nibble = 0/1 (DC=0/AC=1), Lower nibble = 0-3 Table ID
-             * [16]  - # of codes of each length
-             * [X]   - Symbols
-             */
-            /*
-            var dht = preCheck.get_dht_point(testFileStream);
-            int dht_index = dht.Item1; // DHT is hit or not
-            long dht_point = dht.Item2; // point of DHT data starts.
-            if (dht_index == -1)
-            {
-                Console.WriteLine("DHT marker not found");
-            }
-            else
-            {
-                Console.WriteLine("DHT marker starts at:" + dht_point);
-            }
-
-            testFileStream.Seek(0, SeekOrigin.Begin);
-            preCheck.parseDht(testFileStream, dht_point);
-            
-            testFileStream.Close();
-            */
-
-            //p = new Program(rawPath);
-            //m.recoverSegment(rawPath, p);
-
-
-            //p = new Program(rawPath);
-            //m.recoverSegment(rawPath, p);
-
-            //Procedure 3: Network Packets
-            
-            String packetPath = @"G:\HBKU\QCRIInternship\pcap.pcap";
-
-            String packetPathTemp = "raw_temp";
-            List<MemoryStream> memoryStreams = m.packetParserUsingDotnetConnections(packetPath);
-            
-            const int fileSystemBlockSize = 4 * 1024; //4kib
-            byte[] byteArray = new byte[fileSystemBlockSize];
-            MemoryStream memStream = new MemoryStream();
-            MemoryStream jpegFragMemStream = new MemoryStream();
-            List<MemoryStream> imgFragMemoryStreams = new List<MemoryStream>();
-
-            for (int i = 0; i < memoryStreams.Count; i++)
-            {
-                memoryStreams[i].Position = 0;
-                while (memoryStreams[i].Read(byteArray, 0, fileSystemBlockSize) > 0)
-                {
-                    memStream = new MemoryStream(byteArray);
-
-                    //Reading stream changes position, retain original
-                    long cpoint = memStream.Position;
-                    bool isJpeg = preCheck.isJpeg(memStream);
-                    memStream.Position = cpoint;
-
-
-                    //Check if jpeg partial headers exist
-                    //Find SOS marker
-                    cpoint = memStream.Position;
-                    var sos = preCheck.get_sos_cnt_and_point(memStream);
-                    memStream.Position = cpoint;
-
-                    int sos_index = sos.Item1; // which SOS code is hit
-                    long sos_point = sos.Item2; // point of encoded data starts. go ahead and recover consequent jpeg
-                    if (sos_index == -1)
-                    {
-                        Console.WriteLine("SOS marker not found");
-                    }
-                    else
-                    {
-                        Console.WriteLine("SOS marker exists at:" + sos_point);
-                    }
-
-                    //If SOS exists then Check if DHT exists
-                    if (sos_index == 0)
-                    {
-                        cpoint = memStream.Position;
-                        var dht = preCheck.get_dht_point(memStream);
-                        memStream.Position = cpoint;
-                        int dht_index = dht.Item1; // DHT is hit or not
-                        long dht_point = dht.Item2; // point of DHT data starts.
-                        if (dht_index == -1)
-                        {
-                            Console.WriteLine("DHT marker not found");
-                        }
-                        else
-                        {
-                            Console.WriteLine("DHT marker starts at:" + dht_point);
-                            cpoint = memStream.Position;
-                            preCheck.parseDht(memStream, dht_point);
-                            memStream.Position = cpoint;
-                        }
-                    }
-
-
-                    if (isJpeg)
-                    {
-                        jpegFragMemStream.Write(byteArray, 0, fileSystemBlockSize);
-                    }
-                    else
-                    {
-                        if (jpegFragMemStream.Length > 0)
-                        {
-                            imgFragMemoryStreams.Add(jpegFragMemStream);
-                            Console.WriteLine("Jpeg Size: " + jpegFragMemStream.Length);
-                            jpegFragMemStream = new MemoryStream();
-                            //break;
-                        }
-                    }
-
-                    Console.WriteLine("Is Jpeg File?: " + isJpeg);
-
-                }
-            }
-
-            String packetfragPath = "G:\\HBKU\\QCRIInternship\\pkt_image_fragments";
-            if (!Directory.Exists(packetfragPath))
-            {
-                Directory.CreateDirectory(packetfragPath);
-            }
-
-            for (int i = 0; i < imgFragMemoryStreams.Count; i++)
-            {
-                bool isJpeg = preCheck.isJpeg(imgFragMemoryStreams[i]);
-                Console.WriteLine("Is pkt Jpeg File?: " + isJpeg);
-                String imageFragPath = packetfragPath + "\\frag_" + i;
-                p = new Program(imageFragPath, imgFragMemoryStreams[i] );
-                Console.WriteLine("Jpeg Size: " + imgFragMemoryStreams[i].Length);
-                m.recoverSegment(imageFragPath, p);
-            }
-            //Cleanup
-
-            foreach (var stream in memoryStreams)
-            {
-                stream.Dispose();
-            }
-            memoryStreams.Clear();
-
-            foreach (var stream in imgFragMemoryStreams)
-            {
-                stream.Dispose();
-            }
-            imgFragMemoryStreams.Clear();
-            
-            //End Procedure 3
 
             /*
             foreach (var stream in memoryStreams)
@@ -275,74 +140,6 @@ namespace JpegRecovery
             //{
             //}
 
-
-
-
-            ///* 
-            // * Procedur 2- Recover whole storage volume.
-            // * 
-            // */
-            /*
-            String basePath = "G:\\HBKU\\QCRIInternship\\dfrws-2007-challenge\\dfrws-2007-challenge.img";
-            const int fileSystemBlockSize = 4*1024; //4kib
-            FileStream fileStream = new FileStream(basePath, FileMode.Open);
-            byte[] byteArray= new byte[fileSystemBlockSize];
-
-
-            MemoryStream memStream = new MemoryStream();
-            MemoryStream jpegFragMemStream = new MemoryStream();
-            List<MemoryStream> memoryStreams = new List<MemoryStream>();
-            //read chunk of bytes and check if it is jpeg
-            while (fileStream.Read(byteArray, 0, fileSystemBlockSize) > 0) {
-                memStream = new MemoryStream(byteArray);
-
-                bool isJpeg = preCheck.isJpeg(memStream);
-
-                if (isJpeg)
-                {
-                    jpegFragMemStream.Write(byteArray, 0, fileSystemBlockSize);
-                }
-                else {
-                    if (jpegFragMemStream.Length > 0) {
-                        memoryStreams.Add(jpegFragMemStream);
-                        Console.WriteLine("Jpeg Size: " + jpegFragMemStream.Length);
-                        jpegFragMemStream = new MemoryStream();
-                        //break;
-                    }
-                }
-
-                Console.WriteLine("Is Jpeg File?: " + isJpeg);
-
-
-            }
-            memStream.Close();
-            fileStream.Close();
-
-            String filePath = "G:\\HBKU\\QCRIInternship\\dfrws-2007-challenge\\image_fragments";
-            if (!Directory.Exists(filePath)) {
-                Directory.CreateDirectory(filePath);
-            }
-
-            for (int i=0; i<memoryStreams.Count; i++)
-            {
-                String imageFragPath = filePath + "\\frag_" + i;
-                p = new Program(imageFragPath, memoryStreams[i] );
-                Console.WriteLine("Jpeg Size: " + memoryStreams[i].Length);
-
-                m.recoverHuffmanHdr(memoryStreams[i] );
-                m.recoverSegment(imageFragPath, p);
-            }
-
-            //Cleanup
-
-            foreach (var stream in memoryStreams)
-            {
-                stream.Dispose();
-            }
-            memoryStreams.Clear();
-            
-            //End of Procedure 2
-            */
 
             //for (int i = 1; i < 26; i++)
             //{

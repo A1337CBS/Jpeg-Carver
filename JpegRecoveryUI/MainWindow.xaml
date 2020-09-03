@@ -47,14 +47,16 @@
 					<TextBlock Text="Input path" Classes="b1" Margin="0,10,0,0"/>
 					<TextBox Grid.Row="2" Text="{Binding Path}" MaxWidth="350" Margin="0 0 0 0" IsReadOnly="True" />
 
-					<TextBlock Text="Output path" Classes="b1" Margin="0,10,0,0"/>
-					<TextBox Grid.Row="3" Text="{Binding Path}" MaxWidth="350" Margin="0 0 0 0" IsReadOnly="True" />
+					<!--<TextBlock Text="Output path" Classes="b1" Margin="0,10,0,0"/>
+					<TextBox Grid.Row="3" Text="{Binding Path}" MaxWidth="350" Margin="0 0 0 0" IsReadOnly="True" />-->
 				
-					<Button Grid.Row="4" Classes="Primary" Content="Browse" Click="Browse_Clicked" Margin="0 0 0 0" />
+					<Button Name="browseBtn" Grid.Row="4" Classes="Primary" Content="Browse" Click="Browse_Clicked" Margin="0 0 0 0" />
 
-					<Button Grid.Row="5" Classes="Primary" Click="Run_Clicked" Margin="0 15 0 0">Run</Button>
-				
-				<ProgressBar></ProgressBar>
+					<ProgressBar Name="progress" Background="LightGray" Margin="0 15 0 0" IsVisible="True" ></ProgressBar>
+
+					<Button Name="runBtn" Grid.Row="5" Classes="Primary" Click="Run_Clicked" Margin="0 15 0 0">Run</Button>
+
+					<TextBlock Name="result" TextAlignment="Center" MaxWidth="350" />
 				
 				
 			</StackPanel>

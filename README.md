@@ -2,6 +2,27 @@
 # jpgscraper
 JpgScraper: An Advanced Carver for Baseline JPEG Files
 
+<p align="center">
+     <img alt="sampleGUIscreenshot" src="./images/SampleScreenshot.png" width="500">
+</p>
+
+
+## Features
+Three modes of operation:
+1) Single image carving from fragment of jpeg
+2) Storage carving of files recovered from media
+3) Network packets carving
+
+## How to use
+This project has two parts, a CLI program (mostly for experimenting) and a GUI. To use the GUI follow the following steps:
+* Execute the GUI program.
+* Select mode from the three modes of operation
+* Select input file path
+* Click on run
+* Enjoy the results!
+
+
+
 This is a wrapper repository introducing tools used and proposed in following papers. Please cite properly.
 * [jpeg-classifier-csharp-source](https://github.com/euzun/jpgscraper/tree/master/jpeg-classifier-csharp-source): A C# tool to discriminate encoded JPEG data from 993 different file data types. Coming soon!
 * [jpeg-carver-csharp-source](https://github.com/euzun/jpgscraper/tree/master/jpeg-carver-csharp-source): Source code of JpgScraper C# toolbox.
@@ -13,12 +34,19 @@ This is a wrapper repository introducing tools used and proposed in following pa
 
 
 
+
+
 ## For developers
 
 Read JPEG compression specification by the International Telecommunication Union (ITU) as Recommendation T.81
 
 https://www.w3.org/Graphics/JPEG/itu-t81.pdf
 
+# Developers
+- Ahmed Aziz             <br />
+
+# Credits
+Credits go to the original authors of JpgScraper, original paper mentioned in citation.
 
 ## Citation
 * Please cite to following papers if you use this tool for academic purpose;
