@@ -11,7 +11,7 @@ JpgScraper: An Advanced Carver for Baseline JPEG Files
 * Four modes of operation:  </br>
 &ensp; 1) Single image carving from fragment of jpeg <br />
 &ensp; 2) Storage carving of files recovered from media <br />
-&ensp; 3) Network packets carving <br />
+&ensp; 3) Network packets carving (pcap files only) <br />
 &ensp; 4) Check if an image fragment is jpeg or not <br />
 
 * Extracts huffman tables if available in file fragment and saves it for future use.
@@ -30,7 +30,7 @@ The sampleData folder contains an image fragment that can be used in Jpeg Carvin
 
 
 ## For developers
-The project was build using Visual Studio 2019 and Windows 10.
+The project was built using Visual Studio 2019 and Windows 10.
 The source code is divided into two layers:
 * Frontend layer: GUI and CLI are part of this
 * Backend layer: Contains all the necessary logic to 
